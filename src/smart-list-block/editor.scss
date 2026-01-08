@@ -1,0 +1,109 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-smart-list-block {
+}
+
+.components-panel__body {
+	.tabs {
+		display: flex;
+		align-items: center;
+		padding: 16px 16px 16px 0px;
+		width: 248px;
+		border: none;
+		height: 100%;
+
+		&.tabs--only-text,
+		&.tabs--alignment {
+			border: 1px solid #dddddd;
+			border-radius: 2px;
+			padding: 6px;
+		}
+
+		.tab {
+			cursor: pointer;
+			padding: 6px 6px 12px;
+			display: flex;
+			gap: 8px;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			.tab-title {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 500;
+			}
+
+			&.tab--underline {
+				border-bottom: 3px solid #979797;
+
+				.tab-icon svg {
+					display: block;
+					fill: currentColor;
+				}
+
+				&.active {
+					border-bottom: 3px solid #641dd7;
+					color: #6f22dd;
+				}
+			}
+			&.tab--icon {
+				padding: 0;
+				border: none;
+				.tab-icon svg rect:first-child {
+					stroke: currentColor;
+				}
+				.tab-title {
+					display: none;
+				}
+				&.active {
+					color: #1a74e4;
+				}
+			}
+			&.tab--only-text {
+				padding: 0;
+				border: none;
+				.tab-icon {
+					display: none;
+				}
+				&.active {
+					padding: 5px;
+					border-radius: 2px;
+					border: 1px solid var(--Primary-2-100, #d6c2f5);
+					background: var(--Primary-2-50, #efe6fb);
+					color: var(--Primary-2-500, #6f22dd);
+					font-size: 13px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 20px;
+				}
+			}
+			&.tab--alignment {
+				display: flex;
+				padding: 2px 6px;
+				justify-content: center;
+				align-items: center;
+				.tab-title {
+					display: none;
+				}
+				&.active {
+					border-radius: 2px;
+					border: 1px solid var(--Primary-2-100, #d6c2f5);
+					background: var(--Primary-2-50, #efe6fb);
+					color: var(--Gutenberg-White, #fff);
+					font-size: 13px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 20px;
+				}
+			}
+		}
+		.tab:hover {
+			color: #641dd7;
+		}
+	}
+}
