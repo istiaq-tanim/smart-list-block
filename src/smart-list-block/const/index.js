@@ -59,3 +59,21 @@ export const alignmentTabItems = [
 		icon: <RightAlign></RightAlign>,
 	},
 ];
+
+export const listItems = [
+	{
+		icon: "🎯",
+		title: "List Item 1",
+		description: "This is the first item description",
+	},
+	{
+		icon: "✨",
+		title: "List Item 2",
+		description: "This is the second item description",
+	},
+	{
+		icon: "🚀",
+		title: "List Item 3",
+		description: "This is the third item description",
+	},
+];

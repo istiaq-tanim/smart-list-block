@@ -19,6 +19,12 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
+		'attributes' => array(
+			'listOrientation' => array(
+				'type' => 'string',
+				'default' => 'vertical'
+			)
+		),
 		'textdomain' => 'smart-list-block',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
