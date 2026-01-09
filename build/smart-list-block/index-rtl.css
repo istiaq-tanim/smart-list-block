@@ -6,6 +6,36 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-create-block-smart-list-block .smart-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.wp-block-create-block-smart-list-block .smart-list.is-horizontal {
+  flex-direction: row;
+}
+.wp-block-create-block-smart-list-block .smart-list.is-vertical {
+  flex-direction: column;
+}
+.wp-block-create-block-smart-list-block .smart-list.alignment-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list.alignment-center {
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-smart-list-block .smart-list.alignment-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 .components-panel__body .tabs {
   display: flex;
   align-items: center;
@@ -97,4 +127,63 @@
 }
 .components-panel__body .tabs .tab:hover {
   color: #641dd7;
+}
+.components-panel__body .range-control {
+  display: flex;
+  padding: 16px 0px 0px 0px;
+  align-items: flex-start;
+}
+.components-panel__body .range-control .content {
+  display: flex;
+  gap: 16px;
+}
+.components-panel__body .range-control .content p {
+  color: var(--Gutenberg-Gray-800, #2f2f2f);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.components-panel__body .range-control .content .range-measure div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+.components-panel__body .range-control .content .range-measure .pixel {
+  display: flex;
+  width: 23px;
+  height: 20px;
+  min-width: 23px;
+  padding: 8px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 2px;
+  border: 1px solid var(--Grey-Grey-30, #8c8f94);
+  background: var(--White, #fff);
+}
+.components-panel__body .range-control .content .range-measure .pixel p {
+  color: var(--Grey-Grey-30, #8c8f94);
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.components-panel__body .range-control .content .desktop {
+  display: flex;
+  width: 22px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 2px;
+  border: 1px solid var(--Grey-Grey-30, #8c8f94);
+  background: var(--White, #fff);
+}
+.input-range {
+  --wp-components-color-accent: #f97316;
 }

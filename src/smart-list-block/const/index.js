@@ -49,8 +49,8 @@ export const alignmentTabItems = [
 		icon: <LeftAlign></LeftAlign>,
 	},
 	{
-		name: "middle",
-		title: "Middle",
+		name: "center",
+		title: "Center",
 		icon: <MiddleAlign></MiddleAlign>,
 	},
 	{
@@ -64,7 +64,7 @@ export const listItems = [
 	{
 		icon: "🎯",
 		title: "List Item 1",
-		description: "This is the first item description",
+		description: "This is the firsts item description",
 	},
 	{
 		icon: "✨",
@@ -74,6 +74,6 @@ export const listItems = [
 	{
 		icon: "🚀",
 		title: "List Item 3",
-		description: "This is the third item description",
+		description: "This is the thirds item description",
 	},
 ];

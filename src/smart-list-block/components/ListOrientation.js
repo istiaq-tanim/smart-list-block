@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { orientationTabItems } from "../const";
 import Tabs from "./Tabs/Tabs";
+import useBlockContext from "../hooks/useBlockContext";
 
 function ListOrientation() {
-	const [selectedTab, setSelectedTab] = useState(orientationTabItems[0].name);
+	const { attributes, setAttributes } = useBlockContext();
+	const { listOrientation } = attributes;
+
+	const selectedTab = listOrientation;
+
 	const handleTab = (tabName) => {
-		setSelectedTab(tabName);
+		setAttributes({ listOrientation: tabName });
 	};
 	return (
 		<div>

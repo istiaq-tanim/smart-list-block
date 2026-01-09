@@ -15,9 +15,29 @@
 		"html": false
 	},
 	"attributes": {
+		"presetsType": {
+			"type": "string",
+			"default": "list"
+		},
 		"listOrientation": {
 			"type": "string",
 			"default": "vertical"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"previewWidth": {
+			"type": "string",
+			"default": "100%"
+		},
+		"spaceBetween": {
+			"type": "number",
+			"default": 0
+		},
+		"iconGap": {
+			"type": "number",
+			"default": 0
 		}
 	},
 	"textdomain": "smart-list-block",

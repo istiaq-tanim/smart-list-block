@@ -1,11 +1,13 @@
-import { useState } from "@wordpress/element";
 import { alignmentTabItems } from "../../../../../const";
+import useBlockContext from "../../../../../hooks/useBlockContext";
 import Tabs from "../../../../Tabs/Tabs";
 
 function Alignment() {
-	const [selectedTab, setSelectedTab] = useState(alignmentTabItems[0].name);
+	const { attributes, setAttributes } = useBlockContext();
+	const { alignment } = attributes;
+	const selectedTab = alignment;
 	const handleTab = (tabName) => {
-		setSelectedTab(tabName);
+		setAttributes({ alignment: tabName });
 	};
 	return (
 		<div>

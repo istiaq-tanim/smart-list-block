@@ -20,9 +20,29 @@ return array(
 			'html' => false
 		),
 		'attributes' => array(
+			'presetsType' => array(
+				'type' => 'string',
+				'default' => 'list'
+			),
 			'listOrientation' => array(
 				'type' => 'string',
 				'default' => 'vertical'
+			),
+			'alignment' => array(
+				'type' => 'string',
+				'default' => 'left'
+			),
+			'previewWidth' => array(
+				'type' => 'string',
+				'default' => '100%'
+			),
+			'spaceBetween' => array(
+				'type' => 'number',
+				'default' => 0
+			),
+			'iconGap' => array(
+				'type' => 'number',
+				'default' => 0
 			)
 		),
 		'textdomain' => 'smart-list-block',

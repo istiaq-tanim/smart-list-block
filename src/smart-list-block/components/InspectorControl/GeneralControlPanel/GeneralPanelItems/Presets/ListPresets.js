@@ -1,11 +1,13 @@
-import { useState } from "@wordpress/element";
 import { presetTabItems } from "../../../../../const";
 import Tabs from "../../../../Tabs/Tabs";
+import useBlockContext from "../../../../../hooks/useBlockContext";
 
 function ListPresets() {
-	const [selectedTab, setSelectedTab] = useState(presetTabItems[0].name);
+	const { attributes, setAttributes } = useBlockContext();
+	const { presetsType } = attributes;
+	const selectedTab = presetsType;
 	const handleTab = (tabName) => {
-		setSelectedTab(tabName);
+		setAttributes({ presetsType: tabName });
 	};
 	return (
 		<div>
