@@ -3,13 +3,34 @@ import { listItems } from "../const";
 import useBlockContext from "../hooks/useBlockContext";
 function ListPreview() {
 	const { attributes } = useBlockContext();
-	const { listOrientation, alignment, presetsType, spaceBetween, iconGap } =
-		attributes;
+	const {
+		listOrientation,
+		alignment,
+		presetsType,
+		spaceBetween,
+		iconGap,
+		divider,
+	} = attributes;
+
+	const { width, style, color, show } = divider;
+
+	console.log(width);
 
 	const orientationClass = `is-${listOrientation || "vertical"}`;
 	const alignmentClass = `alignment-${alignment || "left"}`;
+	const dividerClass = show ? "has-divider" : "";
+
 	return (
-		<ul className={`smart-list ${orientationClass} ${alignmentClass}`}>
+		<ul
+			className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass}`}
+			style={{
+				"--spaceBetween": `${spaceBetween}px`,
+				"--iconGap": `${iconGap}px`,
+				"--dividerColor": divider.color,
+				"--dividerStyle": divider.style,
+				"--dividerWidth": `${divider.width}`,
+			}}
+		>
 			{listItems.map((item, index) => {
 				return (
 					<li className="smart-item" key={index}>

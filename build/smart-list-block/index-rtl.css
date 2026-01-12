@@ -11,18 +11,29 @@
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 24px;
 }
 .wp-block-create-block-smart-list-block .smart-list .smart-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--iconGap, 12px);
+}
+.wp-block-create-block-smart-list-block .smart-list.has-divider.is-vertical .smart-item:not(:last-child) {
+  border-bottom: calc(var(--dividerWidth, 1) * 1px) var(--dividerStyle, solid) var(--dividerColor, #dddddd);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-divider.is-horizontal .smart-item:not(:last-child) {
+  border-left: calc(var(--dividerWidth, 1) * 1px) var(--dividerStyle, solid) var(--dividerColor, #dddddd);
+  padding-left: 8px;
+  margin-left: 8px;
 }
 .wp-block-create-block-smart-list-block .smart-list.is-horizontal {
   flex-direction: row;
+  gap: var(--spaceBetween, 24px);
 }
 .wp-block-create-block-smart-list-block .smart-list.is-vertical {
   flex-direction: column;
+  gap: var(--spaceBetween, 24px);
 }
 .wp-block-create-block-smart-list-block .smart-list.alignment-left {
   justify-content: flex-start;
@@ -135,40 +146,44 @@
 }
 .components-panel__body .range-control .content {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
 }
-.components-panel__body .range-control .content p {
-  color: var(--Gutenberg-Gray-800, #2f2f2f);
+.components-panel__body .range-control .content .range-label {
+  display: flex;
+  gap: 8px;
+}
+.components-panel__body .range-control .content .range-label p {
+  color: #2f2f2f;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
+.components-panel__body .range-control .content .range-measure {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
 .components-panel__body .range-control .content .range-measure div {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   gap: 8px;
-  flex: 1 0 0;
 }
 .components-panel__body .range-control .content .range-measure .pixel {
   display: flex;
   width: 23px;
   height: 20px;
-  min-width: 23px;
   padding: 8px 5px;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   border-radius: 2px;
-  border: 1px solid var(--Grey-Grey-30, #8c8f94);
-  background: var(--White, #fff);
+  border: 1px solid #8c8f94;
+  background: #fff;
 }
 .components-panel__body .range-control .content .range-measure .pixel p {
-  color: var(--Grey-Grey-30, #8c8f94);
+  color: #8c8f94;
   text-align: center;
   font-size: 10px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -176,14 +191,56 @@
   display: flex;
   width: 22px;
   height: 20px;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   border-radius: 2px;
-  border: 1px solid var(--Grey-Grey-30, #8c8f94);
-  background: var(--White, #fff);
+  border: 1px solid #8c8f94;
+  background: #fff;
+}
+.components-panel__body .toggle-control.custom-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+.components-panel__body .toggle-control.custom-toggle .toggle-label {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2f2f2f;
+}
+.components-panel__body .toggle-control.custom-toggle .components-form-toggle .components-form-toggle__track {
+  background-color: #bbb !important;
+}
+.components-panel__body .toggle-control.custom-toggle .components-form-toggle.is-checked .components-form-toggle__track {
+  background-color: #884ae3 !important;
+}
+.components-panel__body .toggle-control.custom-toggle .components-form-toggle .components-form-toggle__thumb {
+  background-color: #fff !important;
+}
+.components-panel__body .selector-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+.components-panel__body .selector-control .selector-label {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2f2f2f;
+}
+.components-panel__body .selector-control.inline {
+  flex-direction: row;
 }
 .input-range {
   --wp-components-color-accent: #f97316;
+}
+.custom-toggle {
+  --wp-components-color-accent: var(--Primary-2-400, #884ae3);
+}
+.custom-selector {
+  --wp-components-color-accent: var(--Primary-2-400, #884ae3);
 }

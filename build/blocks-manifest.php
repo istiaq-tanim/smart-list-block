@@ -38,11 +38,24 @@ return array(
 			),
 			'spaceBetween' => array(
 				'type' => 'number',
-				'default' => 0
+				'default' => 24
 			),
 			'iconGap' => array(
 				'type' => 'number',
-				'default' => 0
+				'default' => 12
+			),
+			'divider' => array(
+				'type' => 'object',
+				'default' => array(
+					'show' => false,
+					'width' => 1,
+					'style' => 'solid',
+					'color' => '#DDDDDD'
+				)
+			),
+			'showConnectionLine' => array(
+				'type' => 'boolean',
+				'default' => false
 			)
 		),
 		'textdomain' => 'smart-list-block',

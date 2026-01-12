@@ -77,3 +77,22 @@ export const listItems = [
 		description: "This is the thirds item description",
 	},
 ];
+
+export const dividerStyle = [
+	{
+		label: "Solid",
+		value: "solid",
+	},
+	{
+		label: "Dotted",
+		value: "dotted",
+	},
+	{
+		label: "Dashed",
+		value: "dashed",
+	},
+	{
+		label: "Double",
+		value: "double",
+	},
+];

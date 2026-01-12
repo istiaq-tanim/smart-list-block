@@ -1,6 +1,6 @@
 import { alignmentTabItems } from "../../../../../const";
 import useBlockContext from "../../../../../hooks/useBlockContext";
-import Tabs from "../../../../Tabs/Tabs";
+import Tabs from "../../../common/Tabs/Tabs";
 
 function Alignment() {
 	const { attributes, setAttributes } = useBlockContext();

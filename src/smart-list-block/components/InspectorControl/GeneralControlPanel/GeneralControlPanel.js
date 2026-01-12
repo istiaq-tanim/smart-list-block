@@ -1,10 +1,10 @@
 import { PanelBody } from "@wordpress/components";
-import Tabs from "../../Tabs/Tabs";
 import Presets from "./GeneralPanelItems/Presets";
 import Styles from "./GeneralPanelItems/Styles";
 import { useState } from "@wordpress/element";
 import { generalTabItems } from "../../../const";
 import { __ } from "@wordpress/i18n";
+import Tabs from "../common/Tabs/Tabs";
 
 function GeneralControlPanel() {
 	const [selectedTab, setSelectedTab] = useState(generalTabItems[0].name);

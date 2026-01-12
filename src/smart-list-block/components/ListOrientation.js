@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { orientationTabItems } from "../const";
-import Tabs from "./Tabs/Tabs";
+import Tabs from "./InspectorControl/common/Tabs/Tabs";
 import useBlockContext from "../hooks/useBlockContext";
 
 function ListOrientation() {
