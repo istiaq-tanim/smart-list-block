@@ -51,6 +51,13 @@
 		"showConnectionLine": {
 			"type": "boolean",
 			"default": false
+		},
+		"backgroundStyle": {
+			"type": "object",
+			"default": {
+				"type": "solid",
+				"background": ""
+			}
 		}
 	},
 	"textdomain": "smart-list-block",

@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "@wordpress/element";
 import useBlockContext from "../../../../hooks/useBlockContext";
 import ListOrientation from "../../../ListOrientation";
 import CustomRangeControl from "../../common/RangeControl/CustomRangeControl";
@@ -8,7 +9,28 @@ import ListPresets from "./Presets/ListPresets";
 
 function Presets() {
 	const { attributes, setAttributes } = useBlockContext();
-	const { listOrientation, divider, showConnectionLine } = attributes;
+	const { listOrientation, divider, showConnectionLine, presetsType } =
+		attributes;
+
+	const prevListRef = useRef(divider.show);
+	// Handle user preset list when divider on and of
+	useEffect(() => {
+		if (presetsType !== "list") {
+			// Save user's list preference before forcing
+			prevListRef.current = divider.show;
+
+			if (!divider.show) {
+				setAttributes({
+					divider: { ...divider, show: true },
+				});
+			}
+		} else {
+			// Restore user's list preference
+			setAttributes({
+				divider: { ...divider, show: prevListRef.current },
+			});
+		}
+	}, [presetsType]);
 	return (
 		<>
 			<ListPresets></ListPresets>
@@ -19,14 +41,14 @@ function Presets() {
 				attributeKey="spaceBetween"
 				min={0}
 				max={100}
-				defaultValue={20}
+				defaultValue={24}
 			></CustomRangeControl>
 			<CustomRangeControl
 				label="Icon to Content Gap"
 				attributeKey="iconGap"
 				min={0}
 				max={100}
-				defaultValue={10}
+				defaultValue={12}
 			></CustomRangeControl>
 			<ToggleControlButton
 				label="Divider"

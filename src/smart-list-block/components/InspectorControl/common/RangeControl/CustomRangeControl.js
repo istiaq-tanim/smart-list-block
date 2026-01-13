@@ -12,9 +12,10 @@ function CustomRangeControl({
 	subKey = null,
 }) {
 	const { attributes, setAttributes } = useBlockContext();
-	const value = attributes[attributeKey] || defaultValue;
 
-	console.log(attributes);
+	const value = subKey
+		? attributes?.[attributeKey]?.[subKey] ?? defaultValue
+		: attributes?.[attributeKey] ?? defaultValue;
 
 	//Handle Both primitive and nonPrimitive attributes
 
@@ -30,6 +31,12 @@ function CustomRangeControl({
 			setAttributes({ [attributeKey]: newValue });
 		}
 	};
+
+	//Reset the value with default value
+
+	const handleReset = () => {
+		handleChange(attributeKey, defaultValue, subKey);
+	};
 	return (
 		<div className="custom-range-control">
 			<div className="range-control">
@@ -42,7 +49,10 @@ function CustomRangeControl({
 					</div>
 					<div className="range-measure">
 						<div>
-							<ResetIcon></ResetIcon>
+							<ResetIcon
+								style={{ cursor: "pointer" }}
+								onClick={handleReset}
+							></ResetIcon>
 							<div className="pixel">
 								<p>px</p>
 							</div>

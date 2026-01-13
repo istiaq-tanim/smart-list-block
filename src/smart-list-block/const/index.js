@@ -5,6 +5,9 @@ import DescriptionListIcon from "../assets/DescriptionListIcon";
 import RightAlign from "../assets/RightAlign";
 import MiddleAlign from "../assets/MiddleAlign";
 import LeftAlign from "../assets/LeftAlign";
+import Solid from "../assets/Solid";
+import Gradient from "../assets/Gradient";
+import Image from "../assets/Image";
 
 export const generalTabItems = [
 	{
@@ -94,5 +97,23 @@ export const dividerStyle = [
 	{
 		label: "Double",
 		value: "double",
+	},
+];
+
+export const backGroundStyles = [
+	{
+		name: "solid",
+		title: "solid",
+		icon: <Solid></Solid>,
+	},
+	{
+		name: "gradient",
+		title: "gradient",
+		icon: <Gradient></Gradient>,
+	},
+	{
+		name: "image",
+		title: "image",
+		icon: <Image></Image>,
 	},
 ];

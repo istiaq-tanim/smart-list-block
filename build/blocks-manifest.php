@@ -56,6 +56,13 @@ return array(
 			'showConnectionLine' => array(
 				'type' => 'boolean',
 				'default' => false
+			),
+			'backgroundStyle' => array(
+				'type' => 'object',
+				'default' => array(
+					'type' => 'solid',
+					'background' => ''
+				)
 			)
 		),
 		'textdomain' => 'smart-list-block',

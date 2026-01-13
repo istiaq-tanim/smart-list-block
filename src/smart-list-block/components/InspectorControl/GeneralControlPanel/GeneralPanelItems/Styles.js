@@ -1,7 +1,11 @@
+import CustomColorPicker from "../../common/CustomColorPicker/CustomColorPicker";
+import BackgroundStyle from "./GeneralStyle/BackgroundStyle";
+
 function Styles() {
 	return (
 		<div>
-			<p>List Styles</p>
+			<BackgroundStyle label="Background Style"></BackgroundStyle>
+			<CustomColorPicker label="Color"></CustomColorPicker>
 		</div>
 	);
 }

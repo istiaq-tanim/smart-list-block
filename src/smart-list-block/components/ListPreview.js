@@ -10,11 +10,11 @@ function ListPreview() {
 		spaceBetween,
 		iconGap,
 		divider,
+		backgroundStyle,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
-
-	console.log(width);
+	const { background } = backgroundStyle;
 
 	const orientationClass = `is-${listOrientation || "vertical"}`;
 	const alignmentClass = `alignment-${alignment || "left"}`;
@@ -26,9 +26,10 @@ function ListPreview() {
 			style={{
 				"--spaceBetween": `${spaceBetween}px`,
 				"--iconGap": `${iconGap}px`,
-				"--dividerColor": divider.color,
-				"--dividerStyle": divider.style,
-				"--dividerWidth": `${divider.width}`,
+				"--dividerColor": color,
+				"--dividerStyle": style,
+				"--dividerWidth": `${width}`,
+				"--backGround": background,
 			}}
 		>
 			{listItems.map((item, index) => {

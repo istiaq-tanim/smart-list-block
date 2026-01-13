@@ -4,12 +4,14 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+// List Style in Backend
 .wp-block-create-block-smart-list-block {
 	.smart-list {
-		padding: 0;
+		padding: 10px;
 		margin: 0;
 		list-style: none;
 		display: flex;
+		background: var(--backGround);
 
 		.smart-item {
 			display: flex;
@@ -65,7 +67,6 @@
 		display: flex;
 		align-items: center;
 		padding: 16px 16px 16px 0px;
-		width: 248px;
 		border: none;
 		height: 100%;
 
@@ -74,6 +75,11 @@
 			border: 1px solid #dddddd;
 			border-radius: 2px;
 			padding: 6px;
+		}
+
+		&.tabs--smallIcon {
+			display: flex;
+			gap: 8px;
 		}
 
 		.tab {
@@ -115,6 +121,16 @@
 				}
 				&.active {
 					color: #1a74e4;
+				}
+			}
+			&.tab--smallIcon {
+				padding: 4px;
+				border: none;
+				.tab-title {
+					display: none;
+				}
+				&.active {
+					border: 1px solid #884ae3;
 				}
 			}
 			&.tab--only-text {
@@ -273,6 +289,47 @@
 		&.inline {
 			flex-direction: row;
 		}
+	}
+
+	//Label
+	.label {
+		color: var(--Gutenberg-Gray-800, #2f2f2f);
+		/* Gutenberg Block Font Style/Body */
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+	}
+	.background-style {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	//Background-List
+	.background-list {
+		display: flex;
+		width: 24px;
+		height: 24px;
+		padding: 4px;
+		align-items: flex-start;
+		gap: 8px;
+		border-radius: 2px;
+		border: 1px solid var(--Primary-2-400, #884ae3);
+	}
+
+	//Image Upload
+
+	.image-upload {
+		display: flex;
+		height: 108px;
+		justify-content: center;
+		background: #faeae9;
+		align-items: center;
+		gap: 10px;
+		align-self: stretch;
+		border-radius: 2px;
+		border: 1px solid var(--Grey-Field-Border, #fdcfc1);
+		margin: 10px 0px 10px 0px;
 	}
 }
 
