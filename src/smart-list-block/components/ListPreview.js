@@ -12,6 +12,7 @@ function ListPreview() {
 		iconGap,
 		divider,
 		backgroundStyle,
+		color: textColor,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -27,18 +28,23 @@ function ListPreview() {
 			className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass}`}
 			style={{
 				"--spaceBetween": `${spaceBetween}px`,
+				"--color": textColor,
 				"--iconGap": `${iconGap}px`,
 				"--dividerColor": color,
 				"--dividerStyle": style,
 				"--dividerWidth": `${width}`,
-				"--backGround": getBackgroundValue(type, background, image),
+				"--backgroundImage":
+					type === "image" && image ? `url(${image})` : "none",
+				"--backgroundGradient":
+					type === "gradient" && background ? background : "none",
 				"--backgroundSize": type === "image" ? backgroundSize : "auto",
-				"--overlay-color": backgroundOverlay?.enabled
-					? hexToRgba(
-							backgroundOverlay.color || "#f05e31",
-							backgroundOverlay.opacity || 50,
-					  )
-					: "transparent",
+				"--overlayColor":
+					backgroundOverlay?.enabled && type === "image"
+						? hexToRgba(
+								backgroundOverlay.color || "#f05e31",
+								backgroundOverlay.opacity || 50,
+						  )
+						: "transparent",
 			}}
 		>
 			{listItems.map((item, index) => {

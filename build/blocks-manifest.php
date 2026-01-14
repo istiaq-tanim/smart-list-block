@@ -70,6 +70,10 @@ return array(
 						'opacity' => 50
 					)
 				)
+			),
+			'color' => array(
+				'type' => 'string',
+				'default' => '#000'
 			)
 		),
 		'textdomain' => 'smart-list-block',

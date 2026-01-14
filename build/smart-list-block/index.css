@@ -10,8 +10,10 @@
   padding: 10px;
   margin: 0;
   list-style: none;
+  color: var(--color, "#fff");
   display: flex;
-  background: linear-gradient(var(--overlayColor, transparent), var(--overlayColor, transparent)), var(--backgroundGradient, none), var(--backgroundImage, none);
+  background-image: linear-gradient(var(--overlayColor, transparent), var(--overlayColor, transparent)), var(--backgroundGradient, none), var(--backgroundImage, none);
+  position: relative;
   background-size: auto, auto, var(--backgroundSize, cover);
   background-position: center;
   background-repeat: no-repeat;

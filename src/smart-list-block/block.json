@@ -65,6 +65,10 @@
 					"opacity": 50
 				}
 			}
+		},
+		"color": {
+			"type": "string",
+			"default": "#000"
 		}
 	},
 	"textdomain": "smart-list-block",
