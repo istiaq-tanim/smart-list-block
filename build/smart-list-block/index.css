@@ -11,7 +11,10 @@
   margin: 0;
   list-style: none;
   display: flex;
-  background: var(--backGround);
+  background: linear-gradient(var(--overlayColor, transparent), var(--overlayColor, transparent)), var(--backgroundGradient, none), var(--backgroundImage, none);
+  background-size: auto, auto, var(--backgroundSize, cover);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .wp-block-create-block-smart-list-block .smart-list .smart-item {
   display: flex;
@@ -104,7 +107,7 @@
   color: #1a74e4;
 }
 .components-panel__body .tabs .tab.tab--smallIcon {
-  padding: 4px;
+  padding: 3px;
   border: none;
 }
 .components-panel__body .tabs .tab.tab--smallIcon .tab-title {

@@ -1,5 +1,4 @@
 import { MediaUpload, MediaUploadCheck } from "@wordpress/block-editor";
-import { Button } from "@wordpress/components";
 import UploadButton from "./UploadButton";
 
 function ImageUpload({ onChange, value }) {
@@ -10,6 +9,9 @@ function ImageUpload({ onChange, value }) {
 			onChange(media.url);
 		}
 	};
+	const handleRemove = () => {
+		onChange("");
+	};
 
 	return (
 		<div className="background-image-upload">
@@ -19,7 +21,11 @@ function ImageUpload({ onChange, value }) {
 					onSelect={handleImageSelect}
 					value={value}
 					render={({ open }) => (
-						<UploadButton onClick={open} imageUrl={value}></UploadButton>
+						<UploadButton
+							onClick={open}
+							imageUrl={value}
+							onRemove={handleRemove}
+						></UploadButton>
 					)}
 				/>
 			</MediaUploadCheck>

@@ -2,11 +2,16 @@ import Close from "../../../../../assets/Close";
 import PlusIcon from "../../../../../assets/PlusIcon";
 import Label from "../../../common/Label";
 
-function UploadButton({ onClick, imageUrl }) {
+function UploadButton({ onClick, imageUrl, onRemove }) {
+	const handleRemove = (e) => {
+		e.stopPropagation();
+		e.preventDefault();
+		onRemove();
+	};
 	return (
-		<div onClick={onClick} style={{ cursor: "pointer" }}>
+		<div style={{ cursor: "pointer" }}>
 			<Label label="Image"></Label>
-			<div className="image-upload">
+			<div onClick={!imageUrl ? onClick : undefined} className="image-upload">
 				{imageUrl ? (
 					<div style={{ position: "relative", width: "100%", height: "100%" }}>
 						<img
@@ -14,11 +19,14 @@ function UploadButton({ onClick, imageUrl }) {
 							style={{ width: "100%", height: "100%", objectFit: "cover" }}
 						></img>
 						<button
+							onClick={handleRemove}
+							type="button"
 							style={{
 								position: "absolute",
 								top: "8px",
 								right: "8px",
-								zIndex: 1,
+								zIndex: 10,
+								cursor: "pointer",
 							}}
 						>
 							<Close></Close>

@@ -45,7 +45,7 @@
 				"show": false,
 				"width": 1,
 				"style": "solid",
-				"color": "#DDDDDD"
+				"color": "#f05e31"
 			}
 		},
 		"showConnectionLine": {
@@ -56,7 +56,14 @@
 			"type": "object",
 			"default": {
 				"type": "solid",
-				"background": ""
+				"background": "",
+				"image": "",
+				"backgroundSize": "auto",
+				"backgroundOverlay": {
+					"enabled": false,
+					"color": "#f05e31",
+					"opacity": 50
+				}
 			}
 		}
 	},

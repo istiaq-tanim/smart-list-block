@@ -50,7 +50,7 @@ return array(
 					'show' => false,
 					'width' => 1,
 					'style' => 'solid',
-					'color' => '#DDDDDD'
+					'color' => '#f05e31'
 				)
 			),
 			'showConnectionLine' => array(
@@ -61,7 +61,14 @@ return array(
 				'type' => 'object',
 				'default' => array(
 					'type' => 'solid',
-					'background' => ''
+					'background' => '',
+					'image' => '',
+					'backgroundSize' => 'auto',
+					'backgroundOverlay' => array(
+						'enabled' => false,
+						'color' => '#f05e31',
+						'opacity' => 50
+					)
 				)
 			)
 		),

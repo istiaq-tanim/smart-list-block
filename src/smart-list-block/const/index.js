@@ -117,3 +117,20 @@ export const backGroundStyles = [
 		icon: <Image></Image>,
 	},
 ];
+export const imageScales = [
+	{
+		name: "auto",
+		title: "None",
+		icon: <Solid></Solid>,
+	},
+	{
+		name: "cover",
+		title: "Cover",
+		icon: <Gradient></Gradient>,
+	},
+	{
+		name: "contain",
+		title: "Contain",
+		icon: <Image></Image>,
+	},
+];

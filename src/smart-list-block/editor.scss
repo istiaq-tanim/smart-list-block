@@ -11,7 +11,15 @@
 		margin: 0;
 		list-style: none;
 		display: flex;
-		background: var(--backGround);
+		background: linear-gradient(
+				var(--overlayColor, transparent),
+				var(--overlayColor, transparent)
+			),
+			var(--backgroundGradient, none), var(--backgroundImage, none);
+
+		background-size: auto, auto, var(--backgroundSize, cover);
+		background-position: center;
+		background-repeat: no-repeat;
 
 		.smart-item {
 			display: flex;
@@ -124,7 +132,7 @@
 				}
 			}
 			&.tab--smallIcon {
-				padding: 4px;
+				padding: 3px;
 				border: none;
 				.tab-title {
 					display: none;

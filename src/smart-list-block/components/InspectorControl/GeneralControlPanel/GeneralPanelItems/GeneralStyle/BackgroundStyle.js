@@ -2,28 +2,40 @@ import { backGroundStyles } from "../../../../../const";
 import useBlockContext from "../../../../../hooks/useBlockContext";
 import Label from "../../../common/Label";
 import Tabs from "../../../common/Tabs/Tabs";
+import BackgroundOverlay from "./BackgroundOverlay";
 import GradientBackground from "./GradientStyle";
+import ImageScale from "./ImageScale";
 import ImageUpload from "./ImageUpload";
 
 function BackgroundStyle() {
 	const { attributes, setAttributes } = useBlockContext();
 	const { backgroundStyle } = attributes;
 	const selectedTab = backgroundStyle.type || "solid";
+	const { backgroundOverlay } = backgroundStyle;
+
 	const handleTab = (tabName) => {
-		//Handle Default value based on tab change
-		let defaultValue = "";
-		if (tabName === "gradient") {
-			defaultValue =
-				"linear-gradient(135deg,#12c2e9 0%,#c471ed 50%,#f64f59 100%)";
-		}
 		setAttributes({
-			backgroundStyle: { background: defaultValue, type: tabName },
+			backgroundStyle: {
+				...backgroundStyle,
+				type: tabName,
+			},
 		});
 	};
 
-	const handleChange = (value) => {
+	const handleGradientChange = (value) => {
 		setAttributes({
 			backgroundStyle: { ...backgroundStyle, background: value },
+		});
+	};
+	const handleImageChange = (value) => {
+		setAttributes({
+			backgroundStyle: { ...backgroundStyle, image: value },
+		});
+	};
+
+	const handleOverlayChange = (value) => {
+		setAttributes({
+			backgroundStyle: { ...backgroundStyle, backgroundOverlay: value },
 		});
 	};
 
@@ -33,15 +45,22 @@ function BackgroundStyle() {
 				return (
 					<GradientBackground
 						value={backgroundStyle.background}
-						onChange={handleChange}
+						onChange={handleGradientChange}
 					></GradientBackground>
 				);
 			case "image":
 				return (
-					<ImageUpload
-						onChange={handleChange}
-						value={backgroundStyle.background}
-					></ImageUpload>
+					<>
+						<ImageUpload
+							onChange={handleImageChange}
+							value={backgroundStyle.image || ""}
+						></ImageUpload>
+						<ImageScale></ImageScale>
+						<BackgroundOverlay
+							value={backgroundOverlay}
+							onChange={handleOverlayChange}
+						></BackgroundOverlay>
+					</>
 				);
 			case "solid":
 			default:

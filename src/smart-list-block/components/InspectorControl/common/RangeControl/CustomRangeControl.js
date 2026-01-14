@@ -10,17 +10,31 @@ function CustomRangeControl({
 	max = 100,
 	defaultValue = 0,
 	subKey = null,
+	nestedKey = null,
 }) {
 	const { attributes, setAttributes } = useBlockContext();
 
-	const value = subKey
-		? attributes?.[attributeKey]?.[subKey] ?? defaultValue
-		: attributes?.[attributeKey] ?? defaultValue;
+	const value =
+		nestedKey && subKey
+			? attributes?.[attributeKey]?.[subKey]?.[nestedKey] ?? defaultValue
+			: subKey
+			? attributes?.[attributeKey]?.[subKey] ?? defaultValue
+			: attributes?.[attributeKey] ?? defaultValue;
 
 	//Handle Both primitive and nonPrimitive attributes
 
 	const handleChange = (attributeKey, newValue, subKey) => {
-		if (subKey) {
+		if (nestedKey && subKey) {
+			setAttributes({
+				[attributeKey]: {
+					...attributes[attributeKey],
+					[subKey]: {
+						...attributes[attributeKey][subKey],
+						[nestedKey]: newValue,
+					},
+				},
+			});
+		} else if (subKey) {
 			setAttributes({
 				[attributeKey]: {
 					...attributes[attributeKey],

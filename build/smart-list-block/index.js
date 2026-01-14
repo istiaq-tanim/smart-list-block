@@ -51,7 +51,6 @@ __webpack_require__.r(__webpack_exports__);
 function Circle({
   fill
 }) {
-  console.log(fill);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
     width: "24",
     height: "24",
@@ -730,7 +729,7 @@ function TelevisionIcon() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#DDDDDD"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":""}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -782,6 +781,79 @@ function GeneralControlPanel() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/BackgroundOverlay.js"
+/*!**********************************************************************************************************************************!*\
+  !*** ./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/BackgroundOverlay.js ***!
+  \**********************************************************************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
+/* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
+/* harmony import */ var _common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../common/RangeControl/CustomRangeControl */ "./src/smart-list-block/components/InspectorControl/common/RangeControl/CustomRangeControl.js");
+/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+function BackgroundOverlay({
+  value,
+  onChange
+}) {
+  const {
+    enabled,
+    color,
+    opacity
+  } = value || {
+    enabled: false,
+    color: "#f05e31",
+    opacity: 50
+  };
+  const handleToggle = newEnabled => {
+    onChange({
+      ...value,
+      enabled: newEnabled
+    });
+  };
+  const handleColorChange = newColor => {
+    onChange({
+      ...value,
+      color: newColor
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      label: "Overlay",
+      checked: enabled,
+      onChange: handleToggle
+    }), enabled && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          label: "Overlay Color",
+          value: color,
+          onChange: handleColorChange
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          label: "opacity",
+          attributeKey: "backgroundStyle",
+          max: 100,
+          defaultValue: 50,
+          subKey: "backgroundOverlay",
+          nestedKey: "opacity"
+        })]
+      })
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BackgroundOverlay);
+
+/***/ },
+
 /***/ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/BackgroundStyle.js"
 /*!********************************************************************************************************************************!*\
   !*** ./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/BackgroundStyle.js ***!
@@ -796,10 +868,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
 /* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
 /* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
-/* harmony import */ var _GradientStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GradientStyle */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/GradientStyle.js");
-/* harmony import */ var _ImageUpload__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ImageUpload */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _BackgroundOverlay__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./BackgroundOverlay */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/BackgroundOverlay.js");
+/* harmony import */ var _GradientStyle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GradientStyle */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/GradientStyle.js");
+/* harmony import */ var _ImageScale__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ImageScale */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageScale.js");
+/* harmony import */ var _ImageUpload__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ImageUpload */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__);
+
+
 
 
 
@@ -816,20 +892,18 @@ function BackgroundStyle() {
     backgroundStyle
   } = attributes;
   const selectedTab = backgroundStyle.type || "solid";
+  const {
+    backgroundOverlay
+  } = backgroundStyle;
   const handleTab = tabName => {
-    //Handle Default value based on tab change
-    let defaultValue = "";
-    if (tabName === "gradient") {
-      defaultValue = "linear-gradient(135deg,#12c2e9 0%,#c471ed 50%,#f64f59 100%)";
-    }
     setAttributes({
       backgroundStyle: {
-        background: defaultValue,
+        ...backgroundStyle,
         type: tabName
       }
     });
   };
-  const handleChange = value => {
+  const handleGradientChange = value => {
     setAttributes({
       backgroundStyle: {
         ...backgroundStyle,
@@ -837,29 +911,50 @@ function BackgroundStyle() {
       }
     });
   };
+  const handleImageChange = value => {
+    setAttributes({
+      backgroundStyle: {
+        ...backgroundStyle,
+        image: value
+      }
+    });
+  };
+  const handleOverlayChange = value => {
+    setAttributes({
+      backgroundStyle: {
+        ...backgroundStyle,
+        backgroundOverlay: value
+      }
+    });
+  };
   const renderBackgroundControl = () => {
     switch (selectedTab) {
       case "gradient":
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_GradientStyle__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_GradientStyle__WEBPACK_IMPORTED_MODULE_5__["default"], {
           value: backgroundStyle.background,
-          onChange: handleChange
+          onChange: handleGradientChange
         });
       case "image":
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_ImageUpload__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          onChange: handleChange,
-          value: backgroundStyle.background
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ImageUpload__WEBPACK_IMPORTED_MODULE_7__["default"], {
+            onChange: handleImageChange,
+            value: backgroundStyle.image || ""
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_ImageScale__WEBPACK_IMPORTED_MODULE_6__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_BackgroundOverlay__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            value: backgroundOverlay,
+            onChange: handleOverlayChange
+          })]
         });
       case "solid":
       default:
         return null;
     }
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
       className: "background-style",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Background Style"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
         tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.backGroundStyles,
         onHandleTab: handleTab,
         selectedTab: selectedTab,
@@ -892,10 +987,12 @@ function GradientBackground({
   value,
   onChange
 }) {
+  const DEFAULT_GRADIENT = "linear-gradient(135deg,#12c2e9 0%,#c471ed 50%,#f64f59 100%)";
+  const gradientValue = value && typeof value === "string" && value.includes("gradient") ? value : DEFAULT_GRADIENT;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     className: "background-gradient-picker",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.GradientPicker, {
-      value: value,
+      value: gradientValue,
       clearable: false,
       onChange: onChange,
       gradients: [{
@@ -930,6 +1027,59 @@ function GradientBackground({
 
 /***/ },
 
+/***/ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageScale.js"
+/*!***************************************************************************************************************************!*\
+  !*** ./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageScale.js ***!
+  \***************************************************************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../const */ "./src/smart-list-block/const/index.js");
+/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
+/* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
+/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+function ImageScale() {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  const {
+    backgroundStyle
+  } = attributes;
+  const selectedTab = backgroundStyle.backgroundSize || "auto";
+  const handleTab = value => {
+    setAttributes({
+      backgroundStyle: {
+        ...backgroundStyle,
+        backgroundSize: value
+      }
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Image Scale"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.imageScales,
+      onHandleTab: handleTab,
+      selectedTab: selectedTab,
+      variant: "only-text"
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ImageScale);
+
+/***/ },
+
 /***/ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload.js"
 /*!****************************************************************************************************************************!*\
   !*** ./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload.js ***!
@@ -942,12 +1092,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _UploadButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UploadButton */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/UploadButton.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
-
+/* harmony import */ var _UploadButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UploadButton */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/UploadButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -961,18 +1108,22 @@ function ImageUpload({
       onChange(media.url);
     }
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  const handleRemove = () => {
+    onChange("");
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     className: "background-image-upload",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.MediaUploadCheck, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.MediaUpload, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.MediaUploadCheck, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.MediaUpload, {
         allowedTypes: ALLOWED_MEDIA_TYPES,
         onSelect: handleImageSelect,
         value: value,
         render: ({
           open
-        }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_UploadButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_UploadButton__WEBPACK_IMPORTED_MODULE_1__["default"], {
           onClick: open,
-          imageUrl: value
+          imageUrl: value,
+          onRemove: handleRemove
         })
       })
     })
@@ -1003,16 +1154,22 @@ __webpack_require__.r(__webpack_exports__);
 
 function UploadButton({
   onClick,
-  imageUrl
+  imageUrl,
+  onRemove
 }) {
+  const handleRemove = e => {
+    e.stopPropagation();
+    e.preventDefault();
+    onRemove();
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-    onClick: onClick,
     style: {
       cursor: "pointer"
     },
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Image"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      onClick: !imageUrl ? onClick : undefined,
       className: "image-upload",
       children: imageUrl ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         style: {
@@ -1028,11 +1185,14 @@ function UploadButton({
             objectFit: "cover"
           }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+          onClick: handleRemove,
+          type: "button",
           style: {
             position: "absolute",
             top: "8px",
             right: "8px",
-            zIndex: 1
+            zIndex: 10,
+            cursor: "pointer"
           },
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_Close__WEBPACK_IMPORTED_MODULE_0__["default"], {})
         })]
@@ -1208,30 +1368,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../const */ "./src/smart-list-block/const/index.js");
-/* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
-/* harmony import */ var _common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../common/RangeControl/CustomRangeControl */ "./src/smart-list-block/components/InspectorControl/common/RangeControl/CustomRangeControl.js");
-/* harmony import */ var _common_Selection_Selection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../common/Selection/Selection */ "./src/smart-list-block/components/InspectorControl/common/Selection/Selection.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
+/* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
+/* harmony import */ var _common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../common/RangeControl/CustomRangeControl */ "./src/smart-list-block/components/InspectorControl/common/RangeControl/CustomRangeControl.js");
+/* harmony import */ var _common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../common/Selection/Selection */ "./src/smart-list-block/components/InspectorControl/common/Selection/Selection.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
 
 
 function DividerSetting() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  const {
+    divider
+  } = attributes;
+  const handleDividerColor = value => {
+    setAttributes({
+      divider: {
+        ...divider,
+        color: value
+      }
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__["default"], {
       label: "Divider Style",
       options: _const__WEBPACK_IMPORTED_MODULE_0__.dividerStyle
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Divider Width",
       attributeKey: "divider",
       min: 0,
       max: 10,
       defaultValue: 1,
       subKey: "width"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      label: "Divider Color"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Divider Color",
+      value: divider.color,
+      onChange: handleDividerColor
     })]
   });
 }
@@ -1343,32 +1522,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function CustomColorPicker({
-  label
+  label,
+  value,
+  onChange,
+  defaultValue = "#f05e31"
 }) {
   const [isOpen, setIsOpen] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const {
-    attributes,
-    setAttributes
-  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_4__["default"])();
   const anchorRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  const {
-    divider
-  } = attributes;
   const handleColorChange = value => {
-    setAttributes({
-      divider: {
-        ...divider,
-        color: value.hex
-      }
-    });
+    onChange(value.hex);
   };
   const handleReset = () => {
-    setAttributes({
-      divider: {
-        ...divider,
-        color: "#DDDDDD"
-      }
-    });
+    onChange(defaultValue);
     setIsOpen(false);
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -1401,7 +1566,7 @@ function CustomColorPicker({
                   cursor: "pointer"
                 },
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Circle__WEBPACK_IMPORTED_MODULE_1__["default"], {
-                  fill: divider.color
+                  fill: value
                 })
               })
             })]
@@ -1414,7 +1579,7 @@ function CustomColorPicker({
       className: "color-popover",
       usePortal: false,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorPicker, {
-        color: divider.color,
+        color: value,
         onChangeComplete: handleColorChange,
         enableAlpha: true
       })
@@ -1478,19 +1643,30 @@ function CustomRangeControl({
   min = 0,
   max = 100,
   defaultValue = 0,
-  subKey = null
+  subKey = null,
+  nestedKey = null
 }) {
-  var _attributes$attribute, _attributes$attribute2;
+  var _attributes$attribute, _attributes$attribute2, _attributes$attribute3;
   const {
     attributes,
     setAttributes
   } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_3__["default"])();
-  const value = subKey ? (_attributes$attribute = attributes?.[attributeKey]?.[subKey]) !== null && _attributes$attribute !== void 0 ? _attributes$attribute : defaultValue : (_attributes$attribute2 = attributes?.[attributeKey]) !== null && _attributes$attribute2 !== void 0 ? _attributes$attribute2 : defaultValue;
+  const value = nestedKey && subKey ? (_attributes$attribute = attributes?.[attributeKey]?.[subKey]?.[nestedKey]) !== null && _attributes$attribute !== void 0 ? _attributes$attribute : defaultValue : subKey ? (_attributes$attribute2 = attributes?.[attributeKey]?.[subKey]) !== null && _attributes$attribute2 !== void 0 ? _attributes$attribute2 : defaultValue : (_attributes$attribute3 = attributes?.[attributeKey]) !== null && _attributes$attribute3 !== void 0 ? _attributes$attribute3 : defaultValue;
 
   //Handle Both primitive and nonPrimitive attributes
 
   const handleChange = (attributeKey, newValue, subKey) => {
-    if (subKey) {
+    if (nestedKey && subKey) {
+      setAttributes({
+        [attributeKey]: {
+          ...attributes[attributeKey],
+          [subKey]: {
+            ...attributes[attributeKey][subKey],
+            [nestedKey]: newValue
+          }
+        }
+      });
+    } else if (subKey) {
       setAttributes({
         [attributeKey]: {
           ...attributes[attributeKey],
@@ -1786,8 +1962,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/ListClickIcon */ "./src/smart-list-block/assets/ListClickIcon.js");
 /* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../const */ "./src/smart-list-block/const/index.js");
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils */ "./src/smart-list-block/utils/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -1812,12 +1990,16 @@ function ListPreview() {
     show
   } = divider;
   const {
-    background
+    background,
+    image,
+    type,
+    backgroundSize,
+    backgroundOverlay
   } = backgroundStyle;
   const orientationClass = `is-${listOrientation || "vertical"}`;
   const alignmentClass = `alignment-${alignment || "left"}`;
   const dividerClass = show ? "has-divider" : "";
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("ul", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
     className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass}`,
     style: {
       "--spaceBetween": `${spaceBetween}px`,
@@ -1825,15 +2007,17 @@ function ListPreview() {
       "--dividerColor": color,
       "--dividerStyle": style,
       "--dividerWidth": `${width}`,
-      "--backGround": background
+      "--backGround": (0,_utils__WEBPACK_IMPORTED_MODULE_3__.getBackgroundValue)(type, background, image),
+      "--backgroundSize": type === "image" ? backgroundSize : "auto",
+      "--overlay-color": backgroundOverlay?.enabled ? (0,_utils__WEBPACK_IMPORTED_MODULE_3__.hexToRgba)(backgroundOverlay.color || "#f05e31", backgroundOverlay.opacity || 50) : "transparent"
     },
     children: _const__WEBPACK_IMPORTED_MODULE_1__.listItems.map((item, index) => {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("li", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
         className: "smart-item",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("strong", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
             children: item.title
-          }), presetsType !== "list" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+          }), presetsType !== "list" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
             style: {
               margin: "5px 0 0",
               fontSize: "14px",
@@ -1862,6 +2046,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   backGroundStyles: () => (/* binding */ backGroundStyles),
 /* harmony export */   dividerStyle: () => (/* binding */ dividerStyle),
 /* harmony export */   generalTabItems: () => (/* binding */ generalTabItems),
+/* harmony export */   imageScales: () => (/* binding */ imageScales),
 /* harmony export */   listItems: () => (/* binding */ listItems),
 /* harmony export */   orientationTabItems: () => (/* binding */ orientationTabItems),
 /* harmony export */   presetTabItems: () => (/* binding */ presetTabItems)
@@ -1966,6 +2151,19 @@ const backGroundStyles = [{
 }, {
   name: "image",
   title: "image",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+}];
+const imageScales = [{
+  name: "auto",
+  title: "None",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+}, {
+  name: "cover",
+  title: "Cover",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+}, {
+  name: "contain",
+  title: "Contain",
   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
 }];
 
@@ -2207,6 +2405,37 @@ function save() {
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ },
+
+/***/ "./src/smart-list-block/utils/index.js"
+/*!*********************************************!*\
+  !*** ./src/smart-list-block/utils/index.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getBackgroundValue: () => (/* binding */ getBackgroundValue),
+/* harmony export */   hexToRgba: () => (/* binding */ hexToRgba)
+/* harmony export */ });
+const getBackgroundValue = (type, background, image) => {
+  switch (type) {
+    case "gradient":
+      return background || "none";
+    case "image":
+      return image ? `url(${image})` : "";
+    case "solid":
+    default:
+      return "none";
+  }
+};
+const hexToRgba = (hex, opacity) => {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return `rgba(${r}, ${g} , ${b} , ${opacity / 100})`;
+};
 
 /***/ },
 

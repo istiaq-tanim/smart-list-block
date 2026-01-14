@@ -1,6 +1,7 @@
 import ListClickIcon from "../assets/ListClickIcon";
 import { listItems } from "../const";
 import useBlockContext from "../hooks/useBlockContext";
+import { getBackgroundValue, hexToRgba } from "../utils";
 function ListPreview() {
 	const { attributes } = useBlockContext();
 	const {
@@ -14,7 +15,8 @@ function ListPreview() {
 	} = attributes;
 
 	const { width, style, color, show } = divider;
-	const { background } = backgroundStyle;
+	const { background, image, type, backgroundSize, backgroundOverlay } =
+		backgroundStyle;
 
 	const orientationClass = `is-${listOrientation || "vertical"}`;
 	const alignmentClass = `alignment-${alignment || "left"}`;
@@ -29,7 +31,14 @@ function ListPreview() {
 				"--dividerColor": color,
 				"--dividerStyle": style,
 				"--dividerWidth": `${width}`,
-				"--backGround": background,
+				"--backGround": getBackgroundValue(type, background, image),
+				"--backgroundSize": type === "image" ? backgroundSize : "auto",
+				"--overlay-color": backgroundOverlay?.enabled
+					? hexToRgba(
+							backgroundOverlay.color || "#f05e31",
+							backgroundOverlay.opacity || 50,
+					  )
+					: "transparent",
 			}}
 		>
 			{listItems.map((item, index) => {

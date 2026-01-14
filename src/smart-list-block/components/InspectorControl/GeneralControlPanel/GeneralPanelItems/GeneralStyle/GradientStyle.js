@@ -1,10 +1,16 @@
 import { GradientPicker } from "@wordpress/components";
 
 function GradientBackground({ value, onChange }) {
+	const DEFAULT_GRADIENT =
+		"linear-gradient(135deg,#12c2e9 0%,#c471ed 50%,#f64f59 100%)";
+	const gradientValue =
+		value && typeof value === "string" && value.includes("gradient")
+			? value
+			: DEFAULT_GRADIENT;
 	return (
 		<div className="background-gradient-picker">
 			<GradientPicker
-				value={value}
+				value={gradientValue}
 				clearable={false}
 				onChange={onChange}
 				gradients={[

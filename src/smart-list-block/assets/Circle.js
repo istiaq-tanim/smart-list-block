@@ -1,5 +1,4 @@
 function Circle({ fill }) {
-	console.log(fill);
 	return (
 		<svg
 			width="24"

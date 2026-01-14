@@ -4,22 +4,21 @@ import ResetIcon from "../../../../assets/ResetIcon";
 import { ColorPicker, Popover } from "@wordpress/components";
 import useBlockContext from "../../../../hooks/useBlockContext";
 
-function CustomColorPicker({ label }) {
+function CustomColorPicker({
+	label,
+	value,
+	onChange,
+	defaultValue = "#f05e31",
+}) {
 	const [isOpen, setIsOpen] = useState(false);
-	const { attributes, setAttributes } = useBlockContext();
 	const anchorRef = useRef(null);
-	const { divider } = attributes;
 
 	const handleColorChange = (value) => {
-		setAttributes({
-			divider: { ...divider, color: value.hex },
-		});
+		onChange(value.hex);
 	};
 
 	const handleReset = () => {
-		setAttributes({
-			divider: { ...divider, color: "#DDDDDD" },
-		});
+		onChange(defaultValue);
 		setIsOpen(false);
 	};
 
@@ -44,7 +43,7 @@ function CustomColorPicker({ label }) {
 									ref={anchorRef}
 									style={{ cursor: "pointer" }}
 								>
-									<Circle fill={divider.color} />
+									<Circle fill={value} />
 								</div>
 							</div>
 						</div>
@@ -59,7 +58,7 @@ function CustomColorPicker({ label }) {
 					usePortal={false}
 				>
 					<ColorPicker
-						color={divider.color}
+						color={value}
 						onChangeComplete={handleColorChange}
 						enableAlpha
 					/>
