@@ -2223,12 +2223,14 @@ function SpacingControl({
         className: "control-input-group",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
           value: values.top,
+          step: 4,
           min: 0,
           onChange: val => {
             handleValueChange("top", val);
           }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
           value: values.right,
+          step: 4,
           onChange: val => {
             handleValueChange("right", val);
           },
@@ -2236,12 +2238,14 @@ function SpacingControl({
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
           value: values.left,
           min: 0,
+          step: 4,
           onChange: val => {
             handleValueChange("left", val);
           }
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
           value: values.bottom,
           min: 0,
+          step: 4,
           onChange: val => {
             handleValueChange("bottom", val);
           }
@@ -2459,7 +2463,9 @@ function ListPreview() {
     backgroundStyle,
     color: textColor,
     border,
-    padding
+    padding,
+    margin,
+    radius
   } = attributes;
   const {
     width,
@@ -2484,43 +2490,56 @@ function ListPreview() {
   const alignmentClass = `alignment-${alignment || "left"}`;
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
-    className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass}`,
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     style: {
-      "--spaceBetween": `${spaceBetween}px`,
-      "--color": textColor,
-      "--iconGap": `${iconGap}px`,
-      "--dividerColor": color,
-      "--dividerStyle": style,
-      "--dividerWidth": `${width}`,
-      "--borderColor": borderColor,
-      "--borderStyle": borderStyle,
-      "--borderWidth": `${borderWidth}`,
-      "--paddingTop": `${padding.top}px`,
-      "--paddingRight": `${padding.right}px`,
-      "--paddingBottom": `${padding.bottom}px`,
-      "--paddingLeft": `${padding.left}px`,
-      "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
-      "--backgroundGradient": type === "gradient" && background ? background : "none",
-      "--backgroundSize": type === "image" ? backgroundSize : "auto",
-      "--overlayColor": backgroundOverlay?.enabled && type === "image" ? (0,_utils__WEBPACK_IMPORTED_MODULE_3__.hexToRgba)(backgroundOverlay.color || "#f05e31", backgroundOverlay.opacity || 50) : "transparent"
+      "--marginTop": `${margin.top}px`,
+      "--marginRight": `${margin.right}px`,
+      "--marginBottom": `${margin.bottom}px`,
+      "--marginLeft": `${margin.left}px`
     },
-    children: _const__WEBPACK_IMPORTED_MODULE_1__.listItems.map((item, index) => {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
-        className: "smart-item",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
-            children: item.title
-          }), presetsType !== "list" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-            style: {
-              margin: "5px 0 0",
-              fontSize: "14px",
-              color: "#666"
-            },
-            children: item.description
+    class: "smart-list-wrapper",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
+      className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass}`,
+      style: {
+        "--spaceBetween": `${spaceBetween}px`,
+        "--color": textColor,
+        "--iconGap": `${iconGap}px`,
+        "--dividerColor": color,
+        "--dividerStyle": style,
+        "--dividerWidth": `${width}`,
+        "--borderColor": borderColor,
+        "--borderStyle": borderStyle,
+        "--borderWidth": `${borderWidth}`,
+        "--paddingTop": `${padding.top}px`,
+        "--paddingRight": `${padding.right}px`,
+        "--paddingBottom": `${padding.bottom}px`,
+        "--paddingLeft": `${padding.left}px`,
+        "--radiusTop": `${radius.top}px`,
+        "--radiusRight": `${radius.right}px`,
+        "--radiusBottom": `${radius.bottom}px`,
+        "--radiusLeft": `${radius.left}px`,
+        "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
+        "--backgroundGradient": type === "gradient" && background ? background : "none",
+        "--backgroundSize": type === "image" ? backgroundSize : "auto",
+        "--overlayColor": backgroundOverlay?.enabled && type === "image" ? (0,_utils__WEBPACK_IMPORTED_MODULE_3__.hexToRgba)(backgroundOverlay.color || "#f05e31", backgroundOverlay.opacity || 50) : "transparent"
+      },
+      children: _const__WEBPACK_IMPORTED_MODULE_1__.listItems.map((item, index) => {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
+          className: "smart-item",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+              children: item.title
+            }), presetsType !== "list" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+              style: {
+                margin: "5px 0 0",
+                fontSize: "14px",
+                color: "#666"
+              },
+              children: item.description
+            })]
           })]
-        })]
-      }, index);
+        }, index);
+      })
     })
   });
 }
@@ -2574,7 +2593,7 @@ const generalTabItems = [{
   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
 }, {
   name: "styles",
-  title: "Styles",
+  title: "Style",
   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
 }];
 const presetTabItems = [{

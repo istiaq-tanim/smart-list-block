@@ -17,7 +17,7 @@ export const generalTabItems = [
 	},
 	{
 		name: "styles",
-		title: "Styles",
+		title: "Style",
 		icon: <StylesIcon></StylesIcon>,
 	},
 ];

@@ -53,6 +53,7 @@ function SpacingControl({
 				<div className="control-input-group">
 					<NumberControl
 						value={values.top}
+						step={4}
 						min={0}
 						onChange={(val) => {
 							handleValueChange("top", val);
@@ -60,6 +61,7 @@ function SpacingControl({
 					></NumberControl>
 					<NumberControl
 						value={values.right}
+						step={4}
 						onChange={(val) => {
 							handleValueChange("right", val);
 						}}
@@ -68,6 +70,7 @@ function SpacingControl({
 					<NumberControl
 						value={values.left}
 						min={0}
+						step={4}
 						onChange={(val) => {
 							handleValueChange("left", val);
 						}}
@@ -75,6 +78,7 @@ function SpacingControl({
 					<NumberControl
 						value={values.bottom}
 						min={0}
+						step={4}
 						onChange={(val) => {
 							handleValueChange("bottom", val);
 						}}

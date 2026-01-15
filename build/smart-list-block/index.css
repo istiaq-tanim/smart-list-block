@@ -6,8 +6,17 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-create-block-smart-list-block .smart-list-wrapper {
+  margin-top: var(--marginTop, 5px);
+  margin-left: var(--marginLeft, 5px);
+  margin-right: var(--marginRight, 5px);
+  margin-bottom: var(--marginBottom, 5px);
+}
 .wp-block-create-block-smart-list-block .smart-list {
-  padding-top: var(--);
+  padding-top: var(--paddingTop, 5px);
+  padding-left: var(--paddingLeft, 5px);
+  padding-right: var(--paddingRight, 5px);
+  padding-bottom: var(--paddingBottom, 5px);
   margin: 0;
   list-style: none;
 }
@@ -15,6 +24,14 @@
   border: calc(var(--borderWidth, 1) * 1px) var(--borderStyle, solid) var(--borderColor, #dddddd);
 }
 .wp-block-create-block-smart-list-block .smart-list {
+  border-top-left-radius: var(--radiusTop, 0);
+  border-top-right-radius: var(--radiusTop, 0);
+  border-top-right-radius: var(--radiusRight, 0);
+  border-bottom-right-radius: var(--radiusRight, 0);
+  border-bottom-right-radius: var(--radiusBottom, 0);
+  border-bottom-left-radius: var(--radiusBottom, 0);
+  border-top-left-radius: var(--radiusLeft, 0);
+  border-bottom-left-radius: var(--radiusLeft, 0);
   color: var(--color, "#fff");
   display: flex;
   background-image: linear-gradient(var(--overlayColor, transparent), var(--overlayColor, transparent)), var(--backgroundGradient, none), var(--backgroundImage, none);
