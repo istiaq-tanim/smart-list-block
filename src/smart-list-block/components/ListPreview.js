@@ -13,19 +13,28 @@ function ListPreview() {
 		divider,
 		backgroundStyle,
 		color: textColor,
+		border,
+		padding,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
+	const {
+		width: borderWidth,
+		style: borderStyle,
+		color: borderColor,
+		show: borderShow,
+	} = border;
 	const { background, image, type, backgroundSize, backgroundOverlay } =
 		backgroundStyle;
 
 	const orientationClass = `is-${listOrientation || "vertical"}`;
 	const alignmentClass = `alignment-${alignment || "left"}`;
 	const dividerClass = show ? "has-divider" : "";
+	const borderClass = borderShow ? "has-border" : "";
 
 	return (
 		<ul
-			className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass}`}
+			className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass}`}
 			style={{
 				"--spaceBetween": `${spaceBetween}px`,
 				"--color": textColor,
@@ -33,6 +42,13 @@ function ListPreview() {
 				"--dividerColor": color,
 				"--dividerStyle": style,
 				"--dividerWidth": `${width}`,
+				"--borderColor": borderColor,
+				"--borderStyle": borderStyle,
+				"--borderWidth": `${borderWidth}`,
+				"--paddingTop": `${padding.top}px`,
+				"--paddingRight": `${padding.right}px`,
+				"--paddingBottom": `${padding.bottom}px`,
+				"--paddingLeft": `${padding.left}px`,
 				"--backgroundImage":
 					type === "image" && image ? `url(${image})` : "none",
 				"--backgroundGradient":

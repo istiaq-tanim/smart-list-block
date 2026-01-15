@@ -2,7 +2,6 @@ import { useState, useRef } from "@wordpress/element";
 import Circle from "../../../../assets/Circle";
 import ResetIcon from "../../../../assets/ResetIcon";
 import { ColorPicker, Popover } from "@wordpress/components";
-import useBlockContext from "../../../../hooks/useBlockContext";
 
 function CustomColorPicker({
 	label,

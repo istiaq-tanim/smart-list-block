@@ -53,6 +53,15 @@ return array(
 					'color' => '#f05e31'
 				)
 			),
+			'border' => array(
+				'type' => 'object',
+				'default' => array(
+					'show' => false,
+					'width' => 1,
+					'style' => 'solid',
+					'color' => '#f05e31'
+				)
+			),
 			'showConnectionLine' => array(
 				'type' => 'boolean',
 				'default' => false
@@ -74,6 +83,36 @@ return array(
 			'color' => array(
 				'type' => 'string',
 				'default' => '#000'
+			),
+			'padding' => array(
+				'type' => 'object',
+				'default' => array(
+					'top' => 0,
+					'right' => 0,
+					'bottom' => 0,
+					'left' => 0,
+					'linked' => true
+				)
+			),
+			'margin' => array(
+				'type' => 'object',
+				'default' => array(
+					'top' => 0,
+					'right' => 0,
+					'bottom' => 0,
+					'left' => 0,
+					'linked' => true
+				)
+			),
+			'radius' => array(
+				'type' => 'object',
+				'default' => array(
+					'top' => 0,
+					'right' => 0,
+					'bottom' => 0,
+					'left' => 0,
+					'linked' => true
+				)
 			)
 		),
 		'textdomain' => 'smart-list-block',

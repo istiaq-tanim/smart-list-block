@@ -112,6 +112,39 @@ function Close() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/DecreaseButton.js"
+/*!*******************************************************!*\
+  !*** ./src/smart-list-block/assets/DecreaseButton.js ***!
+  \*******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function DecreaseButton() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "10",
+    height: "5",
+    viewBox: "0 0 10 5",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M10 0L5.00002 5L0 1.32951e-06L5.00002 6.64752e-07L9.99855 2.6551e-07L10 0Z",
+      fill: "#2F2F2F"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DecreaseButton);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/DescriptionListIcon.js"
 /*!************************************************************!*\
   !*** ./src/smart-list-block/assets/DescriptionListIcon.js ***!
@@ -317,6 +350,39 @@ function Image() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/IncreaseButton.js"
+/*!*******************************************************!*\
+  !*** ./src/smart-list-block/assets/IncreaseButton.js ***!
+  \*******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function IncreaseButton() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "10",
+    height: "5",
+    viewBox: "0 0 10 5",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M0 5L4.99998 -2.2764e-07L10 5L4.99998 5L0.00145305 5L0 5Z",
+      fill: "#2F2F2F"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IncreaseButton);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/LeftAlign.js"
 /*!**************************************************!*\
   !*** ./src/smart-list-block/assets/LeftAlign.js ***!
@@ -344,6 +410,39 @@ function LeftAlign() {
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeftAlign);
+
+/***/ },
+
+/***/ "./src/smart-list-block/assets/Link.js"
+/*!*********************************************!*\
+  !*** ./src/smart-list-block/assets/Link.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Link() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "18",
+    height: "11",
+    viewBox: "0 0 18 11",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M12.4 0H10.8V1.5H12.4C14.4 1.5 16.1 3.2 16.1 5.2C16.1 7.2 14.4 8.9 12.4 8.9H10.8V10.4H12.4C15.2 10.4 17.6 8.1 17.6 5.2C17.6 2.3 15.3 0 12.4 0ZM1.5 5.2C1.5 3.2 3.2 1.5 5.2 1.5H6.8V0H5.2C2.3 0 0 2.3 0 5.2C0 8.1 2.3 10.4 5.2 10.4H6.8V8.9H5.2C3.2 8.9 1.5 7.2 1.5 5.2ZM6.1 6.1H11.4V4.6H6.1V6.1Z",
+      fill: "white"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Link);
 
 /***/ },
 
@@ -723,13 +822,46 @@ function TelevisionIcon() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/Unlink.js"
+/*!***********************************************!*\
+  !*** ./src/smart-list-block/assets/Unlink.js ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Unlink() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M8.39981 16.7L9.09981 16.7L7.49981 20.2L8.39981 20.6L12.2998 12.1L14.9998 12.1L14.9998 10.6L12.9998 10.6L14.2998 7.80001L15.5998 7.80001C17.5998 7.80001 19.2998 9.50001 19.2998 11.5C19.2998 13.5 17.5998 15.2 15.5998 15.2L13.9998 15.2L13.9998 16.7L15.5998 16.7C18.4998 16.7 20.7998 14.4 20.7998 11.5C20.7998 8.60001 18.4998 6.30001 15.5998 6.30001L14.9998 6.30001L16.3998 3.10001L15.4998 2.70001L9.79981 15.2L8.39981 15.2C6.39981 15.2 4.69981 13.5 4.69981 11.5C4.69981 9.50001 6.39981 7.80001 8.39981 7.80001L9.99981 7.80001L9.99981 6.30001L8.3998 6.30001C5.4998 6.30001 3.19981 8.60001 3.19981 11.5C3.19981 14.4 5.59981 16.7 8.39981 16.7Z",
+      fill: "#2F2F2F"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Unlink);
+
+/***/ },
+
 /***/ "./src/smart-list-block/block.json"
 /*!*****************************************!*\
   !*** ./src/smart-list-block/block.json ***!
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -1399,7 +1531,9 @@ function DividerSetting() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__["default"], {
       label: "Divider Style",
-      options: _const__WEBPACK_IMPORTED_MODULE_0__.dividerStyle
+      options: _const__WEBPACK_IMPORTED_MODULE_0__.dividerStyle,
+      attributeKey: "divider",
+      subKey: "style"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Divider Width",
       attributeKey: "divider",
@@ -1478,9 +1612,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
 /* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
-/* harmony import */ var _GeneralStyle_BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GeneralStyle/BackgroundStyle */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/BackgroundStyle.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/SpacingControl/SpacingControl */ "./src/smart-list-block/components/InspectorControl/common/SpacingControl/SpacingControl.js");
+/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
+/* harmony import */ var _GeneralStyle_BackgroundStyle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GeneralStyle/BackgroundStyle */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/BackgroundStyle.js");
+/* harmony import */ var _Styles_BorderSettings_BorderSettings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Styles/BorderSettings/BorderSettings */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/Styles/BorderSettings/BorderSettings.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
 
 
 
@@ -1490,22 +1630,115 @@ function Styles() {
     attributes,
     setAttributes
   } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  const {
+    border
+  } = attributes;
   const handleChange = newColor => {
     setAttributes({
       color: newColor
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_GeneralStyle_BackgroundStyle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_GeneralStyle_BackgroundStyle__WEBPACK_IMPORTED_MODULE_4__["default"], {
       label: "Background Style"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Color",
       onChange: handleChange,
       value: attributes.color
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      label: "Border",
+      checked: border.show,
+      onChange: value => setAttributes({
+        border: {
+          ...border,
+          show: value
+        }
+      })
+    }), border.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Styles_BorderSettings_BorderSettings__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      values: attributes.radius,
+      label: "Border Radius",
+      onChange: values => setAttributes({
+        radius: values
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      values: attributes.padding,
+      label: "Padding",
+      onChange: values => setAttributes({
+        padding: values
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      values: attributes.margin,
+      label: "Margin",
+      onChange: values => setAttributes({
+        margin: values
+      })
     })]
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Styles);
+
+/***/ },
+
+/***/ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/Styles/BorderSettings/BorderSettings.js"
+/*!****************************************************************************************************************************************!*\
+  !*** ./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/Styles/BorderSettings/BorderSettings.js ***!
+  \****************************************************************************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../const */ "./src/smart-list-block/const/index.js");
+/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
+/* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
+/* harmony import */ var _common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../common/RangeControl/CustomRangeControl */ "./src/smart-list-block/components/InspectorControl/common/RangeControl/CustomRangeControl.js");
+/* harmony import */ var _common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../common/Selection/Selection */ "./src/smart-list-block/components/InspectorControl/common/Selection/Selection.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+function BorderSetting() {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  const {
+    border
+  } = attributes;
+  const handleBorderColor = value => {
+    setAttributes({
+      border: {
+        ...border,
+        color: value
+      }
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      label: "Border Style",
+      options: _const__WEBPACK_IMPORTED_MODULE_0__.dividerStyle,
+      attributeKey: "border",
+      subKey: "style"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      label: "Border Width",
+      attributeKey: "border",
+      min: 0,
+      max: 10,
+      defaultValue: 1,
+      subKey: "width"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Border Color",
+      value: border.color,
+      onChange: handleBorderColor
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BorderSetting);
 
 /***/ },
 
@@ -1525,10 +1758,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../assets/ResetIcon */ "./src/smart-list-block/assets/ResetIcon.js");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -1549,28 +1780,28 @@ function CustomColorPicker({
     onChange(defaultValue);
     setIsOpen(false);
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "custom-range-control",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "range-control",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "content",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "range-label",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
             children: label
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "range-measure",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {
               style: {
                 cursor: "pointer"
               },
               onClick: handleReset
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "color",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 onClick: () => {
                   setIsOpen(!isOpen);
                 },
@@ -1578,7 +1809,7 @@ function CustomColorPicker({
                 style: {
                   cursor: "pointer"
                 },
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Circle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_Circle__WEBPACK_IMPORTED_MODULE_1__["default"], {
                   fill: value
                 })
               })
@@ -1586,12 +1817,12 @@ function CustomColorPicker({
           })
         })]
       })
-    }), isOpen && anchorRef.current && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Popover, {
+    }), isOpen && anchorRef.current && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Popover, {
       position: "middle right",
       onClose: () => setIsOpen(false),
       className: "color-popover",
       usePortal: false,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorPicker, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ColorPicker, {
         color: value,
         onChangeComplete: handleColorChange,
         enableAlpha: true
@@ -1768,22 +1999,27 @@ __webpack_require__.r(__webpack_exports__);
 function SectionControlButton({
   label,
   options,
-  inline = true
+  inline = true,
+  attributeKey,
+  subKey
 }) {
   const {
     attributes,
     setAttributes
   } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  const {
-    divider
-  } = attributes;
-  const handleChange = value => {
-    setAttributes({
-      divider: {
-        ...divider,
-        style: value
-      }
-    });
+  const handleChange = newValue => {
+    if (subKey) {
+      setAttributes({
+        [attributeKey]: {
+          ...attributes[attributeKey],
+          [subKey]: newValue
+        }
+      });
+    } else {
+      setAttributes({
+        [attributeKey]: newValue
+      });
+    }
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     className: `selector-control custom-selector ${inline ? "inline" : ""}`,
@@ -1793,11 +2029,237 @@ function SectionControlButton({
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
       options: options,
       onChange: value => handleChange(value),
-      value: divider.style
+      value: attributes[attributeKey][subKey]
     })]
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SectionControlButton);
+
+/***/ },
+
+/***/ "./src/smart-list-block/components/InspectorControl/common/SpacingControl/NumberControl.js"
+/*!*************************************************************************************************!*\
+  !*** ./src/smart-list-block/components/InspectorControl/common/SpacingControl/NumberControl.js ***!
+  \*************************************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_IncreaseButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../assets/IncreaseButton */ "./src/smart-list-block/assets/IncreaseButton.js");
+/* harmony import */ var _assets_DecreaseButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../assets/DecreaseButton */ "./src/smart-list-block/assets/DecreaseButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function NumberControl({
+  value = 0,
+  onChange = () => {},
+  min,
+  max,
+  step = 1
+}) {
+  const handleChange = e => {
+    const inputValue = e.target.value;
+
+    // Allow empty input for better UX
+    if (inputValue === "") {
+      onChange(0);
+      return;
+    }
+    let newValue = parseInt(inputValue, 10);
+
+    // Handle Invalid value minimum value and maximum value
+    if (isNaN(newValue)) {
+      newValue = 0;
+    }
+    if (min !== undefined && newValue < min) {
+      newValue = min;
+    }
+    if (max !== undefined && newValue > max) {
+      newValue = max;
+    }
+    onChange(newValue);
+  };
+  const increment = () => {
+    let newValue = value + step;
+    if (max !== undefined && newValue > max) {
+      newValue = max;
+    }
+    onChange(newValue);
+  };
+  const decrement = () => {
+    let newValue = value - step;
+    if (min !== undefined && newValue < min) {
+      newValue = min;
+    }
+    onChange(newValue);
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "input-box",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "input-with-spinner",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+        type: "number",
+        value: value,
+        onChange: handleChange,
+        min: min,
+        max: max,
+        step: step
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "spinner-control",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          type: "button",
+          onClick: increment,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_assets_IncreaseButton__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          type: "button",
+          onClick: decrement,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_assets_DecreaseButton__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+        })]
+      })]
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NumberControl);
+
+/***/ },
+
+/***/ "./src/smart-list-block/components/InspectorControl/common/SpacingControl/SpacingControl.js"
+/*!**************************************************************************************************!*\
+  !*** ./src/smart-list-block/components/InspectorControl/common/SpacingControl/SpacingControl.js ***!
+  \**************************************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_Link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../assets/Link */ "./src/smart-list-block/assets/Link.js");
+/* harmony import */ var _assets_ResetIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../assets/ResetIcon */ "./src/smart-list-block/assets/ResetIcon.js");
+/* harmony import */ var _assets_TelevisionIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../assets/TelevisionIcon */ "./src/smart-list-block/assets/TelevisionIcon.js");
+/* harmony import */ var _assets_Unlink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../assets/Unlink */ "./src/smart-list-block/assets/Unlink.js");
+/* harmony import */ var _NumberControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NumberControl */ "./src/smart-list-block/components/InspectorControl/common/SpacingControl/NumberControl.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+function SpacingControl({
+  label,
+  values = {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    linked: true
+  },
+  onChange = () => {}
+}) {
+  const handleValueChange = (position, value) => {
+    if (values.linked) {
+      onChange({
+        ...values,
+        top: value,
+        right: value,
+        bottom: value,
+        left: value
+      });
+    } else {
+      onChange({
+        ...values,
+        [position]: value
+      });
+    }
+  };
+  const handleReset = () => {
+    onChange({
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+      linked: true
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+    className: "custom-range-control",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "range-control",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "content",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "range-label",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+            children: label
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+            className: "desktop",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_TelevisionIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          className: "range-measure",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_ResetIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {
+              style: {
+                cursor: "pointer"
+              },
+              onClick: handleReset
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              className: "pixel",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+                children: "px"
+              })
+            })]
+          })
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      className: "control-input-group",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "control-input-group",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          value: values.top,
+          min: 0,
+          onChange: val => {
+            handleValueChange("top", val);
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          value: values.right,
+          onChange: val => {
+            handleValueChange("right", val);
+          },
+          min: 0
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          value: values.left,
+          min: 0,
+          onChange: val => {
+            handleValueChange("left", val);
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          value: values.bottom,
+          min: 0,
+          onChange: val => {
+            handleValueChange("bottom", val);
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+            onClick: () => onChange({
+              ...values,
+              linked: !values.linked
+            }),
+            className: `link-btn ${values.linked ? "" : "is-unlinked "}`,
+            children: values.linked ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Unlink__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+          })
+        })]
+      })
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SpacingControl);
 
 /***/ },
 
@@ -1995,7 +2457,9 @@ function ListPreview() {
     iconGap,
     divider,
     backgroundStyle,
-    color: textColor
+    color: textColor,
+    border,
+    padding
   } = attributes;
   const {
     width,
@@ -2003,6 +2467,12 @@ function ListPreview() {
     color,
     show
   } = divider;
+  const {
+    width: borderWidth,
+    style: borderStyle,
+    color: borderColor,
+    show: borderShow
+  } = border;
   const {
     background,
     image,
@@ -2013,8 +2483,9 @@ function ListPreview() {
   const orientationClass = `is-${listOrientation || "vertical"}`;
   const alignmentClass = `alignment-${alignment || "left"}`;
   const dividerClass = show ? "has-divider" : "";
+  const borderClass = borderShow ? "has-border" : "";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
-    className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass}`,
+    className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass}`,
     style: {
       "--spaceBetween": `${spaceBetween}px`,
       "--color": textColor,
@@ -2022,6 +2493,13 @@ function ListPreview() {
       "--dividerColor": color,
       "--dividerStyle": style,
       "--dividerWidth": `${width}`,
+      "--borderColor": borderColor,
+      "--borderStyle": borderStyle,
+      "--borderWidth": `${borderWidth}`,
+      "--paddingTop": `${padding.top}px`,
+      "--paddingRight": `${padding.right}px`,
+      "--paddingBottom": `${padding.bottom}px`,
+      "--paddingLeft": `${padding.left}px`,
       "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
       "--backgroundGradient": type === "gradient" && background ? background : "none",
       "--backgroundSize": type === "image" ? backgroundSize : "auto",

@@ -48,6 +48,15 @@
 				"color": "#f05e31"
 			}
 		},
+		"border": {
+			"type": "object",
+			"default": {
+				"show": false,
+				"width": 1,
+				"style": "solid",
+				"color": "#f05e31"
+			}
+		},
 		"showConnectionLine": {
 			"type": "boolean",
 			"default": false
@@ -69,6 +78,36 @@
 		"color": {
 			"type": "string",
 			"default": "#000"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": 0,
+				"right": 0,
+				"bottom": 0,
+				"left": 0,
+				"linked": true
+			}
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"top": 0,
+				"right": 0,
+				"bottom": 0,
+				"left": 0,
+				"linked": true
+			}
+		},
+		"radius": {
+			"type": "object",
+			"default": {
+				"top": 0,
+				"right": 0,
+				"bottom": 0,
+				"left": 0,
+				"linked": true
+			}
 		}
 	},
 	"textdomain": "smart-list-block",

@@ -4,36 +4,36 @@ import CustomColorPicker from "../../../../common/CustomColorPicker/CustomColorP
 import CustomRangeControl from "../../../../common/RangeControl/CustomRangeControl";
 import SectionControlButton from "../../../../common/Selection/Selection";
 
-function DividerSetting() {
+function BorderSetting() {
 	const { attributes, setAttributes } = useBlockContext();
-	const { divider } = attributes;
+	const { border } = attributes;
 
-	const handleDividerColor = (value) => {
-		setAttributes({ divider: { ...divider, color: value } });
+	const handleBorderColor = (value) => {
+		setAttributes({ border: { ...border, color: value } });
 	};
 	return (
 		<div>
 			<SectionControlButton
-				label="Divider Style"
+				label="Border Style"
 				options={dividerStyle}
-				attributeKey="divider"
+				attributeKey="border"
 				subKey="style"
 			></SectionControlButton>
 			<CustomRangeControl
-				label="Divider Width"
-				attributeKey="divider"
+				label="Border Width"
+				attributeKey="border"
 				min={0}
 				max={10}
 				defaultValue={1}
 				subKey="width"
 			></CustomRangeControl>
 			<CustomColorPicker
-				label="Divider Color"
-				value={divider.color}
-				onChange={handleDividerColor}
+				label="Border Color"
+				value={border.color}
+				onChange={handleBorderColor}
 			></CustomColorPicker>
 		</div>
 	);
 }
 
-export default DividerSetting;
+export default BorderSetting;
