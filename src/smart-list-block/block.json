@@ -110,12 +110,28 @@
 			}
 		},
 		"title": {
-			"type": "boolean",
-			"default": true
+			"type": "object",
+			"default": {
+				"show": true,
+				"tags": "p",
+				"family": "Roboto",
+				"fontSize": 16,
+				"weight": 400,
+				"height": 0,
+				"spacing": 0
+			}
 		},
 		"description": {
-			"type": "boolean",
-			"default": false
+			"type": "object",
+			"default": {
+				"show": false,
+				"tags": "p",
+				"family": "Roboto",
+				"fontSize": 11,
+				"weight": 400,
+				"height": 0,
+				"spacing": 0
+			}
 		}
 	},
 	"textdomain": "smart-list-block",

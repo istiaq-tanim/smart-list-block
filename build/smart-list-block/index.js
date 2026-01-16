@@ -461,8 +461,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function ListClickIcon() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
-    width: "24",
-    height: "22",
+    width: "20",
+    height: "20",
     viewBox: "0 0 24 22",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -822,6 +822,58 @@ function TelevisionIcon() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/Typo.js"
+/*!*********************************************!*\
+  !*** ./src/smart-list-block/assets/Typo.js ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function Typo({
+  onClick,
+  active
+}) {
+  const strokeColor = active ? "#6f22dd" : "#2F2F2F";
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    onClick: onClick,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
+      x: "0.8",
+      y: "0.8",
+      width: "22.4",
+      height: "22.4",
+      rx: "3.2",
+      stroke: strokeColor,
+      "stroke-width": "1.6"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M13.0315 16.75L11.0684 11.1504C10.1567 8.55012 9.70094 7.25 8.9601 7.25C8.21926 7.25 7.76345 8.55012 6.85184 11.1504L4.88867 16.75M6.5851 12H11.3351",
+      stroke: strokeColor,
+      "stroke-width": "1.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M19.0884 13.3159V16.3695M19.0884 13.3159C19.1204 12.7574 19.1217 12.3319 19.0546 11.9846C18.8965 11.166 18.0411 10.6727 17.2134 10.5723C16.4212 10.4763 15.7853 10.6802 15.142 11.6175M19.0884 13.3159H17.1588C16.8624 13.3159 16.5634 13.3302 16.2778 13.4096C14.532 13.8949 14.66 16.3431 16.4108 16.6449C16.6053 16.6784 16.8039 16.6928 17.0008 16.6839C17.4606 16.6634 17.8848 16.4413 18.249 16.1597C18.6754 15.8299 19.0884 15.3695 19.0884 14.6731V13.3159Z",
+      stroke: strokeColor,
+      "stroke-width": "1.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Typo);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/Unlink.js"
 /*!***********************************************!*\
   !*** ./src/smart-list-block/assets/Unlink.js ***!
@@ -861,7 +913,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"boolean","default":true},"description":{"type":"boolean","default":false}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -943,15 +995,21 @@ function General() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Title",
-      checked: title,
+      checked: title.show,
       onChange: value => setAttributes({
-        title: value
+        title: {
+          ...title,
+          show: value
+        }
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Description",
-      checked: description,
+      checked: description.show,
       onChange: value => setAttributes({
-        description: value
+        description: {
+          ...description,
+          show: value
+        }
       })
     })]
   });
@@ -970,14 +1028,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _common_Typography_Typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../common/Typography/Typography */ "./src/smart-list-block/components/InspectorControl/common/Typography/Typography.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
+/* harmony import */ var _common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/Typography/Typography */ "./src/smart-list-block/components/InspectorControl/common/Typography/Typography.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 function Style() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_common_Typography_Typography__WEBPACK_IMPORTED_MODULE_0__["default"], {
-    label: "Title Typography"
+  const {
+    attributes,
+    setAttributes
+  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  const {
+    title,
+    description
+  } = attributes;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      label: "Title Typography",
+      attributeKey: "title",
+      onChange: value => setAttributes({
+        title: value
+      }),
+      values: title
+    }), description.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      label: "Description Typography",
+      attributeKey: "description",
+      onChange: value => setAttributes({
+        description: value
+      }),
+      values: description
+    })]
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Style);
@@ -1954,6 +2036,69 @@ function CustomColorPicker({
 
 /***/ },
 
+/***/ "./src/smart-list-block/components/InspectorControl/common/Input/Input.js"
+/*!********************************************************************************!*\
+  !*** ./src/smart-list-block/components/InspectorControl/common/Input/Input.js ***!
+  \********************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function Input({
+  label,
+  value,
+  onChange = () => {},
+  step = 1
+}) {
+  const handleChange = e => {
+    const newValue = e.target.value;
+    onChange(newValue);
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    style: {
+      marginTop: "16px"
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("label", {
+      style: {
+        display: "block",
+        marginBottom: "8px",
+        fontSize: "13px",
+        fontWeight: "500",
+        color: "#1e1e1e"
+      },
+      children: label
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+      type: "number",
+      step: step,
+      value: value,
+      onChange: handleChange,
+      style: {
+        width: "100%",
+        border: "1px solid #ddd",
+        fontSize: "14px",
+        outline: "none",
+        transition: "border-color 0.2s"
+      },
+      onFocus: e => {
+        e.target.style.borderColor = "#6f22dd";
+        e.target.style.boxShadow = "0 0 0 1px #6f22dd";
+      },
+      onBlur: e => {
+        e.target.style.borderColor = "#ddd";
+        e.target.style.boxShadow = "none";
+      }
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Input);
+
+/***/ },
+
 /***/ "./src/smart-list-block/components/InspectorControl/common/Label/index.js"
 /*!********************************************************************************!*\
   !*** ./src/smart-list-block/components/InspectorControl/common/Label/index.js ***!
@@ -2337,49 +2482,46 @@ function SpacingControl({
           })
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "control-input-group",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-        className: "control-input-group",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          value: values.top,
-          step: 4,
-          min: 0,
-          onChange: val => {
-            handleValueChange("top", val);
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          value: values.right,
-          step: 4,
-          onChange: val => {
-            handleValueChange("right", val);
-          },
-          min: 0
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          value: values.left,
-          min: 0,
-          step: 4,
-          onChange: val => {
-            handleValueChange("left", val);
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          value: values.bottom,
-          min: 0,
-          step: 4,
-          onChange: val => {
-            handleValueChange("bottom", val);
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
-            onClick: () => onChange({
-              ...values,
-              linked: !values.linked
-            }),
-            className: `link-btn ${values.linked ? "" : "is-unlinked "}`,
-            children: values.linked ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Unlink__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-          })
-        })]
-      })
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        value: values.top,
+        step: 4,
+        min: 0,
+        onChange: val => {
+          handleValueChange("top", val);
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        value: values.right,
+        step: 4,
+        onChange: val => {
+          handleValueChange("right", val);
+        },
+        min: 0
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        value: values.left,
+        min: 0,
+        step: 4,
+        onChange: val => {
+          handleValueChange("left", val);
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_NumberControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        value: values.bottom,
+        min: 0,
+        step: 4,
+        onChange: val => {
+          handleValueChange("bottom", val);
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+          onClick: () => onChange({
+            ...values,
+            linked: !values.linked
+          }),
+          className: `link-btn ${values.linked ? "" : "is-unlinked "}`,
+          children: values.linked ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Link__WEBPACK_IMPORTED_MODULE_0__["default"], {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_assets_Unlink__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+        })
+      })]
     })]
   });
 }
@@ -2507,34 +2649,116 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_Typo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../assets/Typo */ "./src/smart-list-block/assets/Typo.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Selection_Selection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Selection/Selection */ "./src/smart-list-block/components/InspectorControl/common/Selection/Selection.js");
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../const */ "./src/smart-list-block/const/index.js");
+/* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Input/Input */ "./src/smart-list-block/components/InspectorControl/common/Input/Input.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
 
 function Typography({
-  label
+  label,
+  onChange = () => {},
+  values,
+  attributeKey
 }) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+  const [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleChange = (name, value) => {
+    const newValue = {
+      ...values,
+      [name]: value
+    };
+    onChange(newValue);
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
     className: "custom-range-control",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "range-control",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
         className: "content",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
           className: "range-label",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
             children: label
           })
-        })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          className: "range-measure",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+            style: {
+              cursor: "pointer"
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_assets_Typo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+              onClick: handleToggle,
+              active: isOpen
+            })
+          })
+        })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Popover, {
-      position: "middle right",
+    }), isOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Popover, {
       onClose: () => setIsOpen(false),
-      className: "color-popover",
-      usePortal: false,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ColorPicker, {
-        color: value,
-        onChangeComplete: handleColorChange,
-        enableAlpha: true
+      position: "top right",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        style: {
+          padding: "20px",
+          minWidth: "450px"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("h3", {
+          style: {
+            marginTop: 0,
+            marginBottom: "16px"
+          },
+          children: [label, " Typography"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Selection_Selection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          label: "Select Global Style",
+          inline: false,
+          options: _const__WEBPACK_IMPORTED_MODULE_4__.tags,
+          attributeKey: attributeKey,
+          subKey: "tags"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Selection_Selection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          label: "Font Family",
+          inline: false,
+          options: _const__WEBPACK_IMPORTED_MODULE_4__.fontFamilyOptions,
+          attributeKey: attributeKey,
+          subKey: "family"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Selection_Selection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          label: "Font Weight",
+          inline: false,
+          options: _const__WEBPACK_IMPORTED_MODULE_4__.fontWeight,
+          attributeKey: attributeKey,
+          subKey: "weight"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+          style: {
+            display: "flex",
+            gap: "5px"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Input_Input__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            value: values.fontSize,
+            label: "Font Size",
+            onChange: value => handleChange("fontSize", value)
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Input_Input__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            value: values.height,
+            step: 0.1,
+            label: "Height",
+            onChange: value => handleChange("height", value)
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Input_Input__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            value: values.spacing,
+            label: "Spacing",
+            onChange: value => handleChange("spacing", value)
+          })]
+        })]
       })
     })]
   });
@@ -2655,6 +2879,7 @@ function ListPreview() {
   const alignmentClass = `alignment-${alignment || "left"}`;
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
+  const TitleTag = title?.tags || "p";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     style: {
       "--marginTop": `${margin.top}px`,
@@ -2683,6 +2908,16 @@ function ListPreview() {
         "--radiusRight": `${radius.right}px`,
         "--radiusBottom": `${radius.bottom}px`,
         "--radiusLeft": `${radius.left}px`,
+        "--fontSize": `${title.fontSize}px`,
+        "--weight": `${title.weight}`,
+        "--font": `${title.family}`,
+        "--spacing": `${title.spacing}px`,
+        "--height": `${title.height}`,
+        "--descriptionFontSize": `${description.fontSize}px`,
+        "--descriptionWeight": `${description.weight}`,
+        "--descriptionFont": `${description.family}`,
+        "--descriptionSpacing": `${description.spacing}px`,
+        "--descriptionHeight": `${description.height}`,
         "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
         "--backgroundGradient": type === "gradient" && background ? background : "none",
         "--backgroundSize": type === "image" ? backgroundSize : "auto",
@@ -2692,14 +2927,11 @@ function ListPreview() {
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("li", {
           className: "smart-item",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            children: [title && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("strong", {
+            children: [title.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(TitleTag, {
+              className: "title",
               children: item.title
-            }), (presetsType !== "list" || description) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-              style: {
-                margin: "5px 0 0",
-                fontSize: "14px",
-                color: "#666"
-              },
+            }), (presetsType !== "list" || description.show) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+              className: "description",
               children: item.description
             })]
           })]
@@ -2724,11 +2956,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   backGroundStyles: () => (/* binding */ backGroundStyles),
 /* harmony export */   contentTabItems: () => (/* binding */ contentTabItems),
 /* harmony export */   dividerStyle: () => (/* binding */ dividerStyle),
+/* harmony export */   fontFamilyOptions: () => (/* binding */ fontFamilyOptions),
+/* harmony export */   fontWeight: () => (/* binding */ fontWeight),
 /* harmony export */   generalTabItems: () => (/* binding */ generalTabItems),
 /* harmony export */   imageScales: () => (/* binding */ imageScales),
 /* harmony export */   listItems: () => (/* binding */ listItems),
 /* harmony export */   orientationTabItems: () => (/* binding */ orientationTabItems),
-/* harmony export */   presetTabItems: () => (/* binding */ presetTabItems)
+/* harmony export */   presetTabItems: () => (/* binding */ presetTabItems),
+/* harmony export */   tags: () => (/* binding */ tags)
 /* harmony export */ });
 /* harmony import */ var _assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/PresetIcon */ "./src/smart-list-block/assets/PresetIcon.js");
 /* harmony import */ var _assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/StylesIcon */ "./src/smart-list-block/assets/StylesIcon.js");
@@ -2853,6 +3088,57 @@ const imageScales = [{
   name: "contain",
   title: "Contain",
   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+}];
+const tags = [{
+  label: "Heading h1",
+  value: "h1"
+}, {
+  label: "Heading h2",
+  value: "h2"
+}, {
+  label: "Heading h3",
+  value: "h3"
+}, {
+  label: "Body",
+  value: "body"
+}, {
+  label: "Paragraph",
+  value: "p"
+}];
+const fontFamilyOptions = [{
+  label: "Roboto",
+  value: "Roboto"
+}, {
+  label: "Tahoma",
+  value: "Tahoma"
+}, {
+  label: "Arial",
+  value: "Arial"
+}, {
+  label: "Georgia",
+  value: "Georgia"
+}, {
+  label: "Times New Roman",
+  value: "Times New Roman"
+}, {
+  label: "Courier New",
+  value: "Courier New"
+}, {
+  label: "Verdana",
+  value: "Verdana"
+}];
+const fontWeight = [{
+  label: "200",
+  value: "200"
+}, {
+  label: "400",
+  value: "400"
+}, {
+  label: "600",
+  value: "600"
+}, {
+  label: "800",
+  value: "800"
 }];
 
 /***/ },

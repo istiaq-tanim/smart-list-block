@@ -50,47 +50,45 @@ function SpacingControl({
 				</div>
 			</div>
 			<div className="control-input-group">
-				<div className="control-input-group">
-					<NumberControl
-						value={values.top}
-						step={4}
-						min={0}
-						onChange={(val) => {
-							handleValueChange("top", val);
-						}}
-					></NumberControl>
-					<NumberControl
-						value={values.right}
-						step={4}
-						onChange={(val) => {
-							handleValueChange("right", val);
-						}}
-						min={0}
-					></NumberControl>
-					<NumberControl
-						value={values.left}
-						min={0}
-						step={4}
-						onChange={(val) => {
-							handleValueChange("left", val);
-						}}
-					></NumberControl>
-					<NumberControl
-						value={values.bottom}
-						min={0}
-						step={4}
-						onChange={(val) => {
-							handleValueChange("bottom", val);
-						}}
-					></NumberControl>
-					<div>
-						<button
-							onClick={() => onChange({ ...values, linked: !values.linked })}
-							className={`link-btn ${values.linked ? "" : "is-unlinked "}`}
-						>
-							{values.linked ? <Link /> : <Unlink />}
-						</button>
-					</div>
+				<NumberControl
+					value={values.top}
+					step={4}
+					min={0}
+					onChange={(val) => {
+						handleValueChange("top", val);
+					}}
+				></NumberControl>
+				<NumberControl
+					value={values.right}
+					step={4}
+					onChange={(val) => {
+						handleValueChange("right", val);
+					}}
+					min={0}
+				></NumberControl>
+				<NumberControl
+					value={values.left}
+					min={0}
+					step={4}
+					onChange={(val) => {
+						handleValueChange("left", val);
+					}}
+				></NumberControl>
+				<NumberControl
+					value={values.bottom}
+					min={0}
+					step={4}
+					onChange={(val) => {
+						handleValueChange("bottom", val);
+					}}
+				></NumberControl>
+				<div>
+					<button
+						onClick={() => onChange({ ...values, linked: !values.linked })}
+						className={`link-btn ${values.linked ? "" : "is-unlinked "}`}
+					>
+						{values.linked ? <Link /> : <Unlink />}
+					</button>
 				</div>
 			</div>
 		</div>

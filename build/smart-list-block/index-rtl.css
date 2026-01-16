@@ -55,6 +55,22 @@
   padding-left: 8px;
   margin-left: 8px;
 }
+.wp-block-create-block-smart-list-block .smart-list .description {
+  margin: "5px 0 0";
+  font-size: var(--descriptionFontSize, 16px);
+  font-weight: var(--descriptionWeight, 400);
+  font-family: var(--descriptionFont, "Roboto");
+  letter-spacing: var(--descriptionSpacing, 0);
+  line-height: var(--descriptionHeight, 0);
+  color: "#666";
+}
+.wp-block-create-block-smart-list-block .smart-list .title {
+  font-size: var(--fontSize, 16px);
+  font-weight: var(--weight, 400);
+  font-family: var(--font, "Roboto");
+  letter-spacing: var(--spacing, 0);
+  line-height: var(--height, 0);
+}
 .wp-block-create-block-smart-list-block .smart-list.is-horizontal {
   flex-direction: row;
   gap: var(--spaceBetween, 24px);
@@ -281,7 +297,7 @@
   align-items: center;
 }
 .components-panel__body .control-input-group .input-box {
-  width: 52px;
+  width: 50px;
 }
 .components-panel__body .control-input-group .input-with-spinner {
   position: relative;
@@ -363,6 +379,22 @@
 }
 .components-panel__body .control-input-group .link-btn.is-unlinked svg {
   fill: #757575;
+}
+.components-panel__body .controlAbleStyle {
+  display: "block";
+  margin-bottom: "8px";
+  font-size: "13px";
+  font-weight: "500";
+  color: "#1e1e1e";
+}
+.components-panel__body .controlInputStyle {
+  width: "100%";
+  padding: "8px 12px";
+  border: "1px solid #ddd";
+  border-radius: "4px";
+  font-size: "14px";
+  outline: "none";
+  transition: "border-color 0.2s, box-shadow 0.2s";
 }
 .components-panel__body .label {
   color: var(--Gutenberg-Gray-800, #2f2f2f);

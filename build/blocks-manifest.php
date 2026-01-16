@@ -115,12 +115,28 @@ return array(
 				)
 			),
 			'title' => array(
-				'type' => 'boolean',
-				'default' => true
+				'type' => 'object',
+				'default' => array(
+					'show' => true,
+					'tags' => 'p',
+					'family' => 'Roboto',
+					'fontSize' => 16,
+					'weight' => 400,
+					'height' => 0,
+					'spacing' => 0
+				)
 			),
 			'description' => array(
-				'type' => 'boolean',
-				'default' => false
+				'type' => 'object',
+				'default' => array(
+					'show' => false,
+					'tags' => 'p',
+					'family' => 'Roboto',
+					'fontSize' => 11,
+					'weight' => 400,
+					'height' => 0,
+					'spacing' => 0
+				)
 			)
 		),
 		'textdomain' => 'smart-list-block',

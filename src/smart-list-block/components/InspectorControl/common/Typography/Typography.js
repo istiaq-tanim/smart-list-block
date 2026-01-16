@@ -1,4 +1,25 @@
-function Typography({ label }) {
+import { Popover } from "@wordpress/components";
+import Typo from "../../../../assets/Typo";
+import { useState } from "react";
+import SectionControlButton from "../Selection/Selection";
+import { fontFamilyOptions, fontWeight, tags } from "../../../../const";
+import Input from "../Input/Input";
+
+function Typography({ label, onChange = () => {}, values, attributeKey }) {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleToggle = () => {
+		setIsOpen(!isOpen);
+	};
+
+	const handleChange = (name, value) => {
+		const newValue = {
+			...values,
+			[name]: value,
+		};
+		onChange(newValue);
+	};
+
 	return (
 		<div className="custom-range-control">
 			<div className="range-control">
@@ -6,21 +27,64 @@ function Typography({ label }) {
 					<div className="range-label">
 						<p>{label}</p>
 					</div>
+					<div className="range-measure">
+						<div style={{ cursor: "pointer" }}>
+							<Typo onClick={handleToggle} active={isOpen}></Typo>
+						</div>
+					</div>
 				</div>
 			</div>
+			{isOpen && (
+				<Popover onClose={() => setIsOpen(false)} position="top right">
+					<div style={{ padding: "20px", minWidth: "450px" }}>
+						<h3 style={{ marginTop: 0, marginBottom: "16px" }}>
+							{label} Typography
+						</h3>
 
-			<Popover
-				position="middle right"
-				onClose={() => setIsOpen(false)}
-				className="color-popover"
-				usePortal={false}
-			>
-				<ColorPicker
-					color={value}
-					onChangeComplete={handleColorChange}
-					enableAlpha
-				/>
-			</Popover>
+						<SectionControlButton
+							label="Select Global Style"
+							inline={false}
+							options={tags}
+							attributeKey={attributeKey}
+							subKey="tags"
+						/>
+
+						<SectionControlButton
+							label="Font Family"
+							inline={false}
+							options={fontFamilyOptions}
+							attributeKey={attributeKey}
+							subKey="family"
+						/>
+						<SectionControlButton
+							label="Font Weight"
+							inline={false}
+							options={fontWeight}
+							attributeKey={attributeKey}
+							subKey="weight"
+						/>
+
+						<div style={{ display: "flex", gap: "5px" }}>
+							<Input
+								value={values.fontSize}
+								label="Font Size"
+								onChange={(value) => handleChange("fontSize", value)}
+							></Input>
+							<Input
+								value={values.height}
+								step={0.1}
+								label="Height"
+								onChange={(value) => handleChange("height", value)}
+							></Input>
+							<Input
+								value={values.spacing}
+								label="Spacing"
+								onChange={(value) => handleChange("spacing", value)}
+							></Input>
+						</div>
+					</div>
+				</Popover>
+			)}
 		</div>
 	);
 }

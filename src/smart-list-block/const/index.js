@@ -146,3 +146,42 @@ export const imageScales = [
 		icon: <Image></Image>,
 	},
 ];
+
+export const tags = [
+	{
+		label: "Heading h1",
+		value: "h1",
+	},
+	{
+		label: "Heading h2",
+		value: "h2",
+	},
+	{
+		label: "Heading h3",
+		value: "h3",
+	},
+	{
+		label: "Body",
+		value: "body",
+	},
+	{
+		label: "Paragraph",
+		value: "p",
+	},
+];
+
+export const fontFamilyOptions = [
+	{ label: "Roboto", value: "Roboto" },
+	{ label: "Tahoma", value: "Tahoma" },
+	{ label: "Arial", value: "Arial" },
+	{ label: "Georgia", value: "Georgia" },
+	{ label: "Times New Roman", value: "Times New Roman" },
+	{ label: "Courier New", value: "Courier New" },
+	{ label: "Verdana", value: "Verdana" },
+];
+export const fontWeight = [
+	{ label: "200", value: "200" },
+	{ label: "400", value: "400" },
+	{ label: "600", value: "600" },
+	{ label: "800", value: "800" },
+];

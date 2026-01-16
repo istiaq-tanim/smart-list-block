@@ -35,6 +35,7 @@ function ListPreview() {
 	const alignmentClass = `alignment-${alignment || "left"}`;
 	const dividerClass = show ? "has-divider" : "";
 	const borderClass = borderShow ? "has-border" : "";
+	const TitleTag = title?.tags || "p";
 
 	return (
 		<div
@@ -66,6 +67,16 @@ function ListPreview() {
 					"--radiusRight": `${radius.right}px`,
 					"--radiusBottom": `${radius.bottom}px`,
 					"--radiusLeft": `${radius.left}px`,
+					"--fontSize": `${title.fontSize}px`,
+					"--weight": `${title.weight}`,
+					"--font": `${title.family}`,
+					"--spacing": `${title.spacing}px`,
+					"--height": `${title.height}`,
+					"--descriptionFontSize": `${description.fontSize}px`,
+					"--descriptionWeight": `${description.weight}`,
+					"--descriptionFont": `${description.family}`,
+					"--descriptionSpacing": `${description.spacing}px`,
+					"--descriptionHeight": `${description.height}`,
 					"--backgroundImage":
 						type === "image" && image ? `url(${image})` : "none",
 					"--backgroundGradient":
@@ -85,17 +96,11 @@ function ListPreview() {
 						<li className="smart-item" key={index}>
 							<ListClickIcon></ListClickIcon>
 							<div>
-								{title && <strong>{item.title}</strong>}
-								{(presetsType !== "list" || description) && (
-									<p
-										style={{
-											margin: "5px 0 0",
-											fontSize: "14px",
-											color: "#666",
-										}}
-									>
-										{item.description}
-									</p>
+								{title.show && (
+									<TitleTag className="title">{item.title}</TitleTag>
+								)}
+								{(presetsType !== "list" || description.show) && (
+									<p className="description">{item.description}</p>
 								)}
 							</div>
 						</li>

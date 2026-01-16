@@ -4,17 +4,22 @@ import ToggleControlButton from "../../common/ToggleButton/ToggleButton";
 function General() {
 	const { attributes, setAttributes } = useBlockContext();
 	const { title, description } = attributes;
+
 	return (
 		<div>
 			<ToggleControlButton
 				label="Title"
-				checked={title}
-				onChange={(value) => setAttributes({ title: value })}
+				checked={title.show}
+				onChange={(value) =>
+					setAttributes({ title: { ...title, show: value } })
+				}
 			></ToggleControlButton>
 			<ToggleControlButton
 				label="Description"
-				checked={description}
-				onChange={(value) => setAttributes({ description: value })}
+				checked={description.show}
+				onChange={(value) =>
+					setAttributes({ description: { ...description, show: value } })
+				}
 			></ToggleControlButton>
 		</div>
 	);
