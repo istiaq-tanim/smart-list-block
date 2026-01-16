@@ -21,6 +21,18 @@ export const generalTabItems = [
 		icon: <StylesIcon></StylesIcon>,
 	},
 ];
+export const contentTabItems = [
+	{
+		name: "general",
+		title: "General",
+		icon: <PresetIcon></PresetIcon>,
+	},
+	{
+		name: "styles",
+		title: "Style",
+		icon: <StylesIcon></StylesIcon>,
+	},
+];
 export const presetTabItems = [
 	{
 		name: "list",

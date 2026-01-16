@@ -113,6 +113,14 @@ return array(
 					'left' => 0,
 					'linked' => true
 				)
+			),
+			'title' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'description' => array(
+				'type' => 'boolean',
+				'default' => false
 			)
 		),
 		'textdomain' => 'smart-list-block',

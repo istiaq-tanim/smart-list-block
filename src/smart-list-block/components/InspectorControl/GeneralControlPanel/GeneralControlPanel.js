@@ -12,7 +12,7 @@ function GeneralControlPanel() {
 		setSelectedTab(tabName);
 	};
 	return (
-		<PanelBody title={__("General", "smart-list-block")}>
+		<PanelBody title={__("General", "smart-list-block")} initialOpen={false}>
 			<Tabs
 				tabItems={generalTabItems}
 				onHandleTab={handleTab}

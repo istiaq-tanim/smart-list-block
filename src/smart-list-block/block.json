@@ -108,6 +108,14 @@
 				"left": 0,
 				"linked": true
 			}
+		},
+		"title": {
+			"type": "boolean",
+			"default": true
+		},
+		"description": {
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"textdomain": "smart-list-block",

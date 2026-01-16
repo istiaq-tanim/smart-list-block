@@ -17,6 +17,8 @@ function ListPreview() {
 		padding,
 		margin,
 		radius,
+		title,
+		description,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -83,8 +85,8 @@ function ListPreview() {
 						<li className="smart-item" key={index}>
 							<ListClickIcon></ListClickIcon>
 							<div>
-								<strong>{item.title}</strong>
-								{presetsType !== "list" && (
+								{title && <strong>{item.title}</strong>}
+								{(presetsType !== "list" || description) && (
 									<p
 										style={{
 											margin: "5px 0 0",

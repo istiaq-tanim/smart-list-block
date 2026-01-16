@@ -11,6 +11,7 @@ import ListPreview from "./components/ListPreview";
 import BlockProvider from "./Provider/BlockProvider";
 import { ToolbarGroup } from "@wordpress/components";
 import { ToolbarButton } from "@wordpress/components";
+import ContentControlPanel from "./components/InspectorControl/ContentControlPanel/ContentControlPanel";
 
 export default function Edit({ attributes, setAttributes }) {
 	const { previewWidth } = attributes;
@@ -42,6 +43,10 @@ export default function Edit({ attributes, setAttributes }) {
 			<InspectorControls>
 				{/* General Panel with Tabs */}
 				<GeneralControlPanel></GeneralControlPanel>
+
+				{/* Content Panel with Tabs */}
+
+				<ContentControlPanel></ContentControlPanel>
 			</InspectorControls>
 			<div {...blockProps}>
 				<ListPreview></ListPreview>
