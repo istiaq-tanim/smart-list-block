@@ -149,6 +149,10 @@ export const imageScales = [
 
 export const tags = [
 	{
+		label: "Default",
+		value: "p",
+	},
+	{
 		label: "Heading h1",
 		value: "h1",
 	},
@@ -163,10 +167,6 @@ export const tags = [
 	{
 		label: "Body",
 		value: "body",
-	},
-	{
-		label: "Paragraph",
-		value: "p",
 	},
 ];
 

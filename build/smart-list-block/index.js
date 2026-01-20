@@ -2925,7 +2925,8 @@ function ListPreview() {
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
   const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
-  const TitleTag = title?.tags || "p";
+  const TitleTag = title?.tags === "p" ? "p" : title?.tags;
+  const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     style: {
       "--marginTop": `${margin.top}px`,
@@ -2936,7 +2937,7 @@ function ListPreview() {
     class: "smart-list-wrapper",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
       className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
-				${borderClass} ${hasHoverClass}`,
+				${borderClass} ${hasHoverClass} `,
       style: {
         "--spaceBetween": `${spaceBetween}px`,
         "--color": textColor,
@@ -2977,10 +2978,10 @@ function ListPreview() {
           className: "smart-item",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             children: [title.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(TitleTag, {
-              className: "title",
+              className: title?.tags === "p" ? "title" : "title-without-size",
               children: item.title
-            }), (presetsType !== "list" || description.show) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-              className: "description",
+            }), (presetsType !== "list" || description.show) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(DescriptionTag, {
+              className: description?.tags === "p" ? "description" : "description-without-size",
               children: item.description
             })]
           })]
@@ -3140,6 +3141,9 @@ const imageScales = [{
   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
 }];
 const tags = [{
+  label: "Default",
+  value: "p"
+}, {
   label: "Heading h1",
   value: "h1"
 }, {
@@ -3151,9 +3155,6 @@ const tags = [{
 }, {
   label: "Body",
   value: "body"
-}, {
-  label: "Paragraph",
-  value: "p"
 }];
 const fontFamilyOptions = [{
   label: "Roboto",

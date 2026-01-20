@@ -37,7 +37,8 @@ function ListPreview() {
 	const dividerClass = show ? "has-divider" : "";
 	const borderClass = borderShow ? "has-border" : "";
 	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
-	const TitleTag = title?.tags || "p";
+	const TitleTag = title?.tags === "p" ? "p" : title?.tags;
+	const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
 
 	return (
 		<div
@@ -51,7 +52,7 @@ function ListPreview() {
 		>
 			<ul
 				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
-				${borderClass} ${hasHoverClass}`}
+				${borderClass} ${hasHoverClass} `}
 				style={{
 					"--spaceBetween": `${spaceBetween}px`,
 					"--color": textColor,
@@ -102,10 +103,24 @@ function ListPreview() {
 							<ListClickIcon></ListClickIcon>
 							<div>
 								{title.show && (
-									<TitleTag className="title">{item.title}</TitleTag>
+									<TitleTag
+										className={
+											title?.tags === "p" ? "title" : "title-without-size"
+										}
+									>
+										{item.title}
+									</TitleTag>
 								)}
 								{(presetsType !== "list" || description.show) && (
-									<p className="description">{item.description}</p>
+									<DescriptionTag
+										className={
+											description?.tags === "p"
+												? "description"
+												: "description-without-size"
+										}
+									>
+										{item.description}
+									</DescriptionTag>
 								)}
 							</div>
 						</li>

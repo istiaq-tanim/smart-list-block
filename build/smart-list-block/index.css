@@ -63,12 +63,20 @@
   letter-spacing: var(--descriptionSpacing, 0);
   line-height: var(--descriptionHeight, 0);
 }
+.wp-block-create-block-smart-list-block .smart-list .description-without-size {
+  font-weight: var(--descriptionWeight, 400);
+  font-family: var(--descriptionFont, "Roboto");
+}
 .wp-block-create-block-smart-list-block .smart-list .title {
   font-size: var(--fontSize, 16px);
   font-weight: var(--weight, 400);
   font-family: var(--font, "Roboto");
   letter-spacing: var(--spacing, 0);
   line-height: var(--height, 0);
+}
+.wp-block-create-block-smart-list-block .smart-list .title-without-size {
+  font-weight: var(--weight, 400);
+  font-family: var(--font, "Roboto");
 }
 .wp-block-create-block-smart-list-block .smart-list.has-normal .smart-item .title {
   color: var(--titleColor, #757575);
