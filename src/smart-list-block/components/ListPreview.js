@@ -19,6 +19,7 @@ function ListPreview() {
 		radius,
 		title,
 		description,
+		contentEffect,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -35,6 +36,7 @@ function ListPreview() {
 	const alignmentClass = `alignment-${alignment || "left"}`;
 	const dividerClass = show ? "has-divider" : "";
 	const borderClass = borderShow ? "has-border" : "";
+	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
 	const TitleTag = title?.tags || "p";
 
 	return (
@@ -48,7 +50,8 @@ function ListPreview() {
 			class="smart-list-wrapper"
 		>
 			<ul
-				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass}`}
+				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
+				${borderClass} ${hasHoverClass}`}
 				style={{
 					"--spaceBetween": `${spaceBetween}px`,
 					"--color": textColor,
@@ -72,11 +75,13 @@ function ListPreview() {
 					"--font": `${title.family}`,
 					"--spacing": `${title.spacing}px`,
 					"--height": `${title.height}`,
+					"--titleColor": `${title.color}`,
 					"--descriptionFontSize": `${description.fontSize}px`,
 					"--descriptionWeight": `${description.weight}`,
 					"--descriptionFont": `${description.family}`,
 					"--descriptionSpacing": `${description.spacing}px`,
 					"--descriptionHeight": `${description.height}`,
+					"--descriptionColor": `${description.color}`,
 					"--backgroundImage":
 						type === "image" && image ? `url(${image})` : "none",
 					"--backgroundGradient":

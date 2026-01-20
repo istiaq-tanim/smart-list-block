@@ -62,7 +62,6 @@
   font-family: var(--descriptionFont, "Roboto");
   letter-spacing: var(--descriptionSpacing, 0);
   line-height: var(--descriptionHeight, 0);
-  color: "#666";
 }
 .wp-block-create-block-smart-list-block .smart-list .title {
   font-size: var(--fontSize, 16px);
@@ -70,6 +69,20 @@
   font-family: var(--font, "Roboto");
   letter-spacing: var(--spacing, 0);
   line-height: var(--height, 0);
+}
+.wp-block-create-block-smart-list-block .smart-list.has-normal .smart-item .title {
+  color: var(--titleColor, #757575);
+  transition: color 0.3s ease;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-normal .smart-item .description {
+  color: var(--descriptionColor, #2f2f2f);
+  transition: color 0.3s ease;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-hover .smart-item:hover .title {
+  color: var(--titleColor, #757575);
+}
+.wp-block-create-block-smart-list-block .smart-list.has-hover .smart-item:hover .description {
+  color: var(--descriptionColor, #2f2f2f);
 }
 .wp-block-create-block-smart-list-block .smart-list.is-horizontal {
   flex-direction: row;

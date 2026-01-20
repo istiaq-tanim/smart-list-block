@@ -13,7 +13,7 @@ function Style() {
 	};
 
 	const handleDescriptionColor = (value) => {
-		setAttributes({ title: { ...title, color: value } });
+		setAttributes({ description: { ...description, color: value } });
 	};
 
 	const handleTab = (tabName) => {

@@ -1062,8 +1062,8 @@ function Style() {
   };
   const handleDescriptionColor = value => {
     setAttributes({
-      title: {
-        ...title,
+      description: {
+        ...description,
         color: value
       }
     });
@@ -2898,7 +2898,8 @@ function ListPreview() {
     margin,
     radius,
     title,
-    description
+    description,
+    contentEffect
   } = attributes;
   const {
     width,
@@ -2923,6 +2924,7 @@ function ListPreview() {
   const alignmentClass = `alignment-${alignment || "left"}`;
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
+  const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
   const TitleTag = title?.tags || "p";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     style: {
@@ -2933,7 +2935,8 @@ function ListPreview() {
     },
     class: "smart-list-wrapper",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
-      className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass}`,
+      className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
+				${borderClass} ${hasHoverClass}`,
       style: {
         "--spaceBetween": `${spaceBetween}px`,
         "--color": textColor,
@@ -2957,11 +2960,13 @@ function ListPreview() {
         "--font": `${title.family}`,
         "--spacing": `${title.spacing}px`,
         "--height": `${title.height}`,
+        "--titleColor": `${title.color}`,
         "--descriptionFontSize": `${description.fontSize}px`,
         "--descriptionWeight": `${description.weight}`,
         "--descriptionFont": `${description.family}`,
         "--descriptionSpacing": `${description.spacing}px`,
         "--descriptionHeight": `${description.height}`,
+        "--descriptionColor": `${description.color}`,
         "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
         "--backgroundGradient": type === "gradient" && background ? background : "none",
         "--backgroundSize": type === "image" ? backgroundSize : "auto",
