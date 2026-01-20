@@ -1,6 +1,7 @@
 import { orientationTabItems } from "../const";
 import Tabs from "./InspectorControl/common/Tabs/Tabs";
 import useBlockContext from "../hooks/useBlockContext";
+import Label from "../components/InspectorControl/common/Label";
 
 function ListOrientation() {
 	const { attributes, setAttributes } = useBlockContext();
@@ -13,7 +14,8 @@ function ListOrientation() {
 	};
 	return (
 		<div>
-			<p>List Orientation</p>
+			<Label label="List Orientation"></Label>
+			<br />
 			<Tabs
 				tabItems={orientationTabItems}
 				onHandleTab={handleTab}

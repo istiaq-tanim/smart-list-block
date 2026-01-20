@@ -913,7 +913,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -1030,8 +1030,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
 /* harmony import */ var _common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/Typography/Typography */ "./src/smart-list-block/components/InspectorControl/common/Typography/Typography.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../const */ "./src/smart-list-block/const/index.js");
+/* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
 
 
 
@@ -1042,23 +1048,59 @@ function Style() {
   } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_0__["default"])();
   const {
     title,
-    description
+    description,
+    contentEffect
   } = attributes;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  const selectedTab = contentEffect;
+  const handleTextColor = value => {
+    setAttributes({
+      title: {
+        ...title,
+        color: value
+      }
+    });
+  };
+  const handleDescriptionColor = value => {
+    setAttributes({
+      title: {
+        ...title,
+        color: value
+      }
+    });
+  };
+  const handleTab = tabName => {
+    setAttributes({
+      contentEffect: tabName
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Title Typography",
       attributeKey: "title",
       onChange: value => setAttributes({
         title: value
       }),
       values: title
-    }), description.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), description.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Typography_Typography__WEBPACK_IMPORTED_MODULE_1__["default"], {
       label: "Description Typography",
       attributeKey: "description",
       onChange: value => setAttributes({
         description: value
       }),
       values: description
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      tabItems: _const__WEBPACK_IMPORTED_MODULE_3__.contentEffectItems,
+      onHandleTab: handleTab,
+      selectedTab: selectedTab,
+      variant: "only-text"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      label: "Title Color",
+      value: title.color,
+      onChange: handleTextColor
+    }), description.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      label: "Description Color",
+      value: description.color,
+      onChange: handleDescriptionColor
     })]
   });
 }
@@ -2780,8 +2822,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../const */ "./src/smart-list-block/const/index.js");
 /* harmony import */ var _InspectorControl_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InspectorControl/common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_InspectorControl_common_Label__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/InspectorControl/common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -2800,10 +2844,10 @@ function ListOrientation() {
       listOrientation: tabName
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-      children: "List Orientation"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_InspectorControl_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_InspectorControl_common_Label__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      label: "List Orientation"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_InspectorControl_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_1__["default"], {
       tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.orientationTabItems,
       onHandleTab: handleTab,
       selectedTab: selectedTab,
@@ -2954,6 +2998,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   alignmentTabItems: () => (/* binding */ alignmentTabItems),
 /* harmony export */   backGroundStyles: () => (/* binding */ backGroundStyles),
+/* harmony export */   contentEffectItems: () => (/* binding */ contentEffectItems),
 /* harmony export */   contentTabItems: () => (/* binding */ contentTabItems),
 /* harmony export */   dividerStyle: () => (/* binding */ dividerStyle),
 /* harmony export */   fontFamilyOptions: () => (/* binding */ fontFamilyOptions),
@@ -3139,6 +3184,15 @@ const fontWeight = [{
 }, {
   label: "800",
   value: "800"
+}];
+const contentEffectItems = [{
+  name: "normal",
+  title: "Normal",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+}, {
+  name: "hover",
+  title: "Hover",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 
 /***/ },

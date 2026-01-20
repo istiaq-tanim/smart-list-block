@@ -185,3 +185,16 @@ export const fontWeight = [
 	{ label: "600", value: "600" },
 	{ label: "800", value: "800" },
 ];
+
+export const contentEffectItems = [
+	{
+		name: "normal",
+		title: "Normal",
+		icon: <ListIcon></ListIcon>,
+	},
+	{
+		name: "hover",
+		title: "Hover",
+		icon: <DescriptionListIcon></DescriptionListIcon>,
+	},
+];

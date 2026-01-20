@@ -123,7 +123,8 @@ return array(
 					'fontSize' => 16,
 					'weight' => 400,
 					'height' => 0,
-					'spacing' => 0
+					'spacing' => 0,
+					'color' => '#2F2F2F'
 				)
 			),
 			'description' => array(
@@ -135,8 +136,13 @@ return array(
 					'fontSize' => 11,
 					'weight' => 400,
 					'height' => 0,
-					'spacing' => 0
+					'spacing' => 0,
+					'color' => '#757575'
 				)
+			),
+			'contentEffect' => array(
+				'type' => 'string',
+				'default' => 'normal'
 			)
 		),
 		'textdomain' => 'smart-list-block',
