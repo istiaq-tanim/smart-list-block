@@ -1,6 +1,6 @@
 import useBlockContext from "../../../../hooks/useBlockContext";
 import ToggleControlButton from "../../common/ToggleButton/ToggleButton";
-
+import CustomRangeControl from "../../common/RangeControl/CustomRangeControl";
 function General() {
 	const { attributes, setAttributes } = useBlockContext();
 	const { title, description } = attributes;
@@ -21,6 +21,15 @@ function General() {
 					setAttributes({ description: { ...description, show: value } })
 				}
 			></ToggleControlButton>
+			{description.show && (
+				<CustomRangeControl
+					label="Title to Description Gap"
+					attributeKey="gapTitleToDescription"
+					min={0}
+					max={100}
+					defaultValue={6}
+				></CustomRangeControl>
+			)}
 		</div>
 	);
 }

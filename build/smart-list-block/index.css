@@ -45,6 +45,11 @@
   align-items: center;
   gap: var(--iconGap, 12px);
 }
+.wp-block-create-block-smart-list-block .smart-list .smart-item .list-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gapBetweenTitleAndDescription, 6px);
+}
 .wp-block-create-block-smart-list-block .smart-list.has-divider.is-vertical .smart-item:not(:last-child) {
   border-bottom: calc(var(--dividerWidth, 1) * 1px) var(--dividerStyle, solid) var(--dividerColor, #dddddd);
   padding-bottom: 8px;
@@ -450,6 +455,18 @@
   align-self: stretch;
   border-radius: 2px;
   border: 1px solid var(--Grey-Field-Border, #fdcfc1);
+  margin: 10px 0px 10px 0px;
+}
+.components-panel__body .icon-upload {
+  display: flex;
+  height: 108px;
+  justify-content: center;
+  background: #fff;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 2px;
+  border: 1px solid var(--Grey-Field-Border, #ddd);
   margin: 10px 0px 10px 0px;
 }
 .input-range {

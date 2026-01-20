@@ -33,6 +33,19 @@ export const contentTabItems = [
 		icon: <StylesIcon></StylesIcon>,
 	},
 ];
+
+export const iconImageTabItems = [
+	{
+		name: "general",
+		title: "General",
+		icon: <PresetIcon></PresetIcon>,
+	},
+	{
+		name: "styles",
+		title: "Style",
+		icon: <StylesIcon></StylesIcon>,
+	},
+];
 export const presetTabItems = [
 	{
 		name: "list",
@@ -54,6 +67,18 @@ export const orientationTabItems = [
 	{
 		name: "vertical",
 		title: "Vertical",
+		icon: <DescriptionListIcon></DescriptionListIcon>,
+	},
+];
+export const iconTabItems = [
+	{
+		name: "iconSet",
+		title: "Icon Set",
+		icon: <ListIcon></ListIcon>,
+	},
+	{
+		name: "custom",
+		title: "Custom",
 		icon: <DescriptionListIcon></DescriptionListIcon>,
 	},
 ];

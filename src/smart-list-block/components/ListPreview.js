@@ -2,6 +2,7 @@ import ListClickIcon from "../assets/ListClickIcon";
 import { listItems } from "../const";
 import useBlockContext from "../hooks/useBlockContext";
 import { getBackgroundValue, hexToRgba } from "../utils";
+import RenderIcon from "./RenderIcon";
 function ListPreview() {
 	const { attributes } = useBlockContext();
 	const {
@@ -20,6 +21,8 @@ function ListPreview() {
 		title,
 		description,
 		contentEffect,
+		gapTitleToDescription,
+		icon,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -83,6 +86,7 @@ function ListPreview() {
 					"--descriptionSpacing": `${description.spacing}px`,
 					"--descriptionHeight": `${description.height}`,
 					"--descriptionColor": `${description.color}`,
+					"--gapBetweenTitleAndDescription": `${gapTitleToDescription}px`,
 					"--backgroundImage":
 						type === "image" && image ? `url(${image})` : "none",
 					"--backgroundGradient":
@@ -100,8 +104,8 @@ function ListPreview() {
 				{listItems.map((item, index) => {
 					return (
 						<li className="smart-item" key={index}>
-							<ListClickIcon></ListClickIcon>
-							<div>
+							<RenderIcon icon={icon}></RenderIcon>
+							<div className="list-content">
 								{title.show && (
 									<TitleTag
 										className={

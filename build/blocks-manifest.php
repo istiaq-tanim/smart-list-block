@@ -143,6 +143,21 @@ return array(
 			'contentEffect' => array(
 				'type' => 'string',
 				'default' => 'normal'
+			),
+			'gapTitleToDescription' => array(
+				'type' => 'number',
+				'default' => 6
+			),
+			'icon' => array(
+				'type' => 'object',
+				'default' => array(
+					'show' => true,
+					'type' => 'iconSet',
+					'imageSource' => '',
+					'iconSource' => '',
+					'width' => 20,
+					'height' => 20
+				)
 			)
 		),
 		'textdomain' => 'smart-list-block',

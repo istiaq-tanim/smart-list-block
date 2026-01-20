@@ -138,6 +138,21 @@
 		"contentEffect": {
 			"type": "string",
 			"default": "normal"
+		},
+		"gapTitleToDescription": {
+			"type": "number",
+			"default": 6
+		},
+		"icon": {
+			"type": "object",
+			"default": {
+				"show": true,
+				"type": "iconSet",
+				"imageSource": "",
+				"iconSource": "",
+				"width": 20,
+				"height": 20
+			}
 		}
 	},
 	"textdomain": "smart-list-block",
