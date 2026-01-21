@@ -156,7 +156,9 @@ return array(
 					'imageSource' => '',
 					'iconSourceId' => '',
 					'width' => 20,
-					'height' => 20
+					'height' => 20,
+					'size' => 24,
+					'position' => 'before'
 				)
 			)
 		),

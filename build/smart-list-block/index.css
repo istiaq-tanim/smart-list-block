@@ -50,6 +50,26 @@
   flex-direction: column;
   gap: var(--gapBetweenTitleAndDescription, 6px);
 }
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-before {
+  flex-direction: row;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-after {
+  flex-direction: row;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-after .render-icon {
+  order: 2;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top .render-icon {
+  order: 0;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top .list-content {
+  align-items: flex-start;
+  width: 100%;
+}
 .wp-block-create-block-smart-list-block .smart-list.has-divider.is-vertical .smart-item:not(:last-child) {
   border-bottom: calc(var(--dividerWidth, 1) * 1px) var(--dividerStyle, solid) var(--dividerColor, #dddddd);
   padding-bottom: 8px;

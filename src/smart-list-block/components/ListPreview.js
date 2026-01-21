@@ -103,7 +103,7 @@ function ListPreview() {
 			>
 				{listItems.map((item, index) => {
 					return (
-						<li className="smart-item" key={index}>
+						<li className={`smart-item icon-${icon.position}`} key={index}>
 							<RenderIcon icon={icon}></RenderIcon>
 							<div className="list-content">
 								{title.show && (

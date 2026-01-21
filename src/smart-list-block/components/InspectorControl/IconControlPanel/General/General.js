@@ -1,5 +1,4 @@
-import { useState } from "@wordpress/element";
-import { iconTabItems } from "../../../../const";
+import { iconPosition, iconTabItems } from "../../../../const";
 import useBlockContext from "../../../../hooks/useBlockContext";
 import Label from "../../common/Label";
 import ToggleControlButton from "../../common/ToggleButton/ToggleButton";
@@ -7,6 +6,7 @@ import Tabs from "../../common/Tabs/Tabs";
 import ImageUpload from "../../GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload";
 import CustomRangeControl from "../../common/RangeControl/CustomRangeControl";
 import IconUpload from "./IconUpload";
+import SectionControlButton from "../../common/Selection/Selection";
 
 function General() {
 	const { attributes, setAttributes } = useBlockContext();
@@ -31,13 +31,19 @@ function General() {
 						<br />
 						<IconUpload></IconUpload>
 						<CustomRangeControl
-							label="Width"
+							label="Icon Size"
 							attributeKey="icon"
-							subKey="width"
+							subKey="size"
 							min={0}
 							max={100}
 							defaultValue={24}
 						></CustomRangeControl>
+						<SectionControlButton
+							label="Icon Position"
+							options={iconPosition}
+							attributeKey="icon"
+							subKey="position"
+						></SectionControlButton>
 					</>
 				);
 			case "custom":

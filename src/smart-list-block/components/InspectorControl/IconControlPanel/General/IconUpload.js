@@ -79,9 +79,7 @@ function IconUpload() {
 											style={{
 												padding: "8px",
 												borderRadius: "4px",
-												backgroundColor: isSelected
-													? "#F05D31;"
-													: "transparent",
+												backgroundColor: isSelected ? "#F05D31" : "transparent",
 												cursor: "pointer",
 												transition: "all 0.2s ease",
 											}}

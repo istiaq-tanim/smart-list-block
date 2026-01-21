@@ -57,6 +57,29 @@
 				flex-direction: column;
 				gap: var(--gapBetweenTitleAndDescription, 6px);
 			}
+
+			&.icon-before {
+				flex-direction: row;
+			}
+			&.icon-after {
+				flex-direction: row;
+
+				.render-icon {
+					order: 2;
+				}
+			}
+			&.icon-top {
+				flex-direction: column;
+				align-items: flex-start;
+
+				.render-icon {
+					order: 0;
+				}
+				.list-content {
+					align-items: flex-start;
+					width: 100%;
+				}
+			}
 		}
 
 		&.has-divider {

@@ -136,6 +136,20 @@ export const dividerStyle = [
 		value: "double",
 	},
 ];
+export const iconPosition = [
+	{
+		label: "Before",
+		value: "before",
+	},
+	{
+		label: "After",
+		value: "after",
+	},
+	{
+		label: "Top",
+		value: "top",
+	},
+];
 
 export const backGroundStyles = [
 	{
