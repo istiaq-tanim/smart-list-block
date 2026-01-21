@@ -28,7 +28,16 @@ function General() {
 			case "iconSet":
 				return (
 					<>
+						<br />
 						<IconUpload></IconUpload>
+						<CustomRangeControl
+							label="Width"
+							attributeKey="icon"
+							subKey="width"
+							min={0}
+							max={100}
+							defaultValue={24}
+						></CustomRangeControl>
 					</>
 				);
 			case "custom":

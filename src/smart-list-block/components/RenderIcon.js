@@ -1,3 +1,5 @@
+import { getIcon } from "../const/icons";
+
 export default function RenderIcon({ icon }) {
 	if (!icon.show) return null;
 	if (icon.type === "custom" && icon.imageSource) {
@@ -12,5 +14,9 @@ export default function RenderIcon({ icon }) {
 			></img>
 		);
 	}
-	return <div></div>;
+	if (icon.type === "iconSet" && icon.iconSourceId) {
+		const { component } = getIcon(icon.iconSourceId);
+		const IconComponent = component;
+		return <IconComponent size={24} color="#757575" />;
+	}
 }

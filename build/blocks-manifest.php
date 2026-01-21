@@ -154,7 +154,7 @@ return array(
 					'show' => true,
 					'type' => 'iconSet',
 					'imageSource' => '',
-					'iconSource' => '',
+					'iconSourceId' => '',
 					'width' => 20,
 					'height' => 20
 				)
