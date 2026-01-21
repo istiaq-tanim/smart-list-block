@@ -58,6 +58,15 @@
 				gap: var(--gapBetweenTitleAndDescription, 6px);
 			}
 
+			.render-icon {
+				flex-shrink: 0;
+				width: var(--iconSize, 20px);
+				height: var(--iconSize, 20px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
 			&.icon-before {
 				flex-direction: row;
 			}
@@ -79,6 +88,29 @@
 					align-items: flex-start;
 					width: 100%;
 				}
+			}
+
+			&.icon-align-top {
+				align-items: flex-start;
+			}
+			&.icon-align-center {
+				align-items: center;
+			}
+
+			&.icon-align-bottom {
+				align-items: flex-end;
+			}
+
+			&.icon-top.icon-align-top {
+				align-items: flex-start;
+			}
+
+			&.icon-top.icon-align-center {
+				align-items: center;
+			}
+
+			&.icon-top.icon-align-bottom {
+				align-items: flex-end;
 			}
 		}
 

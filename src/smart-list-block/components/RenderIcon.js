@@ -4,11 +4,10 @@ export default function RenderIcon({ icon }) {
 	if (!icon?.show) return null;
 
 	return (
-		<span
+		<div
 			className="render-icon"
 			style={{
-				width: icon?.width || icon?.size || 20,
-				height: icon?.height || icon?.size || 20,
+				"--iconSize": `${icon?.size || 20}px`,
 			}}
 		>
 			{icon.type === "custom" && icon.imageSource && (
@@ -35,6 +34,6 @@ export default function RenderIcon({ icon }) {
 						/>
 					);
 				})()}
-		</span>
+		</div>
 	);
 }

@@ -59,6 +59,7 @@ function ListPreview() {
 				style={{
 					"--spaceBetween": `${spaceBetween}px`,
 					"--color": textColor,
+					"--iconSize": `${icon.size || 20}px`,
 					"--iconGap": `${iconGap}px`,
 					"--dividerColor": color,
 					"--dividerStyle": style,
@@ -103,7 +104,12 @@ function ListPreview() {
 			>
 				{listItems.map((item, index) => {
 					return (
-						<li className={`smart-item icon-${icon.position}`} key={index}>
+						<li
+							className={`smart-item icon-${icon.position} icon-align-${
+								icon.alignment || "center"
+							}`}
+							key={index}
+						>
 							<RenderIcon icon={icon}></RenderIcon>
 							<div className="list-content">
 								{title.show && (

@@ -35,6 +35,36 @@ function BlockProvider({
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/BottomAlignment.js"
+/*!********************************************************!*\
+  !*** ./src/smart-list-block/assets/BottomAlignment.js ***!
+  \********************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function BottomAlignment() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M19.8002 19.8L19.8002 10.9L18.3002 10.9L18.3002 19.8L19.8002 19.8ZM4.2002 10.9L4.2002 19.8L5.7002 19.8L5.7002 10.9L4.2002 10.9ZM11.2002 19.8L12.7002 19.8L12.7002 3.79999L11.2002 3.79999L11.2002 19.8Z",
+      fill: "#757575"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BottomAlignment);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/Circle.js"
 /*!***********************************************!*\
   !*** ./src/smart-list-block/assets/Circle.js ***!
@@ -512,6 +542,39 @@ function MiddleAlign() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/MiddleAlignMent.js"
+/*!********************************************************!*\
+  !*** ./src/smart-list-block/assets/MiddleAlignMent.js ***!
+  \********************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function MiddleAlignMent() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M19.7998 16.3999L19.7998 7.59994L18.2998 7.59994L18.2998 16.4999L19.7998 16.4999L19.7998 16.3999ZM12.7998 3.99994L11.2998 3.99994L11.2998 19.9999L12.7998 19.9999L12.7998 3.99994ZM4.19981 7.59994L4.1998 16.4999L5.6998 16.4999L5.69981 7.59994L4.19981 7.59994Z",
+      fill: "#757575"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MiddleAlignMent);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/NormalListIcon.js"
 /*!*******************************************************!*\
   !*** ./src/smart-list-block/assets/NormalListIcon.js ***!
@@ -822,6 +885,39 @@ function TelevisionIcon() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/TopAlignment.js"
+/*!*****************************************************!*\
+  !*** ./src/smart-list-block/assets/TopAlignment.js ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function TopAlignment() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M4.19981 3.99994L4.1998 12.8999L5.6998 12.8999L5.69981 3.99994L4.19981 3.99994ZM19.7998 12.8999L19.7998 3.99994L18.2998 3.99994L18.2998 12.8999L19.7998 12.8999ZM12.7998 3.99994L11.2998 3.99994L11.2998 19.9999L12.7998 19.9999L12.7998 3.99994Z",
+      fill: "#757575"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TopAlignment);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/Typo.js"
 /*!*********************************************!*\
   !*** ./src/smart-list-block/assets/Typo.js ***!
@@ -913,7 +1009,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"","width":20,"height":20,"size":24,"position":"before"}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"","width":20,"height":20,"size":24,"position":"before","alignment":"center"}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -1994,6 +2090,60 @@ function BorderSetting() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/Alignment.js"
+/*!************************************************************************************************!*\
+  !*** ./src/smart-list-block/components/InspectorControl/IconControlPanel/General/Alignment.js ***!
+  \************************************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../const */ "./src/smart-list-block/const/index.js");
+/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
+/* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
+/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+function Alignment() {
+  const {
+    attributes,
+    setAttributes
+  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  const {
+    icon
+  } = attributes;
+  const selectedTab = icon?.alignment;
+  const handleTab = tabName => {
+    setAttributes({
+      icon: {
+        ...icon,
+        alignment: tabName
+      }
+    });
+  };
+  console.log(icon);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Alignment"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconAlignmentTabItems,
+      onHandleTab: handleTab,
+      selectedTab: selectedTab,
+      variant: "alignment"
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Alignment);
+
+/***/ },
+
 /***/ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/General.js"
 /*!**********************************************************************************************!*\
   !*** ./src/smart-list-block/components/InspectorControl/IconControlPanel/General/General.js ***!
@@ -2013,8 +2163,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/RangeControl/CustomRangeControl */ "./src/smart-list-block/components/InspectorControl/common/RangeControl/CustomRangeControl.js");
 /* harmony import */ var _IconUpload__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./IconUpload */ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/IconUpload.js");
 /* harmony import */ var _common_Selection_Selection__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../common/Selection/Selection */ "./src/smart-list-block/components/InspectorControl/common/Selection/Selection.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _Alignment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Alignment */ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/Alignment.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 
@@ -2053,34 +2205,34 @@ function General() {
   const renderBackgroundControl = () => {
     switch (selectedTab) {
       case "iconSet":
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_IconUpload__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_IconUpload__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
             label: "Icon Size",
             attributeKey: "icon",
             subKey: "size",
             min: 0,
             max: 100,
             defaultValue: 24
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_8__["default"], {
             label: "Icon Position",
             options: _const__WEBPACK_IMPORTED_MODULE_0__.iconPosition,
             attributeKey: "icon",
             subKey: "position"
-          })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Alignment__WEBPACK_IMPORTED_MODULE_9__["default"], {})]
         });
       case "custom":
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_GeneralControlPanel_GeneralPanelItems_GeneralStyle_ImageUpload__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_GeneralControlPanel_GeneralPanelItems_GeneralStyle_ImageUpload__WEBPACK_IMPORTED_MODULE_5__["default"], {
             onChange: handleImageChange,
             value: icon.imageSource || ""
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
             label: "Width",
             attributeKey: "icon",
             subKey: "width",
             min: 0,
             max: 100,
             defaultValue: 20
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
             label: "Height",
             attributeKey: "icon",
             subKey: "height",
@@ -2093,8 +2245,8 @@ function General() {
         return null;
     }
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Icon",
       checked: icon.show,
       onChange: value => setAttributes({
@@ -2103,10 +2255,10 @@ function General() {
           show: value
         }
       })
-    }), icon.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), icon.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Icon Source"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
         tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconTabItems,
         onHandleTab: handleTab,
         selectedTab: selectedTab,
@@ -3269,6 +3421,7 @@ function ListPreview() {
       style: {
         "--spaceBetween": `${spaceBetween}px`,
         "--color": textColor,
+        "--iconSize": `${icon.size || 20}px`,
         "--iconGap": `${iconGap}px`,
         "--dividerColor": color,
         "--dividerStyle": style,
@@ -3304,7 +3457,7 @@ function ListPreview() {
       },
       children: _const__WEBPACK_IMPORTED_MODULE_1__.listItems.map((item, index) => {
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("li", {
-          className: `smart-item icon-${icon.position}`,
+          className: `smart-item icon-${icon.position} icon-align-${icon.alignment || "center"}`,
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_RenderIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {
             icon: icon
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
@@ -3345,11 +3498,10 @@ function RenderIcon({
   icon
 }) {
   if (!icon?.show) return null;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     className: "render-icon",
     style: {
-      width: icon?.width || icon?.size || 20,
-      height: icon?.height || icon?.size || 20
+      "--iconSize": `${icon?.size || 20}px`
     },
     children: [icon.type === "custom" && icon.imageSource && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: icon.imageSource,
@@ -3664,6 +3816,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   fontFamilyOptions: () => (/* binding */ fontFamilyOptions),
 /* harmony export */   fontWeight: () => (/* binding */ fontWeight),
 /* harmony export */   generalTabItems: () => (/* binding */ generalTabItems),
+/* harmony export */   iconAlignmentTabItems: () => (/* binding */ iconAlignmentTabItems),
 /* harmony export */   iconImageTabItems: () => (/* binding */ iconImageTabItems),
 /* harmony export */   iconPosition: () => (/* binding */ iconPosition),
 /* harmony export */   iconTabItems: () => (/* binding */ iconTabItems),
@@ -3683,8 +3836,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_Solid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/Solid */ "./src/smart-list-block/assets/Solid.js");
 /* harmony import */ var _assets_Gradient__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/Gradient */ "./src/smart-list-block/assets/Gradient.js");
 /* harmony import */ var _assets_Image__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assets/Image */ "./src/smart-list-block/assets/Image.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _assets_TopAlignment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/TopAlignment */ "./src/smart-list-block/assets/TopAlignment.js");
+/* harmony import */ var _assets_MiddleAlignMent__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../assets/MiddleAlignMent */ "./src/smart-list-block/assets/MiddleAlignMent.js");
+/* harmony import */ var _assets_BottomAlignment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/BottomAlignment */ "./src/smart-list-block/assets/BottomAlignment.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__);
+
+
+
 
 
 
@@ -3699,69 +3858,82 @@ __webpack_require__.r(__webpack_exports__);
 const generalTabItems = [{
   name: "presets",
   title: "Presets",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
 }, {
   name: "styles",
   title: "Style",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
 }];
 const contentTabItems = [{
   name: "general",
   title: "General",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
 }, {
   name: "styles",
   title: "Style",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
 }];
 const iconImageTabItems = [{
   name: "general",
   title: "General",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
 }, {
   name: "styles",
   title: "Style",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
 }];
 const presetTabItems = [{
   name: "list",
   title: "List",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "descriptionList",
   title: "Description List",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 const orientationTabItems = [{
   name: "horizontal",
   title: "Horizontal",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "vertical",
   title: "Vertical",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 const iconTabItems = [{
   name: "iconSet",
   title: "Icon Set",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "custom",
   title: "Custom",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 const alignmentTabItems = [{
   name: "left",
   title: "Left",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_LeftAlign__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_LeftAlign__WEBPACK_IMPORTED_MODULE_6__["default"], {})
 }, {
   name: "center",
   title: "Center",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_MiddleAlign__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_MiddleAlign__WEBPACK_IMPORTED_MODULE_5__["default"], {})
 }, {
   name: "right",
   title: "Right",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_RightAlign__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_RightAlign__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+}];
+const iconAlignmentTabItems = [{
+  name: "top",
+  title: "Top",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_TopAlignment__WEBPACK_IMPORTED_MODULE_10__["default"], {})
+}, {
+  name: "center",
+  title: "Center",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_MiddleAlignMent__WEBPACK_IMPORTED_MODULE_11__["default"], {})
+}, {
+  name: "bottom",
+  title: "Bottom",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_BottomAlignment__WEBPACK_IMPORTED_MODULE_12__["default"], {})
 }];
 const listItems = [{
   icon: "🎯",
@@ -3802,28 +3974,28 @@ const iconPosition = [{
 const backGroundStyles = [{
   name: "solid",
   title: "solid",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
 }, {
   name: "gradient",
   title: "gradient",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
 }, {
   name: "image",
   title: "image",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
 }];
 const imageScales = [{
   name: "auto",
   title: "None",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
 }, {
   name: "cover",
   title: "Cover",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
 }, {
   name: "contain",
   title: "Contain",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
 }];
 const tags = [{
   label: "Default",
@@ -3879,11 +4051,11 @@ const fontWeight = [{
 const contentEffectItems = [{
   name: "normal",
   title: "Normal",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "hover",
   title: "Hover",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 
 /***/ },

@@ -158,7 +158,8 @@ return array(
 					'width' => 20,
 					'height' => 20,
 					'size' => 24,
-					'position' => 'before'
+					'position' => 'before',
+					'alignment' => 'center'
 				)
 			)
 		),

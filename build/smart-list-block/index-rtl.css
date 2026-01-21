@@ -50,6 +50,14 @@
   flex-direction: column;
   gap: var(--gapBetweenTitleAndDescription, 6px);
 }
+.wp-block-create-block-smart-list-block .smart-list .smart-item .render-icon {
+  flex-shrink: 0;
+  width: var(--iconSize, 20px);
+  height: var(--iconSize, 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .wp-block-create-block-smart-list-block .smart-list .smart-item.icon-before {
   flex-direction: row;
 }
@@ -69,6 +77,24 @@
 .wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top .list-content {
   align-items: flex-start;
   width: 100%;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-align-top {
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-align-center {
+  align-items: center;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-align-bottom {
+  align-items: flex-end;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top.icon-align-top {
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top.icon-align-center {
+  align-items: center;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top.icon-align-bottom {
+  align-items: flex-end;
 }
 .wp-block-create-block-smart-list-block .smart-list.has-divider.is-vertical .smart-item:not(:last-child) {
   border-bottom: calc(var(--dividerWidth, 1) * 1px) var(--dividerStyle, solid) var(--dividerColor, #dddddd);

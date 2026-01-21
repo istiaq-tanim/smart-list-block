@@ -7,6 +7,7 @@ import ImageUpload from "../../GeneralControlPanel/GeneralPanelItems/GeneralStyl
 import CustomRangeControl from "../../common/RangeControl/CustomRangeControl";
 import IconUpload from "./IconUpload";
 import SectionControlButton from "../../common/Selection/Selection";
+import Alignment from "./Alignment";
 
 function General() {
 	const { attributes, setAttributes } = useBlockContext();
@@ -44,6 +45,7 @@ function General() {
 							attributeKey="icon"
 							subKey="position"
 						></SectionControlButton>
+						<Alignment></Alignment>
 					</>
 				);
 			case "custom":

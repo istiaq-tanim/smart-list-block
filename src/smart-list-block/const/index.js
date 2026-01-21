@@ -8,6 +8,9 @@ import LeftAlign from "../assets/LeftAlign";
 import Solid from "../assets/Solid";
 import Gradient from "../assets/Gradient";
 import Image from "../assets/Image";
+import TopAlignment from "../assets/TopAlignment";
+import MiddleAlignMent from "../assets/MiddleAlignMent";
+import BottomAlignment from "../assets/BottomAlignment";
 
 export const generalTabItems = [
 	{
@@ -97,6 +100,23 @@ export const alignmentTabItems = [
 		name: "right",
 		title: "Right",
 		icon: <RightAlign></RightAlign>,
+	},
+];
+export const iconAlignmentTabItems = [
+	{
+		name: "top",
+		title: "Top",
+		icon: <TopAlignment></TopAlignment>,
+	},
+	{
+		name: "center",
+		title: "Center",
+		icon: <MiddleAlignMent></MiddleAlignMent>,
+	},
+	{
+		name: "bottom",
+		title: "Bottom",
+		icon: <BottomAlignment></BottomAlignment>,
 	},
 ];
 
