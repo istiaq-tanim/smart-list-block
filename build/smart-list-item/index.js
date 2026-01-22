@@ -26,7 +26,10 @@ function ListItemPreview({
   title,
   description,
   presetsType,
-  iconStyle
+  iconStyle,
+  iconBorderStyle,
+  radiusIcon,
+  paddingIcon
 }) {
   const TitleTag = title?.tags === "p" ? "p" : title?.tags;
   const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
@@ -34,7 +37,10 @@ function ListItemPreview({
     className: `smart-item icon-${icon.position} icon-align-${icon.alignment || "center"}`,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_RenderIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {
       icon: icon,
-      iconStyle: iconStyle
+      iconStyle: iconStyle,
+      iconBorderStyle: iconBorderStyle,
+      radiusIcon: radiusIcon,
+      paddingIcon: paddingIcon
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "list-content",
       children: [title.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TitleTag, {
@@ -68,19 +74,33 @@ __webpack_require__.r(__webpack_exports__);
 
 function RenderIcon({
   icon,
-  iconStyle
+  iconStyle,
+  iconBorderStyle,
+  paddingIcon,
+  radiusIcon
 }) {
   const hasBg = iconStyle?.show;
+  const hasBorder = iconBorderStyle.show;
   if (!icon?.show) return null;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""}`,
+    className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${hasBorder ? "has-border" : ""}`,
     style: {
       "--iconSize": `${icon?.size || 20}px`,
       "--icon-color": iconStyle.iconColor || "#757575",
       "--icon-hover-color": iconStyle.iconHoverColor || "#757575",
       "--bg-color": hasBg ? iconStyle.iconBgColor : "#EEEEEE",
       "--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "#EEEEEE",
-      padding: "10px"
+      "--iconBorderColor": iconBorderStyle.color,
+      "--iconBorderStyle": iconBorderStyle.style,
+      "--iconBorderWidth": `${iconBorderStyle.width || 1}px`,
+      "--iconPaddingTop": `${paddingIcon.top}px` || "10px",
+      "--iconPaddingRight": `${paddingIcon.right}px` || "10px",
+      "--iconPaddingBottom": `${paddingIcon.bottom}px` || "10px",
+      "--iconPaddingLeft": `${paddingIcon.left}px` || "10px",
+      "--iconRadiusTop": `${radiusIcon.top}px`,
+      "--iconRadiusRight": `${radiusIcon.right}px`,
+      "--iconRadiusBottom": `${radiusIcon.bottom}px`,
+      "--iconRadiusLeft": `${radiusIcon.left}px`
     },
     children: [icon.type === "custom" && icon.imageSource && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: icon.imageSource,

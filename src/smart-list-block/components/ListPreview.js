@@ -10,7 +10,7 @@ function ListPreview({ attributes }) {
 		iconGap,
 		divider,
 		backgroundStyle,
-		color: textColor,
+		color: backgroundColor,
 		border,
 		padding,
 		margin,
@@ -21,6 +21,9 @@ function ListPreview({ attributes }) {
 		gapTitleToDescription,
 		icon,
 		iconStyle,
+		iconBorderStyle,
+		paddingIcon,
+		radiusIcon,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -54,7 +57,6 @@ function ListPreview({ attributes }) {
 				${borderClass} ${hasHoverClass} `}
 				style={{
 					"--spaceBetween": `${spaceBetween}px`,
-					"--color": textColor,
 					"--iconSize": `${icon.size || 20}px`,
 					"--iconGap": `${iconGap}px`,
 					"--dividerColor": color,
@@ -84,18 +86,20 @@ function ListPreview({ attributes }) {
 					"--descriptionHeight": `${description.height}`,
 					"--descriptionColor": `${description.color}`,
 					"--gapBetweenTitleAndDescription": `${gapTitleToDescription}px`,
+					"--backgroundColor":
+						type === "solid" ? backgroundColor : "transparent",
+					"--backgroundGradient": type === "gradient" ? background : "none",
 					"--backgroundImage":
 						type === "image" && image ? `url(${image})` : "none",
-					"--backgroundGradient":
-						type === "gradient" && background ? background : "none",
-					"--backgroundSize": type === "image" ? backgroundSize : "auto",
 					"--overlayColor":
-						backgroundOverlay?.enabled && type === "image"
+						type === "image" && backgroundOverlay?.enabled
 							? hexToRgba(
-									backgroundOverlay.color || "#f05e31",
+									backgroundOverlay.color || "#000",
 									backgroundOverlay.opacity || 50,
 							  )
 							: "transparent",
+
+					"--backgroundSize": type === "image" ? backgroundSize : "auto",
 				}}
 			>
 				{listItems.map((item, index) => {
@@ -108,6 +112,9 @@ function ListPreview({ attributes }) {
 							title={title}
 							description={description}
 							presetsType={presetsType}
+							iconBorderStyle={iconBorderStyle}
+							paddingIcon={paddingIcon}
+							radiusIcon={radiusIcon}
 						/>
 					);
 				})}

@@ -4,24 +4,27 @@ import CustomColorPicker from "../../../../common/CustomColorPicker/CustomColorP
 import CustomRangeControl from "../../../../common/RangeControl/CustomRangeControl";
 import SectionControlButton from "../../../../common/Selection/Selection";
 
-function BorderSetting() {
+function BorderSetting({ attributeKey }) {
 	const { attributes, setAttributes } = useBlockContext();
-	const { border } = attributes;
+	const value = attributes?.[attributeKey]?.color;
 
 	const handleBorderColor = (value) => {
-		setAttributes({ border: { ...border, color: value } });
+		setAttributes({
+			[attributeKey]: { ...attributes[attributeKey], color: value },
+		});
 	};
+
 	return (
 		<div>
 			<SectionControlButton
 				label="Border Style"
 				options={dividerStyle}
-				attributeKey="border"
+				attributeKey={attributeKey}
 				subKey="style"
 			></SectionControlButton>
 			<CustomRangeControl
 				label="Border Width"
-				attributeKey="border"
+				attributeKey={attributeKey}
 				min={0}
 				max={10}
 				defaultValue={1}
@@ -29,7 +32,7 @@ function BorderSetting() {
 			></CustomRangeControl>
 			<CustomColorPicker
 				label="Border Color"
-				value={border.color}
+				value={value}
 				onChange={handleBorderColor}
 			></CustomColorPicker>
 		</div>

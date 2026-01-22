@@ -1167,7 +1167,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"before","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}}},"providesContext":{"listOrientation":"listOrientation","alignment":"alignment","presetsType":"presetsType","spaceBetween":"spaceBetween","iconGap":"iconGap","divider":"divider","backgroundStyle":"backgroundStyle","color":"color","border":"border","padding":"padding","margin":"margin","radius":"radius","title":"title","description":"description","contentEffect":"contentEffect","gapTitleToDescription":"gapTitleToDescription","icon":"icon"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#fff"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"before","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBackGroundStyle":"solid","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}},"iconBorderStyle":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"paddingIcon":{"type":"object","default":{"top":10,"right":10,"bottom":10,"left":10,"linked":true}},"radiusIcon":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"providesContext":{"listOrientation":"listOrientation","alignment":"alignment","presetsType":"presetsType","spaceBetween":"spaceBetween","iconGap":"iconGap","divider":"divider","backgroundStyle":"backgroundStyle","color":"color","border":"border","padding":"padding","margin":"margin","radius":"radius","title":"title","description":"description","contentEffect":"contentEffect","gapTitleToDescription":"gapTitleToDescription","icon":"icon"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2160,7 +2160,9 @@ function Styles() {
           show: value
         }
       })
-    }), border.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Styles_BorderSettings_BorderSettings__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), border.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Styles_BorderSettings_BorderSettings__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      attributeKey: "border"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_2__["default"], {
       values: attributes.radius,
       label: "Border Radius",
       onChange: values => setAttributes({
@@ -2208,18 +2210,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function BorderSetting() {
+function BorderSetting({
+  attributeKey
+}) {
   const {
     attributes,
     setAttributes
   } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  const {
-    border
-  } = attributes;
+  const value = attributes?.[attributeKey]?.color;
   const handleBorderColor = value => {
     setAttributes({
-      border: {
-        ...border,
+      [attributeKey]: {
+        ...attributes[attributeKey],
         color: value
       }
     });
@@ -2228,18 +2230,18 @@ function BorderSetting() {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__["default"], {
       label: "Border Style",
       options: _const__WEBPACK_IMPORTED_MODULE_0__.dividerStyle,
-      attributeKey: "border",
+      attributeKey: attributeKey,
       subKey: "style"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Border Width",
-      attributeKey: "border",
+      attributeKey: attributeKey,
       min: 0,
       max: 10,
       defaultValue: 1,
       subKey: "width"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Border Color",
-      value: border.color,
+      value: value,
       onChange: handleBorderColor
     })]
   });
@@ -2286,7 +2288,6 @@ function Alignment() {
       }
     });
   };
-  console.log(icon);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Alignment"
@@ -2612,10 +2613,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
 /* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
 /* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
-/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
-/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/SpacingControl/SpacingControl */ "./src/smart-list-block/components/InspectorControl/common/SpacingControl/SpacingControl.js");
+/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
+/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
+/* harmony import */ var _GeneralControlPanel_GeneralPanelItems_Styles_BorderSettings_BorderSettings__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../GeneralControlPanel/GeneralPanelItems/Styles/BorderSettings/BorderSettings */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/Styles/BorderSettings/BorderSettings.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__);
+
+
 
 
 
@@ -2629,7 +2634,8 @@ function Style() {
     setAttributes
   } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
   const {
-    iconStyle
+    iconStyle,
+    iconBorderStyle
   } = attributes;
   const selectedTab = iconStyle.type;
   const selectedEffectTab = iconStyle.effect;
@@ -2683,8 +2689,8 @@ function Style() {
       });
     }
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
       label: "Icon Background",
       checked: iconStyle.show,
       onChange: value => setAttributes({
@@ -2693,29 +2699,52 @@ function Style() {
           show: value
         }
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_5__["default"], {
       tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconEffectTabItems,
       onHandleTab: handleEffectTab,
       selectedTab: selectedEffectTab,
       variant: "only-text"
-    }), iconStyle.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), iconStyle.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_3__["default"], {
         label: "Choose Background Shape"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_5__["default"], {
         tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconBackgroundTabsItems,
         onHandleTab: handleTab,
         selectedTab: selectedTab,
         variant: "alignment",
         color: "#757575"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Icon Background",
         value: iconStyle.effect === "normal" ? iconStyle.iconBgColor : iconStyle.iconHoverBgColor,
         onChange: handleIconBackgroundColor
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Icon Color",
       value: iconStyle.effect === "normal" ? iconStyle.iconColor : iconStyle.iconHoverColor,
       onChange: handleIconColor
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      label: "Border",
+      checked: iconBorderStyle.show,
+      onChange: value => setAttributes({
+        iconBorderStyle: {
+          ...iconBorderStyle,
+          show: value
+        }
+      })
+    }), iconBorderStyle.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_GeneralControlPanel_GeneralPanelItems_Styles_BorderSettings_BorderSettings__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      attributeKey: "iconBorderStyle"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      values: attributes.radiusIcon,
+      label: "Border Radius",
+      onChange: values => setAttributes({
+        radiusIcon: values
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_SpacingControl_SpacingControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      values: attributes.paddingIcon,
+      label: "Padding",
+      onChange: values => setAttributes({
+        paddingIcon: values
+      })
     })]
   });
 }
@@ -3574,7 +3603,10 @@ function ListItemPreview({
   title,
   description,
   presetsType,
-  iconStyle
+  iconStyle,
+  iconBorderStyle,
+  radiusIcon,
+  paddingIcon
 }) {
   const TitleTag = title?.tags === "p" ? "p" : title?.tags;
   const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
@@ -3582,7 +3614,10 @@ function ListItemPreview({
     className: `smart-item icon-${icon.position} icon-align-${icon.alignment || "center"}`,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_RenderIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {
       icon: icon,
-      iconStyle: iconStyle
+      iconStyle: iconStyle,
+      iconBorderStyle: iconBorderStyle,
+      radiusIcon: radiusIcon,
+      paddingIcon: paddingIcon
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "list-content",
       children: [title.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TitleTag, {
@@ -3679,7 +3714,7 @@ function ListPreview({
     iconGap,
     divider,
     backgroundStyle,
-    color: textColor,
+    color: backgroundColor,
     border,
     padding,
     margin,
@@ -3689,7 +3724,10 @@ function ListPreview({
     contentEffect,
     gapTitleToDescription,
     icon,
-    iconStyle
+    iconStyle,
+    iconBorderStyle,
+    paddingIcon,
+    radiusIcon
   } = attributes;
   const {
     width,
@@ -3728,7 +3766,6 @@ function ListPreview({
 				${borderClass} ${hasHoverClass} `,
       style: {
         "--spaceBetween": `${spaceBetween}px`,
-        "--color": textColor,
         "--iconSize": `${icon.size || 20}px`,
         "--iconGap": `${iconGap}px`,
         "--dividerColor": color,
@@ -3758,10 +3795,11 @@ function ListPreview({
         "--descriptionHeight": `${description.height}`,
         "--descriptionColor": `${description.color}`,
         "--gapBetweenTitleAndDescription": `${gapTitleToDescription}px`,
+        "--backgroundColor": type === "solid" ? backgroundColor : "transparent",
+        "--backgroundGradient": type === "gradient" ? background : "none",
         "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
-        "--backgroundGradient": type === "gradient" && background ? background : "none",
-        "--backgroundSize": type === "image" ? backgroundSize : "auto",
-        "--overlayColor": backgroundOverlay?.enabled && type === "image" ? (0,_utils__WEBPACK_IMPORTED_MODULE_1__.hexToRgba)(backgroundOverlay.color || "#f05e31", backgroundOverlay.opacity || 50) : "transparent"
+        "--overlayColor": type === "image" && backgroundOverlay?.enabled ? (0,_utils__WEBPACK_IMPORTED_MODULE_1__.hexToRgba)(backgroundOverlay.color || "#000", backgroundOverlay.opacity || 50) : "transparent",
+        "--backgroundSize": type === "image" ? backgroundSize : "auto"
       },
       children: _const__WEBPACK_IMPORTED_MODULE_0__.listItems.map((item, index) => {
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_ListItemPreview__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -3770,7 +3808,10 @@ function ListPreview({
           iconStyle: iconStyle,
           title: title,
           description: description,
-          presetsType: presetsType
+          presetsType: presetsType,
+          iconBorderStyle: iconBorderStyle,
+          paddingIcon: paddingIcon,
+          radiusIcon: radiusIcon
         }, index);
       })
     })
@@ -3797,19 +3838,33 @@ __webpack_require__.r(__webpack_exports__);
 
 function RenderIcon({
   icon,
-  iconStyle
+  iconStyle,
+  iconBorderStyle,
+  paddingIcon,
+  radiusIcon
 }) {
   const hasBg = iconStyle?.show;
+  const hasBorder = iconBorderStyle.show;
   if (!icon?.show) return null;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""}`,
+    className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${hasBorder ? "has-border" : ""}`,
     style: {
       "--iconSize": `${icon?.size || 20}px`,
       "--icon-color": iconStyle.iconColor || "#757575",
       "--icon-hover-color": iconStyle.iconHoverColor || "#757575",
       "--bg-color": hasBg ? iconStyle.iconBgColor : "#EEEEEE",
       "--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "#EEEEEE",
-      padding: "10px"
+      "--iconBorderColor": iconBorderStyle.color,
+      "--iconBorderStyle": iconBorderStyle.style,
+      "--iconBorderWidth": `${iconBorderStyle.width || 1}px`,
+      "--iconPaddingTop": `${paddingIcon.top}px` || "10px",
+      "--iconPaddingRight": `${paddingIcon.right}px` || "10px",
+      "--iconPaddingBottom": `${paddingIcon.bottom}px` || "10px",
+      "--iconPaddingLeft": `${paddingIcon.left}px` || "10px",
+      "--iconRadiusTop": `${radiusIcon.top}px`,
+      "--iconRadiusRight": `${radiusIcon.right}px`,
+      "--iconRadiusBottom": `${radiusIcon.bottom}px`,
+      "--iconRadiusLeft": `${radiusIcon.left}px`
     },
     children: [icon.type === "custom" && icon.imageSource && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: icon.imageSource,

@@ -11,7 +11,6 @@ function Alignment() {
 		setAttributes({ icon: { ...icon, alignment: tabName } });
 	};
 
-	console.log(icon);
 	return (
 		<div>
 			<Label label="Alignment"></Label>

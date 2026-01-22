@@ -6,6 +6,9 @@ function ListItemPreview({
 	description,
 	presetsType,
 	iconStyle,
+	iconBorderStyle,
+	radiusIcon,
+	paddingIcon,
 }) {
 	const TitleTag = title?.tags === "p" ? "p" : title?.tags;
 	const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
@@ -16,7 +19,13 @@ function ListItemPreview({
 				icon.alignment || "center"
 			}`}
 		>
-			<RenderIcon icon={icon} iconStyle={iconStyle} />
+			<RenderIcon
+				icon={icon}
+				iconStyle={iconStyle}
+				iconBorderStyle={iconBorderStyle}
+				radiusIcon={radiusIcon}
+				paddingIcon={paddingIcon}
+			/>
 			<div className="list-content">
 				{title.show && (
 					<TitleTag

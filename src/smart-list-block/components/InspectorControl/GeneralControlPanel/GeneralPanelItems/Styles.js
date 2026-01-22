@@ -27,7 +27,7 @@ function Styles() {
 					setAttributes({ border: { ...border, show: value } })
 				}
 			></ToggleControlButton>
-			{border.show && <BorderSetting></BorderSetting>}
+			{border.show && <BorderSetting attributeKey="border"></BorderSetting>}
 			<SpacingControl
 				values={attributes.radius}
 				label="Border Radius"

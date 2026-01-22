@@ -2,12 +2,14 @@ import { iconBackgroundTabsItems, iconEffectTabItems } from "../../../../const";
 import useBlockContext from "../../../../hooks/useBlockContext";
 import CustomColorPicker from "../../common/CustomColorPicker/CustomColorPicker";
 import Label from "../../common/Label";
+import SpacingControl from "../../common/SpacingControl/SpacingControl";
 import Tabs from "../../common/Tabs/Tabs";
 import ToggleControlButton from "../../common/ToggleButton/ToggleButton";
+import BorderSetting from "../../GeneralControlPanel/GeneralPanelItems/Styles/BorderSettings/BorderSettings";
 
 function Style() {
 	const { attributes, setAttributes } = useBlockContext();
-	const { iconStyle } = attributes;
+	const { iconStyle, iconBorderStyle } = attributes;
 	const selectedTab = iconStyle.type;
 	const selectedEffectTab = iconStyle.effect;
 
@@ -83,6 +85,28 @@ function Style() {
 				}
 				onChange={handleIconColor}
 			></CustomColorPicker>
+			<ToggleControlButton
+				label="Border"
+				checked={iconBorderStyle.show}
+				onChange={(value) =>
+					setAttributes({
+						iconBorderStyle: { ...iconBorderStyle, show: value },
+					})
+				}
+			></ToggleControlButton>
+			{iconBorderStyle.show && (
+				<BorderSetting attributeKey="iconBorderStyle"></BorderSetting>
+			)}
+			<SpacingControl
+				values={attributes.radiusIcon}
+				label="Border Radius"
+				onChange={(values) => setAttributes({ radiusIcon: values })}
+			></SpacingControl>
+			<SpacingControl
+				values={attributes.paddingIcon}
+				label="Padding"
+				onChange={(values) => setAttributes({ paddingIcon: values })}
+			></SpacingControl>
 		</div>
 	);
 }

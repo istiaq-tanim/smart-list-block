@@ -82,7 +82,7 @@ return array(
 			),
 			'color' => array(
 				'type' => 'string',
-				'default' => '#000'
+				'default' => '#fff'
 			),
 			'padding' => array(
 				'type' => 'object',
@@ -167,11 +167,41 @@ return array(
 				'default' => array(
 					'show' => false,
 					'type' => 'square',
+					'iconBackGroundStyle' => 'solid',
 					'iconBgColor' => '#EEEEEE',
 					'iconHoverBgColor' => '#EEEEEE',
 					'iconColor' => '#757575',
 					'iconHoverColor' => '#757575',
 					'effect' => 'normal'
+				)
+			),
+			'iconBorderStyle' => array(
+				'type' => 'object',
+				'default' => array(
+					'show' => false,
+					'width' => 1,
+					'style' => 'solid',
+					'color' => '#f05e31'
+				)
+			),
+			'paddingIcon' => array(
+				'type' => 'object',
+				'default' => array(
+					'top' => 10,
+					'right' => 10,
+					'bottom' => 10,
+					'left' => 10,
+					'linked' => true
+				)
+			),
+			'radiusIcon' => array(
+				'type' => 'object',
+				'default' => array(
+					'top' => 0,
+					'right' => 0,
+					'bottom' => 0,
+					'left' => 0,
+					'linked' => true
 				)
 			)
 		),

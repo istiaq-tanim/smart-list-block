@@ -77,7 +77,7 @@
     },
     "color": {
       "type": "string",
-      "default": "#000"
+      "default": "#fff"
     },
     "padding": {
       "type": "object",
@@ -162,11 +162,41 @@
       "default": {
         "show": false,
         "type": "square",
+        "iconBackGroundStyle": "solid",
         "iconBgColor": "#EEEEEE",
         "iconHoverBgColor": "#EEEEEE",
         "iconColor": "#757575",
         "iconHoverColor": "#757575",
         "effect": "normal"
+      }
+    },
+    "iconBorderStyle": {
+      "type": "object",
+      "default": {
+        "show": false,
+        "width": 1,
+        "style": "solid",
+        "color": "#f05e31"
+      }
+    },
+    "paddingIcon": {
+      "type": "object",
+      "default": {
+        "top": 10,
+        "right": 10,
+        "bottom": 10,
+        "left": 10,
+        "linked": true
+      }
+    },
+    "radiusIcon": {
+      "type": "object",
+      "default": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "linked": true
       }
     }
   },
