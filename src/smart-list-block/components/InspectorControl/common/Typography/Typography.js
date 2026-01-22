@@ -35,7 +35,7 @@ function Typography({ label, onChange = () => {}, values, attributeKey }) {
 				</div>
 			</div>
 			{isOpen && (
-				<Popover onClose={() => setIsOpen(false)} position="top right">
+				<Popover onClose={() => setIsOpen(false)} placement="left-start">
 					<div style={{ padding: "20px", minWidth: "450px" }}>
 						<h3 style={{ marginTop: 0, marginBottom: "16px" }}>
 							{label} Typography

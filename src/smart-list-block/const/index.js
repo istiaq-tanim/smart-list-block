@@ -91,6 +91,18 @@ export const iconTabItems = [
 		icon: <DescriptionListIcon></DescriptionListIcon>,
 	},
 ];
+export const iconEffectTabItems = [
+	{
+		name: "normal",
+		title: "Normal",
+		icon: <ListIcon></ListIcon>,
+	},
+	{
+		name: "hover",
+		title: "Hover",
+		icon: <DescriptionListIcon></DescriptionListIcon>,
+	},
+];
 export const iconBackgroundTabsItems = [
 	{
 		name: "square",
@@ -156,18 +168,18 @@ export const iconAlignmentTabItems = [
 export const listItems = [
 	{
 		icon: "🎯",
-		title: "List Item 1",
-		description: "This is the firsts item description",
+		title: "Bangladesh",
+		description: "Beautiful Bangladesh",
 	},
 	{
 		icon: "✨",
-		title: "List Item 2",
-		description: "This is the second item description",
+		title: "Bangladesh",
+		description: "Beautiful Bangladesh",
 	},
 	{
 		icon: "🚀",
-		title: "List Item 3",
-		description: "This is the thirds item description",
+		title: "Bangladesh",
+		description: "Beautiful Bangladesh",
 	},
 ];
 

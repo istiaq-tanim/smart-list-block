@@ -165,8 +165,13 @@ return array(
 			'iconStyle' => array(
 				'type' => 'object',
 				'default' => array(
-					'show' => true,
-					'type' => 'square'
+					'show' => false,
+					'type' => 'square',
+					'iconBgColor' => '#EEEEEE',
+					'iconHoverBgColor' => '#EEEEEE',
+					'iconColor' => '#757575',
+					'iconHoverColor' => '#757575',
+					'effect' => 'normal'
 				)
 			)
 		),

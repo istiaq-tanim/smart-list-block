@@ -62,13 +62,43 @@
 				flex-shrink: 0;
 				width: var(--iconSize, 20px);
 				height: var(--iconSize, 20px);
+				background-color: var(--bg-color);
+				color: var(--icon-color);
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				transition: all 0.2s ease;
+			}
+			.render-icon:hover {
+				background-color: var(--bg-hover-color);
+				color: var(--icon-hover-color);
 			}
 
 			.bg-circle {
 				border-radius: 50%;
+			}
+
+			.bg-triangle {
+				transform: rotate(45deg);
+			}
+
+			.bg-triangle svg {
+				transform: rotate(-45deg);
+			}
+
+			.bg-diamond {
+				clip-path: polygon(
+					50% 0%,
+					100% 25%,
+					100% 75%,
+					50% 100%,
+					0% 75%,
+					0% 25%
+				);
+			}
+
+			.bg-circleCurve {
+				border-radius: 40% 60% 55% 45%;
 			}
 
 			&.icon-before {

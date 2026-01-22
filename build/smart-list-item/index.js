@@ -75,7 +75,12 @@ function RenderIcon({
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""}`,
     style: {
-      "--iconSize": `${icon?.size || 20}px`
+      "--iconSize": `${icon?.size || 20}px`,
+      "--icon-color": iconStyle.iconColor || "#757575",
+      "--icon-hover-color": iconStyle.iconHoverColor || "#757575",
+      "--bg-color": hasBg ? iconStyle.iconBgColor : "#EEEEEE",
+      "--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "#EEEEEE",
+      padding: "10px"
     },
     children: [icon.type === "custom" && icon.imageSource && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: icon.imageSource,
@@ -92,7 +97,7 @@ function RenderIcon({
       const IconComponent = component;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(IconComponent, {
         size: icon.size || 20,
-        color: icon.color || "#757575"
+        color: "currentColor"
       });
     })()]
   });

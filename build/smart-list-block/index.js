@@ -1167,7 +1167,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"before","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":true,"type":"square"}}},"providesContext":{"listOrientation":"listOrientation","alignment":"alignment","presetsType":"presetsType","spaceBetween":"spaceBetween","iconGap":"iconGap","divider":"divider","backgroundStyle":"backgroundStyle","color":"color","border":"border","padding":"padding","margin":"margin","radius":"radius","title":"title","description":"description","contentEffect":"contentEffect","gapTitleToDescription":"gapTitleToDescription","icon":"icon"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"before","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}}},"providesContext":{"listOrientation":"listOrientation","alignment":"alignment","presetsType":"presetsType","spaceBetween":"spaceBetween","iconGap":"iconGap","divider":"divider","backgroundStyle":"backgroundStyle","color":"color","border":"border","padding":"padding","margin":"margin","radius":"radius","title":"title","description":"description","contentEffect":"contentEffect","gapTitleToDescription":"gapTitleToDescription","icon":"icon"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2610,11 +2610,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../const */ "./src/smart-list-block/const/index.js");
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
-/* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
-/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
-/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/CustomColorPicker/CustomColorPicker */ "./src/smart-list-block/components/InspectorControl/common/CustomColorPicker/CustomColorPicker.js");
+/* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
+/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
+/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -2630,6 +2632,7 @@ function Style() {
     iconStyle
   } = attributes;
   const selectedTab = iconStyle.type;
+  const selectedEffectTab = iconStyle.effect;
   const handleTab = tabName => {
     setAttributes({
       iconStyle: {
@@ -2638,8 +2641,50 @@ function Style() {
       }
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  const handleEffectTab = tabName => {
+    setAttributes({
+      iconStyle: {
+        ...iconStyle,
+        effect: tabName
+      }
+    });
+  };
+  const handleIconBackgroundColor = value => {
+    if (iconStyle.effect === "normal") {
+      setAttributes({
+        iconStyle: {
+          ...iconStyle,
+          iconBgColor: value
+        }
+      });
+    } else if (iconStyle.effect === "hover") {
+      setAttributes({
+        iconStyle: {
+          ...iconStyle,
+          iconHoverBgColor: value
+        }
+      });
+    }
+  };
+  const handleIconColor = value => {
+    if (iconStyle.effect === "normal") {
+      setAttributes({
+        iconStyle: {
+          ...iconStyle,
+          iconColor: value
+        }
+      });
+    } else if (iconStyle.effect === "hover") {
+      setAttributes({
+        iconStyle: {
+          ...iconStyle,
+          iconHoverColor: value
+        }
+      });
+    }
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
       label: "Icon Background",
       checked: iconStyle.show,
       onChange: value => setAttributes({
@@ -2648,20 +2693,29 @@ function Style() {
           show: value
         }
       })
-    }), iconStyle.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconEffectTabItems,
+      onHandleTab: handleEffectTab,
+      selectedTab: selectedEffectTab,
+      variant: "only-text"
+    }), iconStyle.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_3__["default"], {
         label: "Choose Background Shape"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
         tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconBackgroundTabsItems,
         onHandleTab: handleTab,
         selectedTab: selectedTab,
         variant: "alignment",
         color: "#757575"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(CustomColorPicker, {
-        label: "Icon Color",
-        value: title.color,
-        onChange: handleTextColor
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: "Icon Background",
+        value: iconStyle.effect === "normal" ? iconStyle.iconBgColor : iconStyle.iconHoverBgColor,
+        onChange: handleIconBackgroundColor
       })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      label: "Icon Color",
+      value: iconStyle.effect === "normal" ? iconStyle.iconColor : iconStyle.iconHoverColor,
+      onChange: handleIconColor
     })]
   });
 }
@@ -2745,7 +2799,7 @@ function CustomColorPicker({
         })]
       })
     }), isOpen && anchorRef.current && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Popover, {
-      position: "middle right",
+      placement: "left-start",
       onClose: () => setIsOpen(false),
       className: "color-popover",
       usePortal: false,
@@ -3438,7 +3492,7 @@ function Typography({
       })
     }), isOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Popover, {
       onClose: () => setIsOpen(false),
-      position: "top right",
+      placement: "left-start",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
         style: {
           padding: "20px",
@@ -3750,7 +3804,12 @@ function RenderIcon({
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""}`,
     style: {
-      "--iconSize": `${icon?.size || 20}px`
+      "--iconSize": `${icon?.size || 20}px`,
+      "--icon-color": iconStyle.iconColor || "#757575",
+      "--icon-hover-color": iconStyle.iconHoverColor || "#757575",
+      "--bg-color": hasBg ? iconStyle.iconBgColor : "#EEEEEE",
+      "--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "#EEEEEE",
+      padding: "10px"
     },
     children: [icon.type === "custom" && icon.imageSource && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: icon.imageSource,
@@ -3767,7 +3826,7 @@ function RenderIcon({
       const IconComponent = component;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(IconComponent, {
         size: icon.size || 20,
-        color: icon.color || "#757575"
+        color: "currentColor"
       });
     })()]
   });
@@ -4067,6 +4126,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   generalTabItems: () => (/* binding */ generalTabItems),
 /* harmony export */   iconAlignmentTabItems: () => (/* binding */ iconAlignmentTabItems),
 /* harmony export */   iconBackgroundTabsItems: () => (/* binding */ iconBackgroundTabsItems),
+/* harmony export */   iconEffectTabItems: () => (/* binding */ iconEffectTabItems),
 /* harmony export */   iconImageTabItems: () => (/* binding */ iconImageTabItems),
 /* harmony export */   iconPosition: () => (/* binding */ iconPosition),
 /* harmony export */   iconTabItems: () => (/* binding */ iconTabItems),
@@ -4171,6 +4231,15 @@ const iconTabItems = [{
   title: "Custom",
   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
+const iconEffectTabItems = [{
+  name: "normal",
+  title: "Normal",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+}, {
+  name: "hover",
+  title: "Hover",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+}];
 const iconBackgroundTabsItems = [{
   name: "square",
   title: "Square",
@@ -4220,16 +4289,16 @@ const iconAlignmentTabItems = [{
 }];
 const listItems = [{
   icon: "🎯",
-  title: "List Item 1",
-  description: "This is the firsts item description"
+  title: "Bangladesh",
+  description: "Beautiful Bangladesh"
 }, {
   icon: "✨",
-  title: "List Item 2",
-  description: "This is the second item description"
+  title: "Bangladesh",
+  description: "Beautiful Bangladesh"
 }, {
   icon: "🚀",
-  title: "List Item 3",
-  description: "This is the thirds item description"
+  title: "Bangladesh",
+  description: "Beautiful Bangladesh"
 }];
 const dividerStyle = [{
   label: "Solid",

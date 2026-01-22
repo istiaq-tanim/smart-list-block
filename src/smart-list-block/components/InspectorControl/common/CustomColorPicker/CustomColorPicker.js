@@ -51,7 +51,7 @@ function CustomColorPicker({
 			</div>
 			{isOpen && anchorRef.current && (
 				<Popover
-					position="middle right"
+					placement="left-start"
 					onClose={() => setIsOpen(false)}
 					className="color-popover"
 					usePortal={false}
