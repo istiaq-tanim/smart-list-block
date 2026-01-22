@@ -3,6 +3,7 @@ import {
 	BlockControls,
 	InspectorControls,
 	useBlockProps,
+	InnerBlocks,
 } from "@wordpress/block-editor";
 import "./editor.scss";
 
@@ -54,7 +55,13 @@ export default function Edit({ attributes, setAttributes }) {
 				<ContentControlPanel></ContentControlPanel>
 			</InspectorControls>
 			<div {...blockProps}>
-				<ListPreview></ListPreview>
+				<ListPreview attributes={attributes}></ListPreview>
+				{/* <InnerBlocks
+					allowedBlocks={["create-block/smart-list-item"]}
+					template={[]}
+					templateLock={false}
+					renderAppender={() => <InnerBlocks.ButtonBlockAppender />}
+				/> */}
 			</div>
 		</BlockProvider>
 	);

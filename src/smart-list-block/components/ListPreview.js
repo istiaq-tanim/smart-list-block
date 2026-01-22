@@ -1,10 +1,7 @@
-import ListClickIcon from "../assets/ListClickIcon";
 import { listItems } from "../const";
-import useBlockContext from "../hooks/useBlockContext";
-import { getBackgroundValue, hexToRgba } from "../utils";
-import RenderIcon from "./RenderIcon";
-function ListPreview() {
-	const { attributes } = useBlockContext();
+import { hexToRgba } from "../utils";
+import ListItemPreview from "./ListItemPreview";
+function ListPreview({ attributes }) {
 	const {
 		listOrientation,
 		alignment,
@@ -23,6 +20,7 @@ function ListPreview() {
 		contentEffect,
 		gapTitleToDescription,
 		icon,
+		iconStyle,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -40,8 +38,6 @@ function ListPreview() {
 	const dividerClass = show ? "has-divider" : "";
 	const borderClass = borderShow ? "has-border" : "";
 	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
-	const TitleTag = title?.tags === "p" ? "p" : title?.tags;
-	const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
 
 	return (
 		<div
@@ -104,36 +100,15 @@ function ListPreview() {
 			>
 				{listItems.map((item, index) => {
 					return (
-						<li
-							className={`smart-item icon-${icon.position} icon-align-${
-								icon.alignment || "center"
-							}`}
+						<ListItemPreview
 							key={index}
-						>
-							<RenderIcon icon={icon}></RenderIcon>
-							<div className="list-content">
-								{title.show && (
-									<TitleTag
-										className={
-											title?.tags === "p" ? "title" : "title-without-size"
-										}
-									>
-										{item.title}
-									</TitleTag>
-								)}
-								{(presetsType !== "list" || description.show) && (
-									<DescriptionTag
-										className={
-											description?.tags === "p"
-												? "description"
-												: "description-without-size"
-										}
-									>
-										{item.description}
-									</DescriptionTag>
-								)}
-							</div>
-						</li>
+							item={item}
+							icon={icon}
+							iconStyle={iconStyle}
+							title={title}
+							description={description}
+							presetsType={presetsType}
+						/>
 					);
 				})}
 			</ul>

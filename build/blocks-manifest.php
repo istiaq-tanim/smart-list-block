@@ -154,19 +154,79 @@ return array(
 					'show' => true,
 					'type' => 'iconSet',
 					'imageSource' => '',
-					'iconSourceId' => '',
+					'iconSourceId' => 'star',
 					'width' => 20,
 					'height' => 20,
 					'size' => 24,
 					'position' => 'before',
 					'alignment' => 'center'
 				)
+			),
+			'iconStyle' => array(
+				'type' => 'object',
+				'default' => array(
+					'show' => true,
+					'type' => 'square'
+				)
 			)
+		),
+		'providesContext' => array(
+			'listOrientation' => 'listOrientation',
+			'alignment' => 'alignment',
+			'presetsType' => 'presetsType',
+			'spaceBetween' => 'spaceBetween',
+			'iconGap' => 'iconGap',
+			'divider' => 'divider',
+			'backgroundStyle' => 'backgroundStyle',
+			'color' => 'color',
+			'border' => 'border',
+			'padding' => 'padding',
+			'margin' => 'margin',
+			'radius' => 'radius',
+			'title' => 'title',
+			'description' => 'description',
+			'contentEffect' => 'contentEffect',
+			'gapTitleToDescription' => 'gapTitleToDescription',
+			'icon' => 'icon'
 		),
 		'textdomain' => 'smart-list-block',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
+	),
+	'smart-list-item' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'create-block/smart-list-item',
+		'version' => '1.0.0',
+		'title' => 'Smart List Item',
+		'category' => 'smart-list',
+		'parent' => array(
+			'create-block/smart-list-block'
+		),
+		'icon' => 'minus',
+		'description' => 'Individual item in a Smart List',
+		'supports' => array(
+			'html' => false,
+			'reusable' => false
+		),
+		'attributes' => array(
+			'title' => array(
+				'type' => 'string',
+				'default' => 'List Item'
+			)
+		),
+		'usesContext' => array(
+			'listOrientation',
+			'presetsType',
+			'title',
+			'description',
+			'icon'
+		),
+		'textdomain' => 'smart-list-block',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css'
 	)
 );

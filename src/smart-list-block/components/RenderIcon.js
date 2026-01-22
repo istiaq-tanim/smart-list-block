@@ -1,11 +1,11 @@
 import { getIcon } from "../const/icons";
 
-export default function RenderIcon({ icon }) {
+export default function RenderIcon({ icon, iconStyle }) {
+	const hasBg = iconStyle?.show;
 	if (!icon?.show) return null;
-
 	return (
 		<div
-			className="render-icon"
+			className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""}`}
 			style={{
 				"--iconSize": `${icon?.size || 20}px`,
 			}}

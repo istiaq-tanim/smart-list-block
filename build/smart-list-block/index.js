@@ -100,6 +100,83 @@ function Circle({
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/CircleCurve.js"
+/*!****************************************************!*\
+  !*** ./src/smart-list-block/assets/CircleCurve.js ***!
+  \****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function CircleCurve({
+  size = 16,
+  color = "currentColor"
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 22 23",
+    fill: "none",
+    style: {
+      color
+    },
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M10.7567 0.0990666C10.8658 -0.032998 11.0682 -0.0329982 11.1773 0.0990665L11.8392 0.900519C11.9338 1.01506 12.1027 1.03281 12.2191 0.940442L13.0332 0.294134C13.1673 0.187634 13.3653 0.229714 13.4446 0.381572L13.9254 1.30314C13.9942 1.43485 14.1557 1.48733 14.2887 1.42117L15.2194 0.958249C15.3728 0.881968 15.5576 0.964288 15.6036 1.1293L15.8823 2.13071C15.9222 2.27383 16.0692 2.35874 16.2131 2.32168L17.2197 2.06239C17.3856 2.01966 17.5493 2.13862 17.56 2.30958L17.6244 3.34706C17.6336 3.49534 17.7598 3.60897 17.9083 3.60263L18.9468 3.55829C19.1179 3.55098 19.2533 3.70139 19.2282 3.87082L19.0755 4.89903C19.0537 5.04598 19.1535 5.18337 19.3 5.20803L20.3251 5.38058C20.494 5.40901 20.5952 5.58429 20.5354 5.74479L20.1723 6.71879C20.1204 6.858 20.1895 7.01313 20.3276 7.06771L21.2944 7.44962C21.4537 7.51255 21.5163 7.70503 21.4244 7.84958L20.8667 8.72681C20.787 8.85219 20.8223 9.01829 20.9461 9.10041L21.8124 9.67497C21.9551 9.76965 21.9763 9.97093 21.8563 10.0932L21.1285 10.8353C21.0244 10.9414 21.0244 11.1112 21.1285 11.2173L21.8563 11.9594C21.9763 12.0817 21.9551 12.283 21.8124 12.3776L20.9461 12.9522C20.8223 13.0343 20.787 13.2004 20.8667 13.3258L21.4244 14.203C21.5163 14.3476 21.4537 14.5401 21.2944 14.603L20.3276 14.9849C20.1895 15.0395 20.1204 15.1946 20.1723 15.3338L20.5354 16.3078C20.5952 16.4683 20.494 16.6436 20.3251 16.672L19.3 16.8446C19.1535 16.8692 19.0537 17.0066 19.0755 17.1536L19.2282 18.1818C19.2533 18.3512 19.1179 18.5016 18.9468 18.4943L17.9083 18.45C17.7598 18.4436 17.6336 18.5573 17.6244 18.7055L17.56 19.743C17.5493 19.914 17.3856 20.0329 17.2197 19.9902L16.2131 19.7309C16.0692 19.6939 15.9222 19.7788 15.8823 19.9219L15.6036 20.9233C15.5576 21.0883 15.3728 21.1706 15.2194 21.0944L14.2887 20.6314C14.1557 20.5653 13.9942 20.6178 13.9254 20.7495L13.4446 21.671C13.3653 21.8229 13.1673 21.865 13.0332 21.7585L12.2191 21.1122C12.1027 21.0198 11.9338 21.0375 11.8392 21.1521L11.1773 21.9535C11.0682 22.0856 10.8658 22.0856 10.7567 21.9535L10.0947 21.1521C10.0001 21.0375 9.83124 21.0198 9.71489 21.1122L8.90076 21.7585C8.7666 21.865 8.56863 21.8229 8.48939 21.671L8.00853 20.7495C7.9398 20.6178 7.7783 20.5653 7.64528 20.6314L6.71456 21.0944C6.5612 21.1706 6.37631 21.0883 6.33037 20.9233L6.05162 19.9219C6.01178 19.7788 5.86471 19.6939 5.72085 19.7309L4.71422 19.9902C4.54835 20.0329 4.38461 19.914 4.37399 19.743L4.30953 18.7055C4.30032 18.5573 4.17412 18.4436 4.0257 18.45L2.98716 18.4943C2.81603 18.5016 2.6806 18.3512 2.70576 18.1818L2.85841 17.1536C2.88023 17.0066 2.78041 16.8692 2.63391 16.8446L1.60885 16.672C1.43994 16.6436 1.33874 16.4683 1.39857 16.3078L1.76167 15.3338C1.81356 15.1946 1.74449 15.0395 1.60632 14.9849L0.639537 14.603C0.480228 14.5401 0.417685 14.3476 0.509579 14.203L1.06725 13.3258C1.14695 13.2004 1.11164 13.0343 0.987837 12.9522L0.121581 12.3776C-0.0211621 12.283 -0.0423179 12.0817 0.0776213 11.9594L0.805489 11.2173C0.909516 11.1112 0.909516 10.9414 0.805489 10.8353L0.0776214 10.0932C-0.0423179 9.97093 -0.0211623 9.76965 0.121581 9.67497L0.987837 9.10041C1.11164 9.01829 1.14695 8.85219 1.06725 8.72681L0.509579 7.84958C0.417686 7.70503 0.480228 7.51255 0.639536 7.44962L1.60632 7.06771C1.74449 7.01313 1.81356 6.858 1.76167 6.71879L1.39857 5.74479C1.33874 5.58429 1.43994 5.40901 1.60885 5.38058L2.63391 5.20803C2.78041 5.18337 2.88023 5.04598 2.85841 4.89903L2.70576 3.87082C2.6806 3.70139 2.81603 3.55098 2.98716 3.55829L4.0257 3.60263C4.17412 3.60897 4.30032 3.49534 4.30953 3.34706L4.37399 2.30958C4.38461 2.13862 4.54835 2.01966 4.71422 2.06239L5.72085 2.32168C5.86471 2.35874 6.01178 2.27383 6.05162 2.13071L6.33037 1.1293C6.37631 0.964289 6.5612 0.881968 6.71456 0.958249L7.64528 1.42117C7.7783 1.48733 7.9398 1.43485 8.00853 1.30314L8.48939 0.381572C8.56863 0.229714 8.7666 0.187634 8.90076 0.294134L9.71489 0.940442C9.83124 1.03281 10.0001 1.01506 10.0947 0.900519L10.7567 0.0990666Z",
+      fill: "currentColor"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CircleCurve);
+
+/***/ },
+
+/***/ "./src/smart-list-block/assets/CircleSolid.js"
+/*!****************************************************!*\
+  !*** ./src/smart-list-block/assets/CircleSolid.js ***!
+  \****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function CircleSolid({
+  size = 16,
+  color = "currentColor"
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    width: size,
+    height: size,
+    viewBox: "0 0 22 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    style: {
+      color
+    },
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("circle", {
+      cx: "10.7143",
+      cy: "10.7143",
+      r: "10.7143",
+      fill: "currentColor"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CircleSolid);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/Close.js"
 /*!**********************************************!*\
   !*** ./src/smart-list-block/assets/Close.js ***!
@@ -288,6 +365,42 @@ function DescriptionListIcon() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/Diamond.js"
+/*!************************************************!*\
+  !*** ./src/smart-list-block/assets/Diamond.js ***!
+  \************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function Diamond({
+  size = 16,
+  color = "currentColor"
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 20 23",
+    fill: "none",
+    style: {
+      color
+    },
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+      d: "M9.68377 0L19.3675 5.59091V16.7727L9.68377 22.3636L3.24249e-05 16.7727V5.59091L9.68377 0Z",
+      fill: "currentColor"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Diamond);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/Gradient.js"
 /*!*************************************************!*\
   !*** ./src/smart-list-block/assets/Gradient.js ***!
@@ -473,39 +586,6 @@ function Link() {
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Link);
-
-/***/ },
-
-/***/ "./src/smart-list-block/assets/ListClickIcon.js"
-/*!******************************************************!*\
-  !*** ./src/smart-list-block/assets/ListClickIcon.js ***!
-  \******************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-function ListClickIcon() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
-    width: "20",
-    height: "20",
-    viewBox: "0 0 24 22",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-      d: "M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z",
-      fill: "#3A292C"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-      d: "M15.2899 9.29L10.9999 13.58L8.70995 11.29C8.31995 10.9 7.68995 10.9 7.29995 11.29C6.90995 11.68 6.90995 12.31 7.29995 12.7L10.2999 15.7C10.4999 15.9 10.7499 15.99 11.0099 15.99C11.2699 15.99 11.5199 15.89 11.7199 15.7L16.7199 10.7C17.1099 10.31 17.1099 9.68 16.7199 9.29C16.3299 8.9 15.6999 8.9 15.3099 9.29H15.2899Z",
-      fill: "#3A292C"
-    })]
-  });
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListClickIcon);
 
 /***/ },
 
@@ -822,6 +902,45 @@ function Solid() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/Square.js"
+/*!***********************************************!*\
+  !*** ./src/smart-list-block/assets/Square.js ***!
+  \***********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Square({
+  size = 16,
+  color = "currentColor"
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    style: {
+      color
+    },
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+      d: "M15.6 1.2V14.4C15.6 15.0628 15.0628 15.6 14.4 15.6H1.2C0.537192 15.6 0 15.0628 0 14.4V1.2C0 0.537192 0.537192 0 1.2 0H14.4C15.0628 0 15.6 0.537192 15.6 1.2Z",
+      fill: "currentColor"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Square);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/StylesIcon.js"
 /*!***************************************************!*\
   !*** ./src/smart-list-block/assets/StylesIcon.js ***!
@@ -918,6 +1037,45 @@ function TopAlignment() {
 
 /***/ },
 
+/***/ "./src/smart-list-block/assets/Triangle.js"
+/*!*************************************************!*\
+  !*** ./src/smart-list-block/assets/Triangle.js ***!
+  \*************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function Triangle({
+  size = 16,
+  color = "currentColor"
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    width: size,
+    height: size,
+    viewBox: "0 0 23 23",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    style: {
+      color
+    },
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("rect", {
+      y: "11.2263",
+      width: "15.8763",
+      height: "15.8763",
+      transform: "rotate(-45 0 11.2263)",
+      fill: "currentColor"
+    })
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Triangle);
+
+/***/ },
+
 /***/ "./src/smart-list-block/assets/Typo.js"
 /*!*********************************************!*\
   !*** ./src/smart-list-block/assets/Typo.js ***!
@@ -1009,7 +1167,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"","width":20,"height":20,"size":24,"position":"before","alignment":"center"}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#000"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"before","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":true,"type":"square"}}},"providesContext":{"listOrientation":"listOrientation","alignment":"alignment","presetsType":"presetsType","spaceBetween":"spaceBetween","iconGap":"iconGap","divider":"divider","backgroundStyle":"backgroundStyle","color":"color","border":"border","padding":"padding","margin":"margin","radius":"radius","title":"title","description":"description","contentEffect":"contentEffect","gapTitleToDescription":"gapTitleToDescription","icon":"icon"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2450,12 +2608,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../const */ "./src/smart-list-block/const/index.js");
+/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
+/* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
+/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
+/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
 
 function Style() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-    children: "Style"
+  const {
+    attributes,
+    setAttributes
+  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  const {
+    iconStyle
+  } = attributes;
+  const selectedTab = iconStyle.type;
+  const handleTab = tabName => {
+    setAttributes({
+      iconStyle: {
+        ...iconStyle,
+        type: tabName
+      }
+    });
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      label: "Icon Background",
+      checked: iconStyle.show,
+      onChange: value => setAttributes({
+        iconStyle: {
+          ...iconStyle,
+          show: value
+        }
+      })
+    }), iconStyle.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        label: "Choose Background Shape"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconBackgroundTabsItems,
+        onHandleTab: handleTab,
+        selectedTab: selectedTab,
+        variant: "alignment",
+        color: "#757575"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(CustomColorPicker, {
+        label: "Icon Color",
+        value: title.color,
+        onChange: handleTextColor
+      })]
+    })]
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Style);
@@ -3064,7 +3271,8 @@ function SingleTab({
   tab,
   onHandleTab,
   isActive,
-  variant
+  variant,
+  color
 }) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
     role: "button",
@@ -3072,6 +3280,9 @@ function SingleTab({
     onClick: () => onHandleTab(tab.name),
     children: [tab.icon && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
       className: "tab-icon",
+      style: {
+        color: isActive ? "#fff" : "#757575"
+      },
       children: tab.icon
     }), tab.title && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
       className: "tab-title",
@@ -3285,6 +3496,55 @@ function Typography({
 
 /***/ },
 
+/***/ "./src/smart-list-block/components/ListItemPreview.js"
+/*!************************************************************!*\
+  !*** ./src/smart-list-block/components/ListItemPreview.js ***!
+  \************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _RenderIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RenderIcon */ "./src/smart-list-block/components/RenderIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function ListItemPreview({
+  item = {
+    title: "List Item",
+    description: "This is the list Description"
+  },
+  icon,
+  title,
+  description,
+  presetsType,
+  iconStyle
+}) {
+  const TitleTag = title?.tags === "p" ? "p" : title?.tags;
+  const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("li", {
+    className: `smart-item icon-${icon.position} icon-align-${icon.alignment || "center"}`,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_RenderIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      icon: icon,
+      iconStyle: iconStyle
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "list-content",
+      children: [title.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TitleTag, {
+        className: title?.tags === "p" ? "title" : "title-without-size",
+        children: item.title
+      }), (presetsType !== "list" || description.show) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(DescriptionTag, {
+        className: description?.tags === "p" ? "description" : "description-without-size",
+        children: item.description
+      })]
+    })]
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItemPreview);
+
+/***/ },
+
 /***/ "./src/smart-list-block/components/ListOrientation.js"
 /*!************************************************************!*\
   !*** ./src/smart-list-block/components/ListOrientation.js ***!
@@ -3345,23 +3605,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _assets_ListClickIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/ListClickIcon */ "./src/smart-list-block/assets/ListClickIcon.js");
-/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../const */ "./src/smart-list-block/const/index.js");
-/* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils */ "./src/smart-list-block/utils/index.js");
-/* harmony import */ var _RenderIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RenderIcon */ "./src/smart-list-block/components/RenderIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../const */ "./src/smart-list-block/const/index.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils */ "./src/smart-list-block/utils/index.js");
+/* harmony import */ var _ListItemPreview__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ListItemPreview */ "./src/smart-list-block/components/ListItemPreview.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
-
-
-function ListPreview() {
-  const {
-    attributes
-  } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_2__["default"])();
+function ListPreview({
+  attributes
+}) {
   const {
     listOrientation,
     alignment,
@@ -3379,7 +3634,8 @@ function ListPreview() {
     description,
     contentEffect,
     gapTitleToDescription,
-    icon
+    icon,
+    iconStyle
   } = attributes;
   const {
     width,
@@ -3405,9 +3661,7 @@ function ListPreview() {
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
   const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
-  const TitleTag = title?.tags === "p" ? "p" : title?.tags;
-  const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     style: {
       "--marginTop": `${margin.top}px`,
       "--marginRight": `${margin.right}px`,
@@ -3415,7 +3669,7 @@ function ListPreview() {
       "--marginLeft": `${margin.left}px`
     },
     class: "smart-list-wrapper",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("ul", {
       className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
 				${borderClass} ${hasHoverClass} `,
       style: {
@@ -3453,23 +3707,16 @@ function ListPreview() {
         "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
         "--backgroundGradient": type === "gradient" && background ? background : "none",
         "--backgroundSize": type === "image" ? backgroundSize : "auto",
-        "--overlayColor": backgroundOverlay?.enabled && type === "image" ? (0,_utils__WEBPACK_IMPORTED_MODULE_3__.hexToRgba)(backgroundOverlay.color || "#f05e31", backgroundOverlay.opacity || 50) : "transparent"
+        "--overlayColor": backgroundOverlay?.enabled && type === "image" ? (0,_utils__WEBPACK_IMPORTED_MODULE_1__.hexToRgba)(backgroundOverlay.color || "#f05e31", backgroundOverlay.opacity || 50) : "transparent"
       },
-      children: _const__WEBPACK_IMPORTED_MODULE_1__.listItems.map((item, index) => {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("li", {
-          className: `smart-item icon-${icon.position} icon-align-${icon.alignment || "center"}`,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_RenderIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            icon: icon
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-            className: "list-content",
-            children: [title.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(TitleTag, {
-              className: title?.tags === "p" ? "title" : "title-without-size",
-              children: item.title
-            }), (presetsType !== "list" || description.show) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(DescriptionTag, {
-              className: description?.tags === "p" ? "description" : "description-without-size",
-              children: item.description
-            })]
-          })]
+      children: _const__WEBPACK_IMPORTED_MODULE_0__.listItems.map((item, index) => {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_ListItemPreview__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          item: item,
+          icon: icon,
+          iconStyle: iconStyle,
+          title: title,
+          description: description,
+          presetsType: presetsType
         }, index);
       })
     })
@@ -3495,11 +3742,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function RenderIcon({
-  icon
+  icon,
+  iconStyle
 }) {
+  const hasBg = iconStyle?.show;
   if (!icon?.show) return null;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: "render-icon",
+    className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""}`,
     style: {
       "--iconSize": `${icon?.size || 20}px`
     },
@@ -3817,6 +4066,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   fontWeight: () => (/* binding */ fontWeight),
 /* harmony export */   generalTabItems: () => (/* binding */ generalTabItems),
 /* harmony export */   iconAlignmentTabItems: () => (/* binding */ iconAlignmentTabItems),
+/* harmony export */   iconBackgroundTabsItems: () => (/* binding */ iconBackgroundTabsItems),
 /* harmony export */   iconImageTabItems: () => (/* binding */ iconImageTabItems),
 /* harmony export */   iconPosition: () => (/* binding */ iconPosition),
 /* harmony export */   iconTabItems: () => (/* binding */ iconTabItems),
@@ -3839,8 +4089,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_TopAlignment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/TopAlignment */ "./src/smart-list-block/assets/TopAlignment.js");
 /* harmony import */ var _assets_MiddleAlignMent__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../assets/MiddleAlignMent */ "./src/smart-list-block/assets/MiddleAlignMent.js");
 /* harmony import */ var _assets_BottomAlignment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/BottomAlignment */ "./src/smart-list-block/assets/BottomAlignment.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _assets_Circle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/Circle */ "./src/smart-list-block/assets/Circle.js");
+/* harmony import */ var _assets_Square__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/Square */ "./src/smart-list-block/assets/Square.js");
+/* harmony import */ var _assets_Diamond__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/Diamond */ "./src/smart-list-block/assets/Diamond.js");
+/* harmony import */ var _assets_CircleCurve__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/CircleCurve */ "./src/smart-list-block/assets/CircleCurve.js");
+/* harmony import */ var _assets_Triangle__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/Triangle */ "./src/smart-list-block/assets/Triangle.js");
+/* harmony import */ var _assets_CircleSolid__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/CircleSolid */ "./src/smart-list-block/assets/CircleSolid.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__);
+
+
+
+
+
+
 
 
 
@@ -3858,82 +4120,103 @@ __webpack_require__.r(__webpack_exports__);
 const generalTabItems = [{
   name: "presets",
   title: "Presets",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
 }, {
   name: "styles",
   title: "Style",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
 }];
 const contentTabItems = [{
   name: "general",
   title: "General",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
 }, {
   name: "styles",
   title: "Style",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
 }];
 const iconImageTabItems = [{
   name: "general",
   title: "General",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_PresetIcon__WEBPACK_IMPORTED_MODULE_0__["default"], {})
 }, {
   name: "styles",
   title: "Style",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_StylesIcon__WEBPACK_IMPORTED_MODULE_1__["default"], {})
 }];
 const presetTabItems = [{
   name: "list",
   title: "List",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "descriptionList",
   title: "Description List",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 const orientationTabItems = [{
   name: "horizontal",
   title: "Horizontal",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "vertical",
   title: "Vertical",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 const iconTabItems = [{
   name: "iconSet",
   title: "Icon Set",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "custom",
   title: "Custom",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+}];
+const iconBackgroundTabsItems = [{
+  name: "square",
+  title: "Square",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Square__WEBPACK_IMPORTED_MODULE_14__["default"], {})
+}, {
+  name: "circle",
+  title: "Circle",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_CircleSolid__WEBPACK_IMPORTED_MODULE_18__["default"], {})
+}, {
+  name: "diamond",
+  title: "Diamond",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Diamond__WEBPACK_IMPORTED_MODULE_15__["default"], {})
+}, {
+  name: "triangle",
+  title: "Triangle",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Triangle__WEBPACK_IMPORTED_MODULE_17__["default"], {})
+}, {
+  name: "circleCurve",
+  title: "CircleCurve",
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_CircleCurve__WEBPACK_IMPORTED_MODULE_16__["default"], {})
 }];
 const alignmentTabItems = [{
   name: "left",
   title: "Left",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_LeftAlign__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_LeftAlign__WEBPACK_IMPORTED_MODULE_6__["default"], {})
 }, {
   name: "center",
   title: "Center",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_MiddleAlign__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_MiddleAlign__WEBPACK_IMPORTED_MODULE_5__["default"], {})
 }, {
   name: "right",
   title: "Right",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_RightAlign__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_RightAlign__WEBPACK_IMPORTED_MODULE_4__["default"], {})
 }];
 const iconAlignmentTabItems = [{
   name: "top",
   title: "Top",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_TopAlignment__WEBPACK_IMPORTED_MODULE_10__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_TopAlignment__WEBPACK_IMPORTED_MODULE_10__["default"], {})
 }, {
   name: "center",
   title: "Center",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_MiddleAlignMent__WEBPACK_IMPORTED_MODULE_11__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_MiddleAlignMent__WEBPACK_IMPORTED_MODULE_11__["default"], {})
 }, {
   name: "bottom",
   title: "Bottom",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_BottomAlignment__WEBPACK_IMPORTED_MODULE_12__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_BottomAlignment__WEBPACK_IMPORTED_MODULE_12__["default"], {})
 }];
 const listItems = [{
   icon: "🎯",
@@ -3974,28 +4257,28 @@ const iconPosition = [{
 const backGroundStyles = [{
   name: "solid",
   title: "solid",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
 }, {
   name: "gradient",
   title: "gradient",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
 }, {
   name: "image",
   title: "image",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
 }];
 const imageScales = [{
   name: "auto",
   title: "None",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Solid__WEBPACK_IMPORTED_MODULE_7__["default"], {})
 }, {
   name: "cover",
   title: "Cover",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Gradient__WEBPACK_IMPORTED_MODULE_8__["default"], {})
 }, {
   name: "contain",
   title: "Contain",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {})
 }];
 const tags = [{
   label: "Default",
@@ -4051,11 +4334,11 @@ const fontWeight = [{
 const contentEffectItems = [{
   name: "normal",
   title: "Normal",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_NormalListIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {})
 }, {
   name: "hover",
   title: "Hover",
-  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_19__.jsx)(_assets_DescriptionListIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {})
 }];
 
 /***/ },
@@ -4151,7 +4434,9 @@ function Edit({
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_InspectorControl_GeneralControlPanel_GeneralControlPanel__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_InspectorControl_IconControlPanel_IconControlPanel__WEBPACK_IMPORTED_MODULE_8__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_InspectorControl_ContentControlPanel_ContentControlPanel__WEBPACK_IMPORTED_MODULE_7__["default"], {})]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
       ...blockProps,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_ListPreview__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_ListPreview__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        attributes: attributes
+      })
     })]
   });
 }
@@ -4209,42 +4494,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/smart-list-block/edit.js");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/smart-list-block/save.js");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/smart-list-block/block.json");
-/**
- * Registers a new block provided a unique name and an object defining its behavior.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
- */
-
-
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * All files containing `style` keyword are bundled together. The code used
- * gets applied both to the front of your site and to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-
-
-/**
- * Internal dependencies
- */
 
 
 
 
-/**
- * Every block starts by registering a new block type definition.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
- */
+
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
-  /**
-   * @see ./edit.js
-   */
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
-  /**
-   * @see ./save.js
-   */
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 
@@ -4264,28 +4520,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
 
-
-/**
- * The save function defines the way in which the different attributes should
- * be combined into the final markup, which is then serialized by the block
- * editor into `post_content`.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#save
- *
- * @return {Element} Element to render.
- */
 
 function save() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: 'Smart List Block – hello from the saved content!'
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks.Content, {})
   });
 }
 

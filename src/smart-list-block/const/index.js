@@ -11,6 +11,12 @@ import Image from "../assets/Image";
 import TopAlignment from "../assets/TopAlignment";
 import MiddleAlignMent from "../assets/MiddleAlignMent";
 import BottomAlignment from "../assets/BottomAlignment";
+import Circle from "../assets/Circle";
+import Square from "../assets/Square";
+import Diamond from "../assets/Diamond";
+import CircleCurve from "../assets/CircleCurve";
+import Triangle from "../assets/Triangle";
+import CircleSolid from "../assets/CircleSolid";
 
 export const generalTabItems = [
 	{
@@ -83,6 +89,33 @@ export const iconTabItems = [
 		name: "custom",
 		title: "Custom",
 		icon: <DescriptionListIcon></DescriptionListIcon>,
+	},
+];
+export const iconBackgroundTabsItems = [
+	{
+		name: "square",
+		title: "Square",
+		icon: <Square></Square>,
+	},
+	{
+		name: "circle",
+		title: "Circle",
+		icon: <CircleSolid></CircleSolid>,
+	},
+	{
+		name: "diamond",
+		title: "Diamond",
+		icon: <Diamond></Diamond>,
+	},
+	{
+		name: "triangle",
+		title: "Triangle",
+		icon: <Triangle></Triangle>,
+	},
+	{
+		name: "circleCurve",
+		title: "CircleCurve",
+		icon: <CircleCurve></CircleCurve>,
 	},
 ];
 export const alignmentTabItems = [

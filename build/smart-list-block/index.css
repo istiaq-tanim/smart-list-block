@@ -58,6 +58,9 @@
   align-items: center;
   justify-content: center;
 }
+.wp-block-create-block-smart-list-block .smart-list .smart-item .bg-circle {
+  border-radius: 50%;
+}
 .wp-block-create-block-smart-list-block .smart-list .smart-item.icon-before {
   flex-direction: row;
 }

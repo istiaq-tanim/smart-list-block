@@ -149,14 +149,40 @@
 				"show": true,
 				"type": "iconSet",
 				"imageSource": "",
-				"iconSourceId": "",
+				"iconSourceId": "star",
 				"width": 20,
 				"height": 20,
 				"size": 24,
 				"position": "before",
 				"alignment": "center"
 			}
+		},
+		"iconStyle": {
+			"type": "object",
+			"default": {
+				"show": true,
+				"type": "square"
+			}
 		}
+	},
+	"providesContext": {
+		"listOrientation": "listOrientation",
+		"alignment": "alignment",
+		"presetsType": "presetsType",
+		"spaceBetween": "spaceBetween",
+		"iconGap": "iconGap",
+		"divider": "divider",
+		"backgroundStyle": "backgroundStyle",
+		"color": "color",
+		"border": "border",
+		"padding": "padding",
+		"margin": "margin",
+		"radius": "radius",
+		"title": "title",
+		"description": "description",
+		"contentEffect": "contentEffect",
+		"gapTitleToDescription": "gapTitleToDescription",
+		"icon": "icon"
 	},
 	"textdomain": "smart-list-block",
 	"editorScript": "file:./index.js",
