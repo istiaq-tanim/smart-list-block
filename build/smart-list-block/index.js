@@ -2098,7 +2098,8 @@ function ListPresets() {
       tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.presetTabItems,
       onHandleTab: handleTab,
       selectedTab: selectedTab,
-      variant: "icon"
+      variant: "icon",
+      activeColor: "#1A74E4"
     })]
   });
 }
@@ -2716,12 +2717,14 @@ function Style() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Icon Background",
         value: iconStyle.effect === "normal" ? iconStyle.iconBgColor : iconStyle.iconHoverBgColor,
-        onChange: handleIconBackgroundColor
+        onChange: handleIconBackgroundColor,
+        defaultValue: "#EEEEEE"
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_2__["default"], {
       label: "Icon Color",
       value: iconStyle.effect === "normal" ? iconStyle.iconColor : iconStyle.iconHoverColor,
-      onChange: handleIconColor
+      onChange: handleIconColor,
+      defaultValue: "#757575"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
       label: "Border",
       checked: iconBorderStyle.show,
@@ -3355,7 +3358,8 @@ function SingleTab({
   onHandleTab,
   isActive,
   variant,
-  color
+  activeColor = "#fff",
+  inactiveColor = "#757575"
 }) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
     role: "button",
@@ -3364,7 +3368,7 @@ function SingleTab({
     children: [tab.icon && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
       className: "tab-icon",
       style: {
-        color: isActive ? "#fff" : "#757575"
+        color: isActive ? activeColor : inactiveColor
       },
       children: tab.icon
     }), tab.title && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
@@ -3396,7 +3400,8 @@ function Tabs({
   tabItems,
   onHandleTab,
   selectedTab,
-  variant = "underline"
+  variant = "underline",
+  activeColor
 }) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     className: `tabs tabs--${variant}`,
@@ -3404,7 +3409,8 @@ function Tabs({
       tab: tab,
       isActive: selectedTab === tab.name,
       onHandleTab: onHandleTab,
-      variant: variant
+      variant: variant,
+      activeColor: activeColor
     }, index))
   });
 }

@@ -1,4 +1,11 @@
-function SingleTab({ tab, onHandleTab, isActive, variant, color }) {
+function SingleTab({
+	tab,
+	onHandleTab,
+	isActive,
+	variant,
+	activeColor = "#fff",
+	inactiveColor = "#757575",
+}) {
 	return (
 		<div
 			role="button"
@@ -8,7 +15,7 @@ function SingleTab({ tab, onHandleTab, isActive, variant, color }) {
 			{tab.icon && (
 				<span
 					className="tab-icon"
-					style={{ color: isActive ? "#fff" : "#757575" }}
+					style={{ color: isActive ? activeColor : inactiveColor }}
 				>
 					{tab.icon}
 				</span>

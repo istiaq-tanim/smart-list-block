@@ -1,5 +1,11 @@
 import SingleTab from "./SingleTab";
-function Tabs({ tabItems, onHandleTab, selectedTab, variant = "underline" }) {
+function Tabs({
+	tabItems,
+	onHandleTab,
+	selectedTab,
+	variant = "underline",
+	activeColor,
+}) {
 	return (
 		<div className={`tabs tabs--${variant}`}>
 			{tabItems.map((tab, index) => (
@@ -9,6 +15,7 @@ function Tabs({ tabItems, onHandleTab, selectedTab, variant = "underline" }) {
 					isActive={selectedTab === tab.name}
 					onHandleTab={onHandleTab}
 					variant={variant}
+					activeColor={activeColor}
 				></SingleTab>
 			))}
 		</div>

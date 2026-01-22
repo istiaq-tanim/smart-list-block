@@ -73,6 +73,7 @@ function Style() {
 								: iconStyle.iconHoverBgColor
 						}
 						onChange={handleIconBackgroundColor}
+						defaultValue="#EEEEEE"
 					></CustomColorPicker>
 				</>
 			)}
@@ -84,6 +85,7 @@ function Style() {
 						: iconStyle.iconHoverColor
 				}
 				onChange={handleIconColor}
+				defaultValue="#757575"
 			></CustomColorPicker>
 			<ToggleControlButton
 				label="Border"

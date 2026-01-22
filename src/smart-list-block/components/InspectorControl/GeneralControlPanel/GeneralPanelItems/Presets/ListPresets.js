@@ -18,6 +18,7 @@ function ListPresets() {
 					onHandleTab={handleTab}
 					selectedTab={selectedTab}
 					variant="icon"
+					activeColor="#1A74E4"
 				></Tabs>
 			}
 		</div>
