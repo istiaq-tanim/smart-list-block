@@ -12,7 +12,9 @@
   "description": "Smart List is block to show list",
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "anchor": true,
+    "className": true
   },
   "attributes": {
     "presetsType": {
@@ -137,9 +139,10 @@
         "family": "Roboto",
         "fontSize": 16,
         "weight": 400,
-        "height": 0,
+        "height": 1.5,
         "spacing": 0,
-        "color": "#2F2F2F"
+        "titleColor": "#757575",
+        "titleHoverColor": "#757575"
       }
     },
     "description": {
@@ -150,9 +153,10 @@
         "family": "Roboto",
         "fontSize": 11,
         "weight": 400,
-        "height": 0,
+        "height": 1.5,
         "spacing": 0,
-        "color": "#757575"
+        "descriptionColor": "#757575",
+        "descriptionHoverColor": "#757575"
       }
     },
     "contentEffect": {
@@ -173,7 +177,7 @@
         "width": 20,
         "height": 20,
         "size": 24,
-        "position": "before",
+        "position": "left",
         "alignment": "center"
       }
     },
@@ -219,25 +223,6 @@
         "linked": true
       }
     }
-  },
-  "providesContext": {
-    "listOrientation": "listOrientation",
-    "alignment": "alignment",
-    "presetsType": "presetsType",
-    "spaceBetween": "spaceBetween",
-    "iconGap": "iconGap",
-    "divider": "divider",
-    "backgroundStyle": "backgroundStyle",
-    "color": "color",
-    "border": "border",
-    "padding": "padding",
-    "margin": "margin",
-    "radius": "radius",
-    "title": "title",
-    "description": "description",
-    "contentEffect": "contentEffect",
-    "gapTitleToDescription": "gapTitleToDescription",
-    "icon": "icon"
   },
   "textdomain": "smart-list-block",
   "editorScript": "file:./index.js",

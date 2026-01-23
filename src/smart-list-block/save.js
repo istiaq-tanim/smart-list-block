@@ -1,3 +1,4 @@
+import { useBlockProps } from "@wordpress/block-editor";
 import { customIcons } from "./const/icons";
 import { hexToRgba } from "./utils";
 
@@ -43,7 +44,16 @@ function save({ attributes }) {
 	const borderClass = borderShow ? "has-border" : "";
 	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
 
-	// RenderIcon component inline - renders actual SVG markup
+	const blockProps = useBlockProps.save({
+		className: "smart-list-wrapper",
+		style: {
+			"--marginTop": `${margin.top}px`,
+			"--marginRight": `${margin.right}px`,
+			"--marginBottom": `${margin.bottom}px`,
+			"--marginLeft": `${margin.left}px`,
+		},
+	});
+
 	const RenderIcon = () => {
 		if (!icon?.show) return null;
 
@@ -137,15 +147,7 @@ function save({ attributes }) {
 	};
 
 	return (
-		<div
-			style={{
-				"--marginTop": `${margin.top}px`,
-				"--marginRight": `${margin.right}px`,
-				"--marginBottom": `${margin.bottom}px`,
-				"--marginLeft": `${margin.left}px`,
-			}}
-			className="smart-list-wrapper"
-		>
+		<div {...blockProps}>
 			<ul
 				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass}`}
 				style={{
@@ -171,13 +173,15 @@ function save({ attributes }) {
 					"--font": `${title.family}`,
 					"--spacing": `${title.spacing}px`,
 					"--height": `${title.height}`,
-					"--titleColor": `${title.color}`,
+					"--titleColor": `${title.titleColor}`,
+					"--titleHoverColor": `${title.titleHoverColor}`,
 					"--descriptionFontSize": `${description.fontSize}px`,
 					"--descriptionWeight": `${description.weight}`,
 					"--descriptionFont": `${description.family}`,
 					"--descriptionSpacing": `${description.spacing}px`,
 					"--descriptionHeight": `${description.height}`,
-					"--descriptionColor": `${description.color}`,
+					"--descriptionColor": `${description.descriptionColor}`,
+					"--descriptionHoverColor": `${description.descriptionHoverColor}`,
 					"--gapBetweenTitleAndDescription": `${gapTitleToDescription}px`,
 					"--backgroundColor":
 						type === "solid" ? backgroundColor : "transparent",

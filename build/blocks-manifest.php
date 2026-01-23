@@ -17,7 +17,9 @@ return array(
 			
 		),
 		'supports' => array(
-			'html' => false
+			'html' => false,
+			'anchor' => true,
+			'className' => true
 		),
 		'attributes' => array(
 			'presetsType' => array(
@@ -142,9 +144,10 @@ return array(
 					'family' => 'Roboto',
 					'fontSize' => 16,
 					'weight' => 400,
-					'height' => 0,
+					'height' => 1.5,
 					'spacing' => 0,
-					'color' => '#2F2F2F'
+					'titleColor' => '#757575',
+					'titleHoverColor' => '#757575'
 				)
 			),
 			'description' => array(
@@ -155,9 +158,10 @@ return array(
 					'family' => 'Roboto',
 					'fontSize' => 11,
 					'weight' => 400,
-					'height' => 0,
+					'height' => 1.5,
 					'spacing' => 0,
-					'color' => '#757575'
+					'descriptionColor' => '#757575',
+					'descriptionHoverColor' => '#757575'
 				)
 			),
 			'contentEffect' => array(
@@ -178,7 +182,7 @@ return array(
 					'width' => 20,
 					'height' => 20,
 					'size' => 24,
-					'position' => 'before',
+					'position' => 'left',
 					'alignment' => 'center'
 				)
 			),
@@ -224,25 +228,6 @@ return array(
 					'linked' => true
 				)
 			)
-		),
-		'providesContext' => array(
-			'listOrientation' => 'listOrientation',
-			'alignment' => 'alignment',
-			'presetsType' => 'presetsType',
-			'spaceBetween' => 'spaceBetween',
-			'iconGap' => 'iconGap',
-			'divider' => 'divider',
-			'backgroundStyle' => 'backgroundStyle',
-			'color' => 'color',
-			'border' => 'border',
-			'padding' => 'padding',
-			'margin' => 'margin',
-			'radius' => 'radius',
-			'title' => 'title',
-			'description' => 'description',
-			'contentEffect' => 'contentEffect',
-			'gapTitleToDescription' => 'gapTitleToDescription',
-			'icon' => 'icon'
 		),
 		'textdomain' => 'smart-list-block',
 		'editorScript' => 'file:./index.js',

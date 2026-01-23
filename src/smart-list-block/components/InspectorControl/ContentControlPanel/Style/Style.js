@@ -9,11 +9,23 @@ function Style() {
 	const selectedTab = contentEffect;
 
 	const handleTextColor = (value) => {
-		setAttributes({ title: { ...title, color: value } });
+		if (contentEffect === "normal") {
+			setAttributes({ title: { ...title, titleColor: value } });
+		} else if (contentEffect === "hover") {
+			setAttributes({ title: { ...title, titleHoverColor: value } });
+		}
 	};
 
 	const handleDescriptionColor = (value) => {
-		setAttributes({ description: { ...description, color: value } });
+		if (contentEffect === "normal") {
+			setAttributes({
+				description: { ...description, descriptionColor: value },
+			});
+		} else if (contentEffect === "hover") {
+			setAttributes({
+				description: { ...description, descriptionHoverColor: value },
+			});
+		}
 	};
 
 	const handleTab = (tabName) => {
@@ -46,13 +58,19 @@ function Style() {
 			></Tabs>
 			<CustomColorPicker
 				label="Title Color"
-				value={title.color}
+				value={
+					contentEffect === "normal" ? title.titleColor : title.titleHoverColor
+				}
 				onChange={handleTextColor}
 			></CustomColorPicker>
 			{description.show && (
 				<CustomColorPicker
 					label="Description Color"
-					value={description.color}
+					value={
+						contentEffect === "normal"
+							? description.descriptionColor
+							: description.descriptionHoverColor
+					}
 					onChange={handleDescriptionColor}
 				></CustomColorPicker>
 			)}

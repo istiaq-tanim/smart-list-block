@@ -174,10 +174,10 @@
   transition: color 0.3s ease;
 }
 .wp-block-create-block-smart-list-block .smart-list.has-hover .smart-item:hover .title {
-  color: var(--titleColor, #757575);
+  color: var(--titleHoverColor, #757575);
 }
 .wp-block-create-block-smart-list-block .smart-list.has-hover .smart-item:hover .description {
-  color: var(--descriptionColor, #2f2f2f);
+  color: var(--descriptionHoverColor, #2f2f2f);
 }
 .wp-block-create-block-smart-list-block .smart-list.is-horizontal {
   flex-direction: row;

@@ -3,7 +3,6 @@ import {
 	BlockControls,
 	InspectorControls,
 	useBlockProps,
-	InnerBlocks,
 } from "@wordpress/block-editor";
 import "./editor.scss";
 
