@@ -32,6 +32,26 @@ return array(
 				'type' => 'string',
 				'default' => 'left'
 			),
+			'lists' => array(
+				'type' => 'array',
+				'default' => array(
+					array(
+						'icon' => '✨',
+						'title' => 'Bangladesh',
+						'description' => 'Beautiful Bangladesh'
+					),
+					array(
+						'icon' => '✨',
+						'title' => 'Bangladesh',
+						'description' => 'Beautiful Bangladesh'
+					),
+					array(
+						'icon' => '✨',
+						'title' => 'Bangladesh',
+						'description' => 'Beautiful Bangladesh'
+					)
+				)
+			),
 			'previewWidth' => array(
 				'type' => 'string',
 				'default' => '100%'
@@ -229,39 +249,5 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
-	),
-	'smart-list-item' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 3,
-		'name' => 'create-block/smart-list-item',
-		'version' => '1.0.0',
-		'title' => 'Smart List Item',
-		'category' => 'smart-list',
-		'parent' => array(
-			'create-block/smart-list-block'
-		),
-		'icon' => 'minus',
-		'description' => 'Individual item in a Smart List',
-		'supports' => array(
-			'html' => false,
-			'reusable' => false
-		),
-		'attributes' => array(
-			'title' => array(
-				'type' => 'string',
-				'default' => 'List Item'
-			)
-		),
-		'usesContext' => array(
-			'listOrientation',
-			'presetsType',
-			'title',
-			'description',
-			'icon'
-		),
-		'textdomain' => 'smart-list-block',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css'
 	)
 );

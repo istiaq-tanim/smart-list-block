@@ -1167,7 +1167,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#fff"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"before","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBackGroundStyle":"solid","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}},"iconBorderStyle":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"paddingIcon":{"type":"object","default":{"top":10,"right":10,"bottom":10,"left":10,"linked":true}},"radiusIcon":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"providesContext":{"listOrientation":"listOrientation","alignment":"alignment","presetsType":"presetsType","spaceBetween":"spaceBetween","iconGap":"iconGap","divider":"divider","backgroundStyle":"backgroundStyle","color":"color","border":"border","padding":"padding","margin":"margin","radius":"radius","title":"title","description":"description","contentEffect":"contentEffect","gapTitleToDescription":"gapTitleToDescription","icon":"icon"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"lists":{"type":"array","default":[{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"},{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"},{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"}]},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#fff"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":0,"spacing":0,"color":"#2F2F2F"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":0,"spacing":0,"color":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"before","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBackGroundStyle":"solid","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}},"iconBorderStyle":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"paddingIcon":{"type":"object","default":{"top":10,"right":10,"bottom":10,"left":10,"linked":true}},"radiusIcon":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"providesContext":{"listOrientation":"listOrientation","alignment":"alignment","presetsType":"presetsType","spaceBetween":"spaceBetween","iconGap":"iconGap","divider":"divider","backgroundStyle":"backgroundStyle","color":"color","border":"border","padding":"padding","margin":"margin","radius":"radius","title":"title","description":"description","contentEffect":"contentEffect","gapTitleToDescription":"gapTitleToDescription","icon":"icon"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -3700,12 +3700,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../const */ "./src/smart-list-block/const/index.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils */ "./src/smart-list-block/utils/index.js");
-/* harmony import */ var _ListItemPreview__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ListItemPreview */ "./src/smart-list-block/components/ListItemPreview.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
-
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ "./src/smart-list-block/utils/index.js");
+/* harmony import */ var _ListItemPreview__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ListItemPreview */ "./src/smart-list-block/components/ListItemPreview.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -3733,7 +3731,8 @@ function ListPreview({
     iconStyle,
     iconBorderStyle,
     paddingIcon,
-    radiusIcon
+    radiusIcon,
+    lists
   } = attributes;
   const {
     width,
@@ -3759,7 +3758,7 @@ function ListPreview({
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
   const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     style: {
       "--marginTop": `${margin.top}px`,
       "--marginRight": `${margin.right}px`,
@@ -3767,7 +3766,7 @@ function ListPreview({
       "--marginLeft": `${margin.left}px`
     },
     class: "smart-list-wrapper",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("ul", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
       className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
 				${borderClass} ${hasHoverClass} `,
       style: {
@@ -3804,11 +3803,11 @@ function ListPreview({
         "--backgroundColor": type === "solid" ? backgroundColor : "transparent",
         "--backgroundGradient": type === "gradient" ? background : "none",
         "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
-        "--overlayColor": type === "image" && backgroundOverlay?.enabled ? (0,_utils__WEBPACK_IMPORTED_MODULE_1__.hexToRgba)(backgroundOverlay.color || "#000", backgroundOverlay.opacity || 50) : "transparent",
+        "--overlayColor": type === "image" && backgroundOverlay?.enabled ? (0,_utils__WEBPACK_IMPORTED_MODULE_0__.hexToRgba)(backgroundOverlay.color || "#000", backgroundOverlay.opacity || 50) : "transparent",
         "--backgroundSize": type === "image" ? backgroundSize : "auto"
       },
-      children: _const__WEBPACK_IMPORTED_MODULE_0__.listItems.map((item, index) => {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_ListItemPreview__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      children: lists.map((item, index) => {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ListItemPreview__WEBPACK_IMPORTED_MODULE_1__["default"], {
           item: item,
           icon: icon,
           iconStyle: iconStyle,
@@ -4644,20 +4643,185 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ save)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _const_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./const/icons */ "./src/smart-list-block/const/icons.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./src/smart-list-block/utils/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
 
-function save() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks.Content, {})
+
+function save({
+  attributes
+}) {
+  const {
+    listOrientation,
+    alignment,
+    presetsType,
+    spaceBetween,
+    iconGap,
+    divider,
+    backgroundStyle,
+    color: backgroundColor,
+    border,
+    padding,
+    margin,
+    radius,
+    title,
+    description,
+    contentEffect,
+    gapTitleToDescription,
+    icon,
+    iconStyle,
+    iconBorderStyle,
+    paddingIcon,
+    radiusIcon,
+    lists
+  } = attributes;
+  const {
+    width,
+    style,
+    color,
+    show
+  } = divider;
+  const {
+    width: borderWidth,
+    style: borderStyle,
+    color: borderColor,
+    show: borderShow
+  } = border;
+  const {
+    background,
+    image,
+    type,
+    backgroundSize,
+    backgroundOverlay
+  } = backgroundStyle;
+  const orientationClass = `is-${listOrientation || "vertical"}`;
+  const alignmentClass = `alignment-${alignment || "left"}`;
+  const dividerClass = show ? "has-divider" : "";
+  const borderClass = borderShow ? "has-border" : "";
+  const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
+
+  // RenderIcon component inline - renders actual SVG markup
+  const RenderIcon = () => {
+    var _paddingIcon$top, _paddingIcon$right, _paddingIcon$bottom, _paddingIcon$left;
+    if (!icon?.show) return null;
+    const hasBg = iconStyle?.show;
+    const hasBorder = iconBorderStyle?.show;
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: `render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${hasBorder ? "has-border" : ""}`,
+      style: {
+        "--iconSize": `${icon?.size || 20}px`,
+        "--icon-color": iconStyle?.iconColor || "#757575",
+        "--icon-hover-color": iconStyle?.iconHoverColor || "#757575",
+        "--bg-color": hasBg ? iconStyle?.iconBgColor : "#EEEEEE",
+        "--bg-hover-color": hasBg ? iconStyle?.iconHoverBgColor : "#EEEEEE",
+        "--iconBorderColor": iconBorderStyle?.color,
+        "--iconBorderStyle": iconBorderStyle?.style,
+        "--iconBorderWidth": `${iconBorderStyle?.width || 1}px`,
+        "--iconPaddingTop": `${(_paddingIcon$top = paddingIcon?.top) !== null && _paddingIcon$top !== void 0 ? _paddingIcon$top : 10}px`,
+        "--iconPaddingRight": `${(_paddingIcon$right = paddingIcon?.right) !== null && _paddingIcon$right !== void 0 ? _paddingIcon$right : 10}px`,
+        "--iconPaddingBottom": `${(_paddingIcon$bottom = paddingIcon?.bottom) !== null && _paddingIcon$bottom !== void 0 ? _paddingIcon$bottom : 10}px`,
+        "--iconPaddingLeft": `${(_paddingIcon$left = paddingIcon?.left) !== null && _paddingIcon$left !== void 0 ? _paddingIcon$left : 10}px`,
+        "--iconRadiusTop": `${radiusIcon?.top || 0}px`,
+        "--iconRadiusRight": `${radiusIcon?.right || 0}px`,
+        "--iconRadiusBottom": `${radiusIcon?.bottom || 0}px`,
+        "--iconRadiusLeft": `${radiusIcon?.left || 0}px`
+      },
+      children: [icon.type === "custom" && icon.imageSource && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+        src: icon.imageSource,
+        alt: "",
+        style: {
+          width: "100%",
+          height: "100%",
+          objectFit: "contain"
+        }
+      }), icon.type === "iconSet" && icon.iconSourceId && (() => {
+        const iconData = _const_icons__WEBPACK_IMPORTED_MODULE_0__.customIcons[icon.iconSourceId];
+        if (iconData && iconData.component) {
+          const IconComponent = iconData.component;
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(IconComponent, {
+            size: icon.size || 20,
+            color: "currentColor"
+          });
+        }
+        return null;
+      })()]
+    });
+  };
+
+  // Helper function to render individual list items
+  const renderListItem = (item, index) => {
+    const TitleTag = title?.tags === "p" ? "p" : title?.tags || "div";
+    const DescriptionTag = description?.tags === "p" ? "p" : description?.tags || "div";
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
+      className: `smart-item icon-${icon.position} icon-align-${icon.alignment || "center"}`,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(RenderIcon, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "list-content",
+        children: [title.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(TitleTag, {
+          className: title?.tags === "p" ? "title" : "title-without-size",
+          children: item.title
+        }), (presetsType !== "list" || description.show) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(DescriptionTag, {
+          className: description?.tags === "p" ? "description" : "description-without-size",
+          children: item.description
+        })]
+      })]
+    }, index);
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    style: {
+      "--marginTop": `${margin.top}px`,
+      "--marginRight": `${margin.right}px`,
+      "--marginBottom": `${margin.bottom}px`,
+      "--marginLeft": `${margin.left}px`
+    },
+    className: "smart-list-wrapper",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
+      className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass}`,
+      style: {
+        "--spaceBetween": `${spaceBetween}px`,
+        "--iconSize": `${icon.size || 20}px`,
+        "--iconGap": `${iconGap}px`,
+        "--dividerColor": color,
+        "--dividerStyle": style,
+        "--dividerWidth": `${width}`,
+        "--borderColor": borderColor,
+        "--borderStyle": borderStyle,
+        "--borderWidth": `${borderWidth}`,
+        "--paddingTop": `${padding.top}px`,
+        "--paddingRight": `${padding.right}px`,
+        "--paddingBottom": `${padding.bottom}px`,
+        "--paddingLeft": `${padding.left}px`,
+        "--radiusTop": `${radius.top}px`,
+        "--radiusRight": `${radius.right}px`,
+        "--radiusBottom": `${radius.bottom}px`,
+        "--radiusLeft": `${radius.left}px`,
+        "--fontSize": `${title.fontSize}px`,
+        "--weight": `${title.weight}`,
+        "--font": `${title.family}`,
+        "--spacing": `${title.spacing}px`,
+        "--height": `${title.height}`,
+        "--titleColor": `${title.color}`,
+        "--descriptionFontSize": `${description.fontSize}px`,
+        "--descriptionWeight": `${description.weight}`,
+        "--descriptionFont": `${description.family}`,
+        "--descriptionSpacing": `${description.spacing}px`,
+        "--descriptionHeight": `${description.height}`,
+        "--descriptionColor": `${description.color}`,
+        "--gapBetweenTitleAndDescription": `${gapTitleToDescription}px`,
+        "--backgroundColor": type === "solid" ? backgroundColor : "transparent",
+        "--backgroundGradient": type === "gradient" ? background : "none",
+        "--backgroundImage": type === "image" && image ? `url(${image})` : "none",
+        "--overlayColor": type === "image" && backgroundOverlay?.enabled ? (0,_utils__WEBPACK_IMPORTED_MODULE_1__.hexToRgba)(backgroundOverlay.color || "#000", backgroundOverlay.opacity || 50) : "transparent",
+        "--backgroundSize": type === "image" ? backgroundSize : "auto"
+      },
+      children: lists.map((item, index) => renderListItem(item, index))
+    })
   });
 }
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (save);
 
 /***/ },
 

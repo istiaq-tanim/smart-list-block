@@ -1,6 +1,7 @@
 import { hexToRgba } from "../utils";
-import ListItemPreview from "./ListItemPreview";
-function ListPreview({ attributes }) {
+import { getIcon } from "../const/icons";
+
+function save({ attributes }) {
 	const {
 		listOrientation,
 		alignment,
@@ -42,6 +43,94 @@ function ListPreview({ attributes }) {
 	const borderClass = borderShow ? "has-border" : "";
 	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
 
+	// RenderIcon component inline
+	const RenderIcon = () => {
+		if (!icon?.show) return null;
+
+		const hasBg = iconStyle?.show;
+		const hasBorder = iconBorderStyle?.show;
+
+		return (
+			<div
+				className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${
+					hasBorder ? "has-border" : ""
+				}`}
+				style={{
+					"--iconSize": `${icon?.size || 20}px`,
+					"--icon-color": iconStyle?.iconColor || "#757575",
+					"--icon-hover-color": iconStyle?.iconHoverColor || "#757575",
+					"--bg-color": hasBg ? iconStyle?.iconBgColor : "#EEEEEE",
+					"--bg-hover-color": hasBg ? iconStyle?.iconHoverBgColor : "#EEEEEE",
+					"--iconBorderColor": iconBorderStyle?.color,
+					"--iconBorderStyle": iconBorderStyle?.style,
+					"--iconBorderWidth": `${iconBorderStyle?.width || 1}px`,
+					"--iconPaddingTop": `${paddingIcon?.top ?? 10}px`,
+					"--iconPaddingRight": `${paddingIcon?.right ?? 10}px`,
+					"--iconPaddingBottom": `${paddingIcon?.bottom ?? 10}px`,
+					"--iconPaddingLeft": `${paddingIcon?.left ?? 10}px`,
+					"--iconRadiusTop": `${radiusIcon?.top || 0}px`,
+					"--iconRadiusRight": `${radiusIcon?.right || 0}px`,
+					"--iconRadiusBottom": `${radiusIcon?.bottom || 0}px`,
+					"--iconRadiusLeft": `${radiusIcon?.left || 0}px`,
+				}}
+			>
+				{icon.type === "custom" && icon.imageSource && (
+					<img
+						src={icon.imageSource}
+						alt=""
+						style={{ width: "100%", height: "100%", objectFit: "contain" }}
+					/>
+				)}
+
+				{icon.type === "iconSet" &&
+					icon.iconSourceId &&
+					(() => {
+						const { component: IconComponent } = getIcon(icon.iconSourceId);
+						return (
+							<IconComponent size={icon.size || 20} color="currentColor" />
+						);
+					})()}
+			</div>
+		);
+	};
+
+	// Helper function to render individual list items
+	const renderListItem = (item, index) => {
+		const TitleTag = title?.tags === "p" ? "p" : title?.tags;
+		const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
+
+		return (
+			<li
+				key={index}
+				className={`smart-item icon-${icon.position} icon-align-${
+					icon.alignment || "center"
+				}`}
+			>
+				<RenderIcon />
+				<div className="list-content">
+					{title.show && (
+						<TitleTag
+							className={title?.tags === "p" ? "title" : "title-without-size"}
+						>
+							{item.title}
+						</TitleTag>
+					)}
+					{(presetsType !== "list" || description.show) && (
+						<DescriptionTag
+							className={
+								description?.tags === "p"
+									? "description"
+									: "description-without-size"
+							}
+						>
+							{item.description}
+						</DescriptionTag>
+					)}
+				</div>
+			</li>
+		);
+	};
+
 	return (
 		<div
 			style={{
@@ -50,11 +139,10 @@ function ListPreview({ attributes }) {
 				"--marginBottom": `${margin.bottom}px`,
 				"--marginLeft": `${margin.left}px`,
 			}}
-			class="smart-list-wrapper"
+			className="smart-list-wrapper"
 		>
 			<ul
-				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
-				${borderClass} ${hasHoverClass} `}
+				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass}`}
 				style={{
 					"--spaceBetween": `${spaceBetween}px`,
 					"--iconSize": `${icon.size || 20}px`,
@@ -98,29 +186,13 @@ function ListPreview({ attributes }) {
 									backgroundOverlay.opacity || 50,
 							  )
 							: "transparent",
-
 					"--backgroundSize": type === "image" ? backgroundSize : "auto",
 				}}
 			>
-				{lists.map((item, index) => {
-					return (
-						<ListItemPreview
-							key={index}
-							item={item}
-							icon={icon}
-							iconStyle={iconStyle}
-							title={title}
-							description={description}
-							presetsType={presetsType}
-							iconBorderStyle={iconBorderStyle}
-							paddingIcon={paddingIcon}
-							radiusIcon={radiusIcon}
-						/>
-					);
-				})}
+				{lists.map((item, index) => renderListItem(item, index))}
 			</ul>
 		</div>
 	);
 }
 
-export default ListPreview;
+export default save;

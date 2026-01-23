@@ -27,6 +27,26 @@
 			"type": "string",
 			"default": "left"
 		},
+		"lists": {
+			"type": "array",
+			"default": [
+				{
+					"icon": "✨",
+					"title": "Bangladesh",
+					"description": "Beautiful Bangladesh"
+				},
+				{
+					"icon": "✨",
+					"title": "Bangladesh",
+					"description": "Beautiful Bangladesh"
+				},
+				{
+					"icon": "✨",
+					"title": "Bangladesh",
+					"description": "Beautiful Bangladesh"
+				}
+			]
+		},
 		"previewWidth": {
 			"type": "string",
 			"default": "100%"

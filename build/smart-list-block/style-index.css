@@ -7,5 +7,198 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-create-block-smart-list-block .smart-list-wrapper {
+  margin-top: var(--marginTop, 5px);
+  margin-left: var(--marginLeft, 5px);
+  margin-right: var(--marginRight, 5px);
+  margin-bottom: var(--marginBottom, 5px);
+}
+.wp-block-create-block-smart-list-block .smart-list {
+  padding-top: var(--paddingTop, 5px);
+  padding-left: var(--paddingLeft, 5px);
+  padding-right: var(--paddingRight, 5px);
+  padding-bottom: var(--paddingBottom, 5px);
+  margin: 0;
+  list-style: none;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-border {
+  border: calc(var(--borderWidth, 1) * 1px) var(--borderStyle, solid) var(--borderColor, #dddddd);
+}
+.wp-block-create-block-smart-list-block .smart-list {
+  border-top-left-radius: var(--radiusTop, 0);
+  border-top-right-radius: var(--radiusTop, 0);
+  border-top-right-radius: var(--radiusRight, 0);
+  border-bottom-right-radius: var(--radiusRight, 0);
+  border-bottom-right-radius: var(--radiusBottom, 0);
+  border-bottom-left-radius: var(--radiusBottom, 0);
+  border-top-left-radius: var(--radiusLeft, 0);
+  border-bottom-left-radius: var(--radiusLeft, 0);
+  background-color: var(--backgroundColor, transparent);
+  display: flex;
+  background-image: linear-gradient(var(--overlayColor, transparent), var(--overlayColor, transparent)), var(--backgroundGradient, none), var(--backgroundImage, none);
+  position: relative;
+  background-size: auto, auto, var(--backgroundSize, cover);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item {
+  display: flex;
+  align-items: center;
+  gap: var(--iconGap, 12px);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .list-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gapBetweenTitleAndDescription, 6px);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .render-icon {
+  flex-shrink: 0;
+  width: var(--iconSize, 20px);
+  height: var(--iconSize, 20px);
+  background-color: var(--bg-color);
+  color: var(--icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding-top: var(--iconPaddingTop, 5px);
+  padding-left: var(--iconPaddingLeft, 5px);
+  padding-right: var(--iconPaddingRight, 5px);
+  padding-bottom: var(--iconPaddingBottom, 5px);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .render-icon.has-border {
+  border-width: var(--iconBorderWidth);
+  border-style: var(--iconBorderStyle, solid);
+  border-color: var(--iconBorderColor, #dddddd);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .render-icon {
+  padding: var(--iconPaddingTop, 5px) var(--iconPaddingRight, 5px) var(--iconPaddingBottom, 5px) var(--iconPaddingLeft, 5px);
+  border-radius: var(--iconRadiusTop, 0) var(--iconRadiusRight, 0) var(--iconRadiusBottom, 0) var(--iconRadiusLeft, 0);
+  transition: all 0.2s ease;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .render-icon:hover {
+  background-color: var(--bg-hover-color);
+  color: var(--icon-hover-color);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .bg-circle {
+  border-radius: 50%;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .bg-triangle {
+  transform: rotate(45deg);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .bg-triangle svg {
+  transform: rotate(-45deg);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .bg-diamond {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item .bg-circleCurve {
+  border-radius: 40% 60% 55% 45%;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-before {
+  flex-direction: row;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-after {
+  flex-direction: row;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-after .render-icon {
+  order: 2;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top .render-icon {
+  order: 0;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top .list-content {
+  align-items: flex-start;
+  width: 100%;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-align-top {
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-align-center {
+  align-items: center;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-align-bottom {
+  align-items: flex-end;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top.icon-align-top {
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top.icon-align-center {
+  align-items: center;
+}
+.wp-block-create-block-smart-list-block .smart-list .smart-item.icon-top.icon-align-bottom {
+  align-items: flex-end;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-divider.is-vertical .smart-item:not(:last-child) {
+  border-bottom: calc(var(--dividerWidth, 1) * 1px) var(--dividerStyle, solid) var(--dividerColor, #dddddd);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-divider.is-horizontal .smart-item:not(:last-child) {
+  border-right: calc(var(--dividerWidth, 1) * 1px) var(--dividerStyle, solid) var(--dividerColor, #dddddd);
+  padding-right: 8px;
+  margin-right: 8px;
+}
+.wp-block-create-block-smart-list-block .smart-list .description {
+  margin: "5px 0 0";
+  font-size: var(--descriptionFontSize, 16px);
+  font-weight: var(--descriptionWeight, 400);
+  font-family: var(--descriptionFont, "Roboto");
+  letter-spacing: var(--descriptionSpacing, 0);
+  line-height: var(--descriptionHeight, 0);
+}
+.wp-block-create-block-smart-list-block .smart-list .description-without-size {
+  font-weight: var(--descriptionWeight, 400);
+  font-family: var(--descriptionFont, "Roboto");
+}
+.wp-block-create-block-smart-list-block .smart-list .title {
+  font-size: var(--fontSize, 16px);
+  font-weight: var(--weight, 400);
+  font-family: var(--font, "Roboto");
+  letter-spacing: var(--spacing, 0);
+  line-height: var(--height, 0);
+}
+.wp-block-create-block-smart-list-block .smart-list .title-without-size {
+  font-weight: var(--weight, 400);
+  font-family: var(--font, "Roboto");
+}
+.wp-block-create-block-smart-list-block .smart-list.has-normal .smart-item .title {
+  color: var(--titleColor, #757575);
+  transition: color 0.3s ease;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-normal .smart-item .description {
+  color: var(--descriptionColor, #2f2f2f);
+  transition: color 0.3s ease;
+}
+.wp-block-create-block-smart-list-block .smart-list.has-hover .smart-item:hover .title {
+  color: var(--titleColor, #757575);
+}
+.wp-block-create-block-smart-list-block .smart-list.has-hover .smart-item:hover .description {
+  color: var(--descriptionColor, #2f2f2f);
+}
+.wp-block-create-block-smart-list-block .smart-list.is-horizontal {
+  flex-direction: row;
+  gap: var(--spaceBetween, 24px);
+}
+.wp-block-create-block-smart-list-block .smart-list.is-vertical {
+  flex-direction: column;
+  gap: var(--spaceBetween, 24px);
+}
+.wp-block-create-block-smart-list-block .smart-list.alignment-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.wp-block-create-block-smart-list-block .smart-list.alignment-center {
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-smart-list-block .smart-list.alignment-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
 /*# sourceMappingURL=style-index.css.map*/
