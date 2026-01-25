@@ -12,18 +12,17 @@ export default function RenderIcon({
 	if (!icon?.show) return null;
 	return (
 		<div
-			className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${
-				hasBorder ? "has-border" : ""
-			}`}
+			className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${hasBorder ? "has-border" : ""
+				}`}
 			style={{
 				"--iconSize": `${icon?.size || 20}px`,
 				"--icon-color": iconStyle.iconColor || "#757575",
 				"--icon-hover-color": iconStyle.iconHoverColor || "#757575",
-				"--bg-color": hasBg ? iconStyle.iconBgColor : "#EEEEEE",
-				"--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "#EEEEEE",
-				"--iconBorderColor": iconBorderStyle.color,
-				"--iconBorderStyle": iconBorderStyle.style,
-				"--iconBorderWidth": `${iconBorderStyle.width || 1}px`,
+				"--bg-color": hasBg ? iconStyle.iconBgColor : "transparent",
+				"--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "transparent",
+				"--iconBorderColor": hasBorder ? iconBorderStyle?.color : "transparent",
+				"--iconBorderStyle": iconBorderStyle?.style || "solid",
+				"--iconBorderWidth": `${iconBorderStyle?.width || 0}px`,
 				"--iconPaddingTop": `${paddingIcon.top}px` || "10px",
 				"--iconPaddingRight": `${paddingIcon.right}px` || "10px",
 				"--iconPaddingBottom": `${paddingIcon.bottom}px` || "10px",
@@ -39,9 +38,9 @@ export default function RenderIcon({
 					src={icon.imageSource}
 					alt="icon"
 					style={{
-						width: "100%",
-						height: "100%",
-						objectFit: "contain",
+						width: icon.width,
+						height: icon.height,
+						objectFit: "cover",
 					}}
 				/>
 			)}

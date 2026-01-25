@@ -184,6 +184,31 @@
 			var(--iconRadiusBottom, 0px) var(--iconRadiusLeft, 0px);
 		padding: var(--iconPaddingTop, 10px) var(--iconPaddingRight, 10px)
 			var(--iconPaddingBottom, 10px) var(--iconPaddingLeft, 10px);
+
+		&.bg-circle {
+			border-radius: 50%;
+		}
+
+		&.bg-triangle {
+			transform: rotate(45deg);
+		}
+
+		&.bg-triangle svg {
+			transform: rotate(-45deg);
+		}
+
+		&.bg-diamond {
+			clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		}
+
+		&.bg-circleCurve {
+			border-radius: 40% 60% 55% 45%;
+		}
+	}
+
+	.render-icon:hover {
+		background-color: var(--bg-hover-color);
+		color: var(--icon-hover-color);
 	}
 
 	.smart-list .list-content .title {

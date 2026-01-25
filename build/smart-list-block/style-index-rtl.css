@@ -148,6 +148,25 @@
   border-radius: var(--iconRadiusRight, 0px) var(--iconRadiusTop, 0px) var(--iconRadiusLeft, 0px) var(--iconRadiusBottom, 0px);
   padding: var(--iconPaddingTop, 10px) var(--iconPaddingLeft, 10px) var(--iconPaddingBottom, 10px) var(--iconPaddingRight, 10px);
 }
+.wp-block-create-block-smart-list-block .render-icon.bg-circle {
+  border-radius: 50%;
+}
+.wp-block-create-block-smart-list-block .render-icon.bg-triangle {
+  transform: rotate(-45deg);
+}
+.wp-block-create-block-smart-list-block .render-icon.bg-triangle svg {
+  transform: rotate(45deg);
+}
+.wp-block-create-block-smart-list-block .render-icon.bg-diamond {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.wp-block-create-block-smart-list-block .render-icon.bg-circleCurve {
+  border-radius: 60% 40% 45% 55%;
+}
+.wp-block-create-block-smart-list-block .render-icon:hover {
+  background-color: var(--bg-hover-color);
+  color: var(--icon-hover-color);
+}
 .wp-block-create-block-smart-list-block .smart-list .list-content .title {
   font-size: var(--fontSize, 16px);
   font-weight: var(--weight, 400);

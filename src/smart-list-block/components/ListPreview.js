@@ -42,6 +42,8 @@ function ListPreview({ attributes }) {
 	const borderClass = borderShow ? "has-border" : "";
 	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
 
+
+
 	return (
 		<div
 			style={{
@@ -96,9 +98,9 @@ function ListPreview({ attributes }) {
 					"--overlayColor":
 						type === "image" && backgroundOverlay?.enabled
 							? hexToRgba(
-									backgroundOverlay.color || "#000",
-									backgroundOverlay.opacity || 50,
-							  )
+								backgroundOverlay.color || "#000",
+								backgroundOverlay.opacity || 50,
+							)
 							: "transparent",
 
 					"--backgroundSize": type === "image" ? backgroundSize : "auto",

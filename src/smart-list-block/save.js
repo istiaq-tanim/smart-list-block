@@ -62,16 +62,15 @@ function save({ attributes }) {
 
 		return (
 			<div
-				className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${
-					hasBorder ? "has-border" : ""
-				}`}
+				className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${hasBorder ? "has-border" : ""
+					}`}
 				style={{
 					"--iconSize": `${icon?.size || 20}px`,
 					"--icon-color": iconStyle?.iconColor || "#757575",
 					"--icon-hover-color": iconStyle?.iconHoverColor || "#757575",
-					"--bg-color": hasBg ? iconStyle?.iconBgColor : "#EEEEEE",
-					"--bg-hover-color": hasBg ? iconStyle?.iconHoverBgColor : "#EEEEEE",
-					"--iconBorderColor": iconBorderStyle?.color,
+					"--bg-color": hasBg ? iconStyle.iconBgColor : "transparent",
+					"--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "transparent",
+					"--iconBorderColor": hasBorder ? iconBorderStyle?.color : "transparent",
 					"--iconBorderStyle": iconBorderStyle?.style,
 					"--iconBorderWidth": `${iconBorderStyle?.width || 1}px`,
 					"--iconPaddingTop": `${paddingIcon?.top ?? 10}px`,
@@ -117,9 +116,8 @@ function save({ attributes }) {
 		return (
 			<li
 				key={index}
-				className={`smart-item icon-${icon.position} icon-align-${
-					icon.alignment || "center"
-				}`}
+				className={`smart-item icon-${icon.position} icon-align-${icon.alignment || "center"
+					}`}
 			>
 				<RenderIcon />
 				<div className="list-content">
@@ -191,9 +189,9 @@ function save({ attributes }) {
 					"--overlayColor":
 						type === "image" && backgroundOverlay?.enabled
 							? hexToRgba(
-									backgroundOverlay.color || "#000",
-									backgroundOverlay.opacity || 50,
-							  )
+								backgroundOverlay.color || "#000",
+								backgroundOverlay.opacity || 50,
+							)
 							: "transparent",
 					"--backgroundSize": type === "image" ? backgroundSize : "auto",
 				}}

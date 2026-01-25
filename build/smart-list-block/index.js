@@ -755,7 +755,7 @@ function PlusIcon(props) {
     fill: "none",
     ...props,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-      d: "M48.4375 0C21.6797 0 0 21.6797 0 48.4375C0 75.1953 21.6797 96.875  48.4375 96.875C75.1953 96.875 96.875 75.1953 96.875 48.4375C96.875 21.6797  75.1953 0 48.4375 0ZM76.5625 53.9062C76.5625 55.1953 75.5078 56.25 74.2188  56.25H56.25V74.2188C56.25 75.5078 55.1953 76.5625 53.9062  76.5625H42.9688C41.6797 76.5625 40.625 75.5078 40.625  74.2188V56.25H22.6562C21.3672 56.25 20.3125 55.1953  20.3125 53.9062V42.9688C20.3125 41.6797 21.3672  40.625 22.6562 40.625H40.625V22.6562C40.625 21.3672 41.6797 20.3125 42.9688 20.3125H53.9062C55.1953  20.3125 56.25 21.3672 56.25 22.6562V40.625H74.2188C75.5078 40.625 76.5625 41.6797 76.5625 42.9688V53.9062Z",
+      d: "M48.4375 0C21.6797 0 0 21.6797 0 48.4375C0 75.1953 21.6797 96.875 \r 48.4375 96.875C75.1953 96.875 96.875 75.1953 96.875 48.4375C96.875 21.6797 \r 75.1953 0 48.4375 0ZM76.5625 53.9062C76.5625 55.1953 75.5078 56.25 74.2188 \r 56.25H56.25V74.2188C56.25 75.5078 55.1953 76.5625 53.9062 \r 76.5625H42.9688C41.6797 76.5625 40.625 75.5078 40.625 \r 74.2188V56.25H22.6562C21.3672 56.25 20.3125 55.1953 \r 20.3125 53.9062V42.9688C20.3125 41.6797 21.3672 \r 40.625 22.6562 40.625H40.625V22.6562C40.625 21.3672 41.6797 20.3125 42.9688 20.3125H53.9062C55.1953 \r 20.3125 56.25 21.3672 56.25 22.6562V40.625H74.2188C75.5078 40.625 76.5625 41.6797 76.5625 42.9688V53.9062Z",
       fill: "#ccc"
     })
   });
@@ -1167,7 +1167,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false,"anchor":true,"className":true},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"lists":{"type":"array","default":[{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"},{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"},{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"}]},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":24},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#fff"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":1.5,"spacing":0,"titleColor":"#757575","titleHoverColor":"#757575"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":1.5,"spacing":0,"descriptionColor":"#757575","descriptionHoverColor":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"left","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBackGroundStyle":"solid","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}},"iconBorderStyle":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"paddingIcon":{"type":"object","default":{"top":10,"right":10,"bottom":10,"left":10,"linked":true}},"radiusIcon":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false,"anchor":true,"className":true},"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"lists":{"type":"array","default":[{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"},{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"},{"icon":"✨","title":"Bangladesh","description":"Beautiful Bangladesh"}]},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"number","default":12},"iconGap":{"type":"number","default":12},"divider":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto","backgroundOverlay":{"enabled":false,"color":"#f05e31","opacity":50}}},"color":{"type":"string","default":"#fff"},"padding":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"margin":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"radius":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":1.5,"spacing":0,"titleColor":"#757575","titleHoverColor":"#757575"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":1.5,"spacing":0,"descriptionColor":"#757575","descriptionHoverColor":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"number","default":6},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":20,"height":20,"size":24,"position":"left","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBackGroundStyle":"solid","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}},"iconBorderStyle":{"type":"object","default":{"show":false,"width":1,"style":"solid","color":"#f05e31"}},"paddingIcon":{"type":"object","default":{"top":10,"right":10,"bottom":10,"left":10,"linked":true}},"radiusIcon":{"type":"object","default":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2335,13 +2335,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../const */ "./src/smart-list-block/const/index.js");
 /* harmony import */ var _hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../hooks/useBlockContext */ "./src/smart-list-block/hooks/useBlockContext.js");
 /* harmony import */ var _common_Label__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/Label */ "./src/smart-list-block/components/InspectorControl/common/Label/index.js");
-/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
-/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
-/* harmony import */ var _GeneralControlPanel_GeneralPanelItems_GeneralStyle_ImageUpload__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload.js");
-/* harmony import */ var _common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/RangeControl/CustomRangeControl */ "./src/smart-list-block/components/InspectorControl/common/RangeControl/CustomRangeControl.js");
-/* harmony import */ var _IconUpload__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./IconUpload */ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/IconUpload.js");
-/* harmony import */ var _common_Selection_Selection__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../common/Selection/Selection */ "./src/smart-list-block/components/InspectorControl/common/Selection/Selection.js");
-/* harmony import */ var _Alignment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Alignment */ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/Alignment.js");
+/* harmony import */ var _common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/RangeControl/CustomRangeControl */ "./src/smart-list-block/components/InspectorControl/common/RangeControl/CustomRangeControl.js");
+/* harmony import */ var _common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/Selection/Selection */ "./src/smart-list-block/components/InspectorControl/common/Selection/Selection.js");
+/* harmony import */ var _common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/Tabs/Tabs */ "./src/smart-list-block/components/InspectorControl/common/Tabs/Tabs.js");
+/* harmony import */ var _common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/ToggleButton/ToggleButton */ "./src/smart-list-block/components/InspectorControl/common/ToggleButton/ToggleButton.js");
+/* harmony import */ var _GeneralControlPanel_GeneralPanelItems_GeneralStyle_ImageUpload__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload */ "./src/smart-list-block/components/InspectorControl/GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload.js");
+/* harmony import */ var _Alignment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Alignment */ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/Alignment.js");
+/* harmony import */ var _IconUpload__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./IconUpload */ "./src/smart-list-block/components/InspectorControl/IconControlPanel/General/IconUpload.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__);
 
@@ -2384,38 +2384,38 @@ function General() {
     switch (selectedTab) {
       case "iconSet":
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_IconUpload__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_IconUpload__WEBPACK_IMPORTED_MODULE_9__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
             label: "Icon Size",
             attributeKey: "icon",
             subKey: "size",
             min: 0,
             max: 100,
             defaultValue: 24
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Selection_Selection__WEBPACK_IMPORTED_MODULE_4__["default"], {
             label: "Icon Position",
             options: _const__WEBPACK_IMPORTED_MODULE_0__.iconPosition,
             attributeKey: "icon",
             subKey: "position"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Alignment__WEBPACK_IMPORTED_MODULE_9__["default"], {})]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Alignment__WEBPACK_IMPORTED_MODULE_8__["default"], {})]
         });
       case "custom":
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_GeneralControlPanel_GeneralPanelItems_GeneralStyle_ImageUpload__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_GeneralControlPanel_GeneralPanelItems_GeneralStyle_ImageUpload__WEBPACK_IMPORTED_MODULE_7__["default"], {
             onChange: handleImageChange,
             value: icon.imageSource || ""
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
             label: "Width",
             attributeKey: "icon",
             subKey: "width",
             min: 0,
-            max: 100,
+            max: 50,
             defaultValue: 20
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_RangeControl_CustomRangeControl__WEBPACK_IMPORTED_MODULE_3__["default"], {
             label: "Height",
             attributeKey: "icon",
             subKey: "height",
             min: 0,
-            max: 100,
+            max: 50,
             defaultValue: 20
           })]
         });
@@ -2424,7 +2424,7 @@ function General() {
     }
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
       label: "Icon",
       checked: icon.show,
       onChange: value => setAttributes({
@@ -2436,7 +2436,7 @@ function General() {
     }), icon.show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Label__WEBPACK_IMPORTED_MODULE_2__["default"], {
         label: "Icon Source"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_common_Tabs_Tabs__WEBPACK_IMPORTED_MODULE_5__["default"], {
         tabItems: _const__WEBPACK_IMPORTED_MODULE_0__.iconTabItems,
         onHandleTab: handleTab,
         selectedTab: selectedTab,
@@ -3877,11 +3877,11 @@ function RenderIcon({
       "--iconSize": `${icon?.size || 20}px`,
       "--icon-color": iconStyle.iconColor || "#757575",
       "--icon-hover-color": iconStyle.iconHoverColor || "#757575",
-      "--bg-color": hasBg ? iconStyle.iconBgColor : "#EEEEEE",
-      "--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "#EEEEEE",
-      "--iconBorderColor": iconBorderStyle.color,
-      "--iconBorderStyle": iconBorderStyle.style,
-      "--iconBorderWidth": `${iconBorderStyle.width || 1}px`,
+      "--bg-color": hasBg ? iconStyle.iconBgColor : "transparent",
+      "--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "transparent",
+      "--iconBorderColor": hasBorder ? iconBorderStyle?.color : "transparent",
+      "--iconBorderStyle": iconBorderStyle?.style || "solid",
+      "--iconBorderWidth": `${iconBorderStyle?.width || 0}px`,
       "--iconPaddingTop": `${paddingIcon.top}px` || "10px",
       "--iconPaddingRight": `${paddingIcon.right}px` || "10px",
       "--iconPaddingBottom": `${paddingIcon.bottom}px` || "10px",
@@ -3895,9 +3895,9 @@ function RenderIcon({
       src: icon.imageSource,
       alt: "icon",
       style: {
-        width: "100%",
-        height: "100%",
-        objectFit: "contain"
+        width: icon.width,
+        height: icon.height,
+        objectFit: "cover"
       }
     }), icon.type === "iconSet" && icon.iconSourceId && (() => {
       const {
@@ -4746,9 +4746,9 @@ function save({
         "--iconSize": `${icon?.size || 20}px`,
         "--icon-color": iconStyle?.iconColor || "#757575",
         "--icon-hover-color": iconStyle?.iconHoverColor || "#757575",
-        "--bg-color": hasBg ? iconStyle?.iconBgColor : "#EEEEEE",
-        "--bg-hover-color": hasBg ? iconStyle?.iconHoverBgColor : "#EEEEEE",
-        "--iconBorderColor": iconBorderStyle?.color,
+        "--bg-color": hasBg ? iconStyle.iconBgColor : "transparent",
+        "--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "transparent",
+        "--iconBorderColor": hasBorder ? iconBorderStyle?.color : "transparent",
         "--iconBorderStyle": iconBorderStyle?.style,
         "--iconBorderWidth": `${iconBorderStyle?.width || 1}px`,
         "--iconPaddingTop": `${(_paddingIcon$top = paddingIcon?.top) !== null && _paddingIcon$top !== void 0 ? _paddingIcon$top : 10}px`,

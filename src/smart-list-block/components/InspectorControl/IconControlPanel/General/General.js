@@ -1,13 +1,13 @@
 import { iconPosition, iconTabItems } from "../../../../const";
 import useBlockContext from "../../../../hooks/useBlockContext";
 import Label from "../../common/Label";
-import ToggleControlButton from "../../common/ToggleButton/ToggleButton";
-import Tabs from "../../common/Tabs/Tabs";
-import ImageUpload from "../../GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload";
 import CustomRangeControl from "../../common/RangeControl/CustomRangeControl";
-import IconUpload from "./IconUpload";
 import SectionControlButton from "../../common/Selection/Selection";
+import Tabs from "../../common/Tabs/Tabs";
+import ToggleControlButton from "../../common/ToggleButton/ToggleButton";
+import ImageUpload from "../../GeneralControlPanel/GeneralPanelItems/GeneralStyle/ImageUpload";
 import Alignment from "./Alignment";
+import IconUpload from "./IconUpload";
 
 function General() {
 	const { attributes, setAttributes } = useBlockContext();
@@ -61,7 +61,7 @@ function General() {
 							attributeKey="icon"
 							subKey="width"
 							min={0}
-							max={100}
+							max={50}
 							defaultValue={20}
 						></CustomRangeControl>
 						<CustomRangeControl
@@ -69,7 +69,7 @@ function General() {
 							attributeKey="icon"
 							subKey="height"
 							min={0}
-							max={100}
+							max={50}
 							defaultValue={20}
 						></CustomRangeControl>
 					</>

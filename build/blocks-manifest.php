@@ -60,7 +60,7 @@ return array(
 			),
 			'spaceBetween' => array(
 				'type' => 'number',
-				'default' => 24
+				'default' => 12
 			),
 			'iconGap' => array(
 				'type' => 'number',

@@ -55,7 +55,7 @@
 		},
 		"spaceBetween": {
 			"type": "number",
-			"default": 24
+			"default": 12
 		},
 		"iconGap": {
 			"type": "number",
