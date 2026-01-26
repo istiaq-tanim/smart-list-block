@@ -19,7 +19,11 @@ return array(
 		'supports' => array(
 			'html' => false,
 			'anchor' => true,
-			'className' => true
+			'className' => true,
+			'innerBlocks' => true
+		),
+		'allowedBlocks' => array(
+			'create-block/smart-list-item'
 		),
 		'attributes' => array(
 			'presetsType' => array(
@@ -33,26 +37,6 @@ return array(
 			'alignment' => array(
 				'type' => 'string',
 				'default' => 'left'
-			),
-			'lists' => array(
-				'type' => 'array',
-				'default' => array(
-					array(
-						'icon' => '✨',
-						'title' => 'Bangladesh',
-						'description' => 'Beautiful Bangladesh'
-					),
-					array(
-						'icon' => '✨',
-						'title' => 'Bangladesh',
-						'description' => 'Beautiful Bangladesh'
-					),
-					array(
-						'icon' => '✨',
-						'title' => 'Bangladesh',
-						'description' => 'Beautiful Bangladesh'
-					)
-				)
 			),
 			'previewWidth' => array(
 				'type' => 'string',
@@ -229,10 +213,61 @@ return array(
 				)
 			)
 		),
+		'providesContext' => array(
+			'title' => 'title',
+			'description' => 'description',
+			'icon' => 'icon',
+			'iconStyle' => 'iconStyle',
+			'iconBorderStyle' => 'iconBorderStyle',
+			'radiusIcon' => 'radiusIcon',
+			'paddingIcon' => 'paddingIcon',
+			'presetsType' => 'presetsType'
+		),
 		'textdomain' => 'smart-list-block',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
+	),
+	'smart-list-item' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'create-block/smart-list-item',
+		'title' => 'Smart List Item',
+		'parent' => array(
+			'create-block/smart-list-block'
+		),
+		'category' => 'smart-list',
+		'icon' => 'editor-ul',
+		'supports' => array(
+			'reusable' => false,
+			'html' => false
+		),
+		'attributes' => array(
+			'icon' => array(
+				'type' => 'string',
+				'default' => '✨'
+			),
+			'title' => array(
+				'type' => 'string',
+				'default' => 'Bangladesh'
+			),
+			'description' => array(
+				'type' => 'string',
+				'default' => 'Beautiful Bangladesh'
+			)
+		),
+		'usesContext' => array(
+			'title',
+			'description',
+			'icon',
+			'iconStyle',
+			'iconBorderStyle',
+			'radiusIcon',
+			'paddingIcon',
+			'presetsType'
+		),
+		'editorScript' => 'file:./index.js',
+		'style' => 'file:./style.css'
 	)
 );

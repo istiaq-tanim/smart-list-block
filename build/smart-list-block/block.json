@@ -14,8 +14,12 @@
   "supports": {
     "html": false,
     "anchor": true,
-    "className": true
+    "className": true,
+    "innerBlocks": true
   },
+  "allowedBlocks": [
+    "create-block/smart-list-item"
+  ],
   "attributes": {
     "presetsType": {
       "type": "string",
@@ -28,26 +32,6 @@
     "alignment": {
       "type": "string",
       "default": "left"
-    },
-    "lists": {
-      "type": "array",
-      "default": [
-        {
-          "icon": "✨",
-          "title": "Bangladesh",
-          "description": "Beautiful Bangladesh"
-        },
-        {
-          "icon": "✨",
-          "title": "Bangladesh",
-          "description": "Beautiful Bangladesh"
-        },
-        {
-          "icon": "✨",
-          "title": "Bangladesh",
-          "description": "Beautiful Bangladesh"
-        }
-      ]
     },
     "previewWidth": {
       "type": "string",
@@ -223,6 +207,16 @@
         "linked": true
       }
     }
+  },
+  "providesContext": {
+    "title": "title",
+    "description": "description",
+    "icon": "icon",
+    "iconStyle": "iconStyle",
+    "iconBorderStyle": "iconBorderStyle",
+    "radiusIcon": "radiusIcon",
+    "paddingIcon": "paddingIcon",
+    "presetsType": "presetsType"
   },
   "textdomain": "smart-list-block",
   "editorScript": "file:./index.js",

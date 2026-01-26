@@ -1,5 +1,5 @@
-import { hexToRgba } from "../utils";
 import { getIcon } from "../const/icons";
+import { hexToRgba } from "../utils";
 
 function save({ attributes }) {
 	const {
@@ -52,9 +52,8 @@ function save({ attributes }) {
 
 		return (
 			<div
-				className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${
-					hasBorder ? "has-border" : ""
-				}`}
+				className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${hasBorder ? "has-border" : ""
+					}`}
 				style={{
 					"--iconSize": `${icon?.size || 20}px`,
 					"--icon-color": iconStyle?.iconColor || "#757575",
@@ -102,9 +101,8 @@ function save({ attributes }) {
 		return (
 			<li
 				key={index}
-				className={`smart-item icon-${icon.position} icon-align-${
-					icon.alignment || "center"
-				}`}
+				className={`smart-item icon-${icon.position} icon-align-${icon.alignment || "center"
+					}`}
 			>
 				<RenderIcon />
 				<div className="list-content">
@@ -182,9 +180,9 @@ function save({ attributes }) {
 					"--overlayColor":
 						type === "image" && backgroundOverlay?.enabled
 							? hexToRgba(
-									backgroundOverlay.color || "#000",
-									backgroundOverlay.opacity || 50,
-							  )
+								backgroundOverlay.color || "#000",
+								backgroundOverlay.opacity || 50,
+							)
 							: "transparent",
 					"--backgroundSize": type === "image" ? backgroundSize : "auto",
 				}}

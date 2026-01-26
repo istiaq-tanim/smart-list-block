@@ -1,5 +1,5 @@
+import { InnerBlocks } from "@wordpress/block-editor";
 import { hexToRgba } from "../utils";
-import ListItemPreview from "./ListItemPreview";
 function ListPreview({ attributes }) {
 	const {
 		listOrientation,
@@ -19,12 +19,14 @@ function ListPreview({ attributes }) {
 		contentEffect,
 		gapTitleToDescription,
 		icon,
-		iconStyle,
-		iconBorderStyle,
-		paddingIcon,
-		radiusIcon,
-		lists,
 	} = attributes;
+
+	const ALLOWED_BLOCKS = ["create-block/smart-list-item"];
+	const TEMPLATE = [
+		["create-block/smart-list-item"],
+		["create-block/smart-list-item"],
+		["create-block/smart-list-item"]
+	];
 
 	const { width, style, color, show } = divider;
 	const {
@@ -96,30 +98,20 @@ function ListPreview({ attributes }) {
 					"--overlayColor":
 						type === "image" && backgroundOverlay?.enabled
 							? hexToRgba(
-									backgroundOverlay.color || "#000",
-									backgroundOverlay.opacity || 50,
-							  )
+								backgroundOverlay.color || "#000",
+								backgroundOverlay.opacity || 50,
+							)
 							: "transparent",
 
 					"--backgroundSize": type === "image" ? backgroundSize : "auto",
 				}}
 			>
-				{lists.map((item, index) => {
-					return (
-						<ListItemPreview
-							key={index}
-							item={item}
-							icon={icon}
-							iconStyle={iconStyle}
-							title={title}
-							description={description}
-							presetsType={presetsType}
-							iconBorderStyle={iconBorderStyle}
-							paddingIcon={paddingIcon}
-							radiusIcon={radiusIcon}
-						/>
-					);
-				})}
+				<InnerBlocks
+					allowedBlocks={ALLOWED_BLOCKS}
+					template={TEMPLATE}
+					renderAppender={InnerBlocks.ButtonBlockAppender}
+				/>
+
 			</ul>
 		</div>
 	);

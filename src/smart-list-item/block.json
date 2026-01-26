@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/smart-list-item",
+  "title": "Smart List Item",
+  "parent": [
+    "create-block/smart-list-block"
+  ],
+  "category": "smart-list",
+  "icon": "editor-ul",
+  "supports": {
+    "reusable": false,
+    "html": false
+  },
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "✨"
+    },
+    "title": {
+      "type": "string",
+      "default": "Bangladesh"
+    },
+    "description": {
+      "type": "string",
+      "default": "Beautiful Bangladesh"
+    }
+  },
+  "usesContext": [
+    "title",
+    "description",
+    "icon",
+    "iconStyle",
+    "iconBorderStyle",
+    "radiusIcon",
+    "paddingIcon",
+    "presetsType"
+  ],
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}
