@@ -14,6 +14,8 @@
  * @package CreateBlock
  */
 
+require_once plugin_dir_path(__FILE__) . 'includes/icon-helpers.php';
+
 function smart_list_register_block_category($categories, $post)
 {
 	return array_merge(

@@ -14,8 +14,10 @@
 	"supports": {
 		"html": false,
 		"anchor": true,
-		"className": true
+		"className": true,
+		"innerBlocks": true
 	},
+	"allowedBlocks": ["create-block/smart-list-item"],
 	"attributes": {
 		"presetsType": {
 			"type": "string",
@@ -29,43 +31,35 @@
 			"type": "string",
 			"default": "left"
 		},
-		"lists": {
-			"type": "array",
-			"default": [
-				{
-					"icon": "✨",
-					"title": "Bangladesh",
-					"description": "Beautiful Bangladesh"
-				},
-				{
-					"icon": "✨",
-					"title": "Bangladesh",
-					"description": "Beautiful Bangladesh"
-				},
-				{
-					"icon": "✨",
-					"title": "Bangladesh",
-					"description": "Beautiful Bangladesh"
-				}
-			]
-		},
 		"previewWidth": {
 			"type": "string",
 			"default": "100%"
 		},
 		"spaceBetween": {
-			"type": "number",
-			"default": 24
+			"type": "object",
+			"default": {
+				"desktop": 4,
+				"tablet": 4,
+				"mobile": 4
+			}
 		},
 		"iconGap": {
-			"type": "number",
-			"default": 12
+			"type": "object",
+			"default": {
+				"desktop": 12,
+				"tablet": 12,
+				"mobile": 12
+			}
 		},
 		"divider": {
 			"type": "object",
 			"default": {
 				"show": false,
-				"width": 1,
+				"width": {
+					"desktop": 1,
+					"tablet": 1,
+					"mobile": 1
+				},
 				"style": "solid",
 				"color": "#f05e31"
 			}
@@ -74,7 +68,11 @@
 			"type": "object",
 			"default": {
 				"show": false,
-				"width": 1,
+				"width": {
+					"desktop": 1,
+					"tablet": 1,
+					"mobile": 1
+				},
 				"style": "solid",
 				"color": "#f05e31"
 			}
@@ -89,11 +87,18 @@
 				"type": "solid",
 				"background": "",
 				"image": "",
-				"backgroundSize": "auto",
-				"backgroundOverlay": {
-					"enabled": false,
-					"color": "#f05e31",
-					"opacity": 50
+				"backgroundSize": "auto"
+			}
+		},
+		"backgroundOverlay": {
+			"type": "object",
+			"default": {
+				"enabled": false,
+				"color": "#f05e31",
+				"opacity": {
+					"desktop": 50,
+					"tablet": 30,
+					"mobile": 30
 				}
 			}
 		},
@@ -104,31 +109,79 @@
 		"padding": {
 			"type": "object",
 			"default": {
-				"top": 0,
-				"right": 0,
-				"bottom": 0,
-				"left": 0,
-				"linked": true
+				"desktop": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"tablet": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"mobile": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				}
 			}
 		},
 		"margin": {
 			"type": "object",
 			"default": {
-				"top": 0,
-				"right": 0,
-				"bottom": 0,
-				"left": 0,
-				"linked": true
+				"desktop": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"tablet": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"mobile": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				}
 			}
 		},
 		"radius": {
 			"type": "object",
 			"default": {
-				"top": 0,
-				"right": 0,
-				"bottom": 0,
-				"left": 0,
-				"linked": true
+				"desktop": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"tablet": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"mobile": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				}
 			}
 		},
 		"title": {
@@ -141,6 +194,7 @@
 				"weight": 400,
 				"height": 1.5,
 				"spacing": 0,
+				"text": "List item title",
 				"titleColor": "#757575",
 				"titleHoverColor": "#757575"
 			}
@@ -155,6 +209,7 @@
 				"weight": 400,
 				"height": 1.5,
 				"spacing": 0,
+				"text": "List item title",
 				"descriptionColor": "#757575",
 				"descriptionHoverColor": "#757575"
 			}
@@ -164,8 +219,12 @@
 			"default": "normal"
 		},
 		"gapTitleToDescription": {
-			"type": "number",
-			"default": 6
+			"type": "object",
+			"default": {
+				"desktop": 6,
+				"tablet": 3,
+				"mobile": 1
+			}
 		},
 		"icon": {
 			"type": "object",
@@ -174,9 +233,21 @@
 				"type": "iconSet",
 				"imageSource": "",
 				"iconSourceId": "star",
-				"width": 20,
-				"height": 20,
-				"size": 24,
+				"width": {
+					"desktop": 24,
+					"tablet": 20,
+					"mobile": 16
+				},
+				"height": {
+					"desktop": 24,
+					"tablet": 20,
+					"mobile": 16
+				},
+				"size": {
+					"desktop": 24,
+					"tablet": 20,
+					"mobile": 16
+				},
 				"position": "left",
 				"alignment": "center"
 			}
@@ -198,7 +269,11 @@
 			"type": "object",
 			"default": {
 				"show": false,
-				"width": 1,
+				"width": {
+					"desktop": 1,
+					"tablet": 1,
+					"mobile": 1
+				},
 				"style": "solid",
 				"color": "#f05e31"
 			}
@@ -206,23 +281,65 @@
 		"paddingIcon": {
 			"type": "object",
 			"default": {
-				"top": 10,
-				"right": 10,
-				"bottom": 10,
-				"left": 10,
-				"linked": true
+				"desktop": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"tablet": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"mobile": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				}
 			}
 		},
 		"radiusIcon": {
 			"type": "object",
 			"default": {
-				"top": 0,
-				"right": 0,
-				"bottom": 0,
-				"left": 0,
-				"linked": true
+				"desktop": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"tablet": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				},
+				"mobile": {
+					"top": 0,
+					"right": 0,
+					"bottom": 0,
+					"left": 0,
+					"linked": true
+				}
 			}
 		}
+	},
+	"providesContext": {
+		"title": "title",
+		"description": "description",
+		"icon": "icon",
+		"iconStyle": "iconStyle",
+		"iconBorderStyle": "iconBorderStyle",
+		"radiusIcon": "radiusIcon",
+		"paddingIcon": "paddingIcon",
+		"presetsType": "presetsType"
 	},
 	"textdomain": "smart-list-block",
 	"editorScript": "file:./index.js",

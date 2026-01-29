@@ -1,4 +1,5 @@
 import useBlockContext from "../../../../hooks/useBlockContext";
+import { useDeviceType } from "../../../../utils";
 import CustomColorPicker from "../../common/CustomColorPicker/CustomColorPicker";
 import SpacingControl from "../../common/SpacingControl/SpacingControl";
 import ToggleControlButton from "../../common/ToggleButton/ToggleButton";
@@ -11,6 +12,9 @@ function Styles() {
 	const handleChange = (newColor) => {
 		setAttributes({ color: newColor });
 	};
+
+	const deviceType = useDeviceType();
+	const normalizedDeviceType = deviceType?.toLowerCase() || "desktop";
 
 	return (
 		<div>
@@ -30,16 +34,19 @@ function Styles() {
 			{border.show && <BorderSetting attributeKey="border"></BorderSetting>}
 			<SpacingControl
 				values={attributes.radius}
+				deviceType={normalizedDeviceType}
 				label="Border Radius"
 				onChange={(values) => setAttributes({ radius: values })}
 			></SpacingControl>
 			<SpacingControl
 				values={attributes.padding}
+				deviceType={normalizedDeviceType}
 				label="Padding"
 				onChange={(values) => setAttributes({ padding: values })}
 			></SpacingControl>
 			<SpacingControl
 				values={attributes.margin}
+				deviceType={normalizedDeviceType}
 				label="Margin"
 				onChange={(values) => setAttributes({ margin: values })}
 			></SpacingControl>

@@ -1,5 +1,6 @@
 import { iconBackgroundTabsItems, iconEffectTabItems } from "../../../../const";
 import useBlockContext from "../../../../hooks/useBlockContext";
+import { useDeviceType } from "../../../../utils";
 import CustomColorPicker from "../../common/CustomColorPicker/CustomColorPicker";
 import Label from "../../common/Label";
 import SpacingControl from "../../common/SpacingControl/SpacingControl";
@@ -35,6 +36,9 @@ function Style() {
 			setAttributes({ iconStyle: { ...iconStyle, iconHoverColor: value } });
 		}
 	};
+
+	const deviceType = useDeviceType();
+	const normalizedDeviceType = deviceType?.toLowerCase() || "desktop";
 	return (
 		<div>
 			<ToggleControlButton
@@ -101,11 +105,13 @@ function Style() {
 			)}
 			<SpacingControl
 				values={attributes.radiusIcon}
+				deviceType={normalizedDeviceType}
 				label="Border Radius"
 				onChange={(values) => setAttributes({ radiusIcon: values })}
 			></SpacingControl>
 			<SpacingControl
 				values={attributes.paddingIcon}
+				deviceType={normalizedDeviceType}
 				label="Padding"
 				onChange={(values) => setAttributes({ paddingIcon: values })}
 			></SpacingControl>

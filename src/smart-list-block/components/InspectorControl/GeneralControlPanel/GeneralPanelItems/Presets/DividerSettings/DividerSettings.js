@@ -25,7 +25,7 @@ function DividerSetting() {
 				min={0}
 				max={10}
 				defaultValue={1}
-				subKey="width"
+				nestedKey="width"
 			></CustomRangeControl>
 			<CustomColorPicker
 				label="Divider Color"

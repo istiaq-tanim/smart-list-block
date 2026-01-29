@@ -1,5 +1,4 @@
 import CustomColorPicker from "../../../common/CustomColorPicker/CustomColorPicker";
-import Label from "../../../common/Label";
 import CustomRangeControl from "../../../common/RangeControl/CustomRangeControl";
 import ToggleControlButton from "../../../common/ToggleButton/ToggleButton";
 
@@ -7,7 +6,11 @@ function BackgroundOverlay({ value, onChange }) {
 	const { enabled, color, opacity } = value || {
 		enabled: false,
 		color: "#f05e31",
-		opacity: 50,
+		opacity: {
+			desktop: 50,
+			mobile: 30,
+			tablet: 30,
+		},
 	};
 
 	const handleToggle = (newEnabled) => {
@@ -17,6 +20,7 @@ function BackgroundOverlay({ value, onChange }) {
 	const handleColorChange = (newColor) => {
 		onChange({ ...value, color: newColor });
 	};
+
 	return (
 		<div>
 			<ToggleControlButton
@@ -34,10 +38,9 @@ function BackgroundOverlay({ value, onChange }) {
 						></CustomColorPicker>
 						<CustomRangeControl
 							label="opacity"
-							attributeKey="backgroundStyle"
+							attributeKey="backgroundOverlay"
 							max={100}
 							defaultValue={50}
-							subKey="backgroundOverlay"
 							nestedKey="opacity"
 						></CustomRangeControl>
 					</div>

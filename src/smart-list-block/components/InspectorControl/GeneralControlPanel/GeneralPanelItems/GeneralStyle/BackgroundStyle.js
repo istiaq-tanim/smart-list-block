@@ -9,9 +9,8 @@ import ImageUpload from "./ImageUpload";
 
 function BackgroundStyle() {
 	const { attributes, setAttributes } = useBlockContext();
-	const { backgroundStyle } = attributes;
+	const { backgroundStyle, backgroundOverlay } = attributes;
 	const selectedTab = backgroundStyle.type || "solid";
-	const { backgroundOverlay } = backgroundStyle;
 
 	const handleTab = (tabName) => {
 		setAttributes({
@@ -35,7 +34,7 @@ function BackgroundStyle() {
 
 	const handleOverlayChange = (value) => {
 		setAttributes({
-			backgroundStyle: { ...backgroundStyle, backgroundOverlay: value },
+			backgroundOverlay: value,
 		});
 	};
 

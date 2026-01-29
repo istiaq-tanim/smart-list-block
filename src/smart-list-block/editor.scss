@@ -21,19 +21,12 @@
 		list-style: none;
 
 		&.has-border {
-			border: calc(var(--borderWidth, 1) * 1px) var(--borderStyle, solid)
+			border: calc(var(--borderWidth, 1) * 1) var(--borderStyle, solid)
 				var(--borderColor, #dddddd);
 		}
 		border-top-left-radius: var(--radiusTop, 0);
-		border-top-right-radius: var(--radiusTop, 0);
-
 		border-top-right-radius: var(--radiusRight, 0);
-		border-bottom-right-radius: var(--radiusRight, 0);
-
 		border-bottom-right-radius: var(--radiusBottom, 0);
-		border-bottom-left-radius: var(--radiusBottom, 0);
-
-		border-top-left-radius: var(--radiusLeft, 0);
 		border-bottom-left-radius: var(--radiusLeft, 0);
 
 		background-color: var(--backgroundColor, transparent);
@@ -48,7 +41,13 @@
 		background-position: center;
 		background-repeat: no-repeat;
 
-		.smart-item {
+		.block-editor-inner-blocks,
+		.block-editor-block-list__layout {
+			display: contents !important;
+		}
+
+		.smart-item,
+		.wp-block-create-block-smart-list-item {
 			display: flex;
 			align-items: center;
 			gap: var(--iconGap, 12px);
@@ -168,18 +167,74 @@
 		}
 
 		&.has-divider {
-			&.is-vertical .smart-item:not(:last-child) {
-				border-bottom: calc(var(--dividerWidth, 1) * 1px)
-					var(--dividerStyle, solid) var(--dividerColor, #dddddd);
-				padding-bottom: 8px;
-				margin-bottom: 8px;
+			// First, reset all borders on items to prevent conflicts
+			.smart-item,
+			.wp-block-create-block-smart-list-item {
+				border-top: none;
+				border-right: none;
+				border-bottom: none;
+				border-left: none;
 			}
 
-			&.is-horizontal .smart-item:not(:last-child) {
-				border-right: calc(var(--dividerWidth, 1) * 1px)
-					var(--dividerStyle, solid) var(--dividerColor, #dddddd);
-				padding-right: 8px;
-				margin-right: 8px;
+			&.is-vertical {
+				// Apply divider to all items
+				.smart-item,
+				.wp-block-create-block-smart-list-item {
+					border-bottom-width: var(--dividerWidth, 1px);
+					border-bottom-style: var(--dividerStyle, solid);
+					border-bottom-color: var(--dividerColor, #dddddd);
+					padding-bottom: 8px;
+					margin-bottom: 8px;
+				}
+
+				// Remove divider from actual last child
+				.smart-item:last-of-type,
+				.wp-block-create-block-smart-list-item:last-of-type,
+				.smart-item:has(+ .block-list-appender),
+				.wp-block-create-block-smart-list-item:has(+ .block-list-appender) {
+					border-bottom: none !important;
+					padding-bottom: 0;
+					margin-bottom: 0;
+				}
+			}
+
+			&.is-horizontal {
+				// Reset vertical dividers first
+				.smart-item,
+				.wp-block-create-block-smart-list-item {
+					border-bottom: none !important;
+					padding-bottom: 0;
+					margin-bottom: 0;
+				}
+
+				// Apply horizontal divider to all items
+				.smart-item,
+				.wp-block-create-block-smart-list-item {
+					border-right-width: var(--dividerWidth, 1px);
+					border-right-style: var(--dividerStyle, solid);
+					border-right-color: var(--dividerColor, #dddddd);
+					padding-right: 8px;
+					margin-right: 8px;
+				}
+
+				// Remove divider from actual last child
+				.smart-item:last-of-type,
+				.wp-block-create-block-smart-list-item:last-of-type,
+				.smart-item:has(+ .block-list-appender),
+				.wp-block-create-block-smart-list-item:has(+ .block-list-appender) {
+					border-right: none !important;
+					padding-right: 0;
+					margin-right: 0;
+				}
+			}
+
+			// Hide divider on the block appender itself
+			.block-list-appender {
+				border: none !important;
+				padding-right: 0 !important;
+				margin-right: 0 !important;
+				padding-bottom: 0 !important;
+				margin-bottom: 0 !important;
 			}
 		}
 		.description {
@@ -193,6 +248,7 @@
 		.description-without-size {
 			font-weight: var(--descriptionWeight, 400);
 			font-family: var(--descriptionFont, "Roboto");
+			color: var(--descriptionColor, #2f2f2f);
 		}
 		.title {
 			font-size: var(--fontSize, 16px);
@@ -202,6 +258,7 @@
 			line-height: var(--height, 0);
 		}
 		.title-without-size {
+			color: var(--titleColor, #757575);
 			font-weight: var(--weight, 400);
 			font-family: var(--font, "Roboto");
 		}
@@ -385,7 +442,6 @@
 					color: #2f2f2f;
 					font-size: 13px;
 					font-weight: 400;
-					line-height: 20px;
 				}
 			}
 

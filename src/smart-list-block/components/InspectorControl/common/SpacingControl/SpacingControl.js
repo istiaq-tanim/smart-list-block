@@ -1,30 +1,56 @@
 import Link from "../../../../assets/Link";
 import ResetIcon from "../../../../assets/ResetIcon";
-import TelevisionIcon from "../../../../assets/TelevisionIcon";
 import Unlink from "../../../../assets/Unlink";
+import DeviceDropdown from "../../../ResponsibeDropdown";
 import NumberControl from "./NumberControl";
 
 function SpacingControl({
 	label,
-	values = { top: 0, right: 0, bottom: 0, left: 0, linked: true },
+	values = {
+		desktop: { top: 0, right: 0, bottom: 0, left: 0, linked: true },
+		tablet: { top: 0, right: 0, bottom: 0, left: 0, linked: true },
+		mobile: { top: 0, right: 0, bottom: 0, left: 0, linked: true },
+	},
 	onChange = () => {},
+	deviceType = "desktop",
 }) {
+	const currentValues = values[deviceType] || {
+		top: 0,
+		right: 0,
+		bottom: 0,
+		left: 0,
+		linked: true,
+	};
+
 	const handleValueChange = (position, value) => {
-		if (values.linked) {
-			onChange({
-				...values,
-				top: value,
-				right: value,
-				bottom: value,
-				left: value,
-			});
-		} else {
-			onChange({ ...values, [position]: value });
-		}
+		const updateDeviceValue = currentValues.linked
+			? {
+					...currentValues,
+					top: value,
+					right: value,
+					bottom: value,
+					left: value,
+			  }
+			: { ...currentValues, [position]: value };
+
+		onChange({
+			...values,
+			[deviceType]: updateDeviceValue,
+		});
 	};
 
 	const handleReset = () => {
-		onChange({ top: 0, right: 0, bottom: 0, left: 0, linked: true });
+		onChange({
+			...values,
+			[deviceType]: { top: 0, right: 0, bottom: 0, left: 0, linked: true },
+		});
+	};
+
+	const handleLinkToggle = () => {
+		onChange({
+			...values,
+			[deviceType]: { ...currentValues, linked: !currentValues.linked },
+		});
 	};
 	return (
 		<div className="custom-range-control">
@@ -33,7 +59,7 @@ function SpacingControl({
 					<div className="range-label">
 						<p>{label}</p>
 						<div className="desktop">
-							<TelevisionIcon></TelevisionIcon>
+							<DeviceDropdown></DeviceDropdown>
 						</div>
 					</div>
 					<div className="range-measure">
@@ -51,7 +77,7 @@ function SpacingControl({
 			</div>
 			<div className="control-input-group">
 				<NumberControl
-					value={values.top}
+					value={currentValues.top}
 					step={4}
 					min={0}
 					onChange={(val) => {
@@ -59,7 +85,7 @@ function SpacingControl({
 					}}
 				></NumberControl>
 				<NumberControl
-					value={values.right}
+					value={currentValues.right}
 					step={4}
 					onChange={(val) => {
 						handleValueChange("right", val);
@@ -67,7 +93,7 @@ function SpacingControl({
 					min={0}
 				></NumberControl>
 				<NumberControl
-					value={values.left}
+					value={currentValues.left}
 					min={0}
 					step={4}
 					onChange={(val) => {
@@ -75,7 +101,7 @@ function SpacingControl({
 					}}
 				></NumberControl>
 				<NumberControl
-					value={values.bottom}
+					value={currentValues.bottom}
 					min={0}
 					step={4}
 					onChange={(val) => {
@@ -84,10 +110,10 @@ function SpacingControl({
 				></NumberControl>
 				<div>
 					<button
-						onClick={() => onChange({ ...values, linked: !values.linked })}
-						className={`link-btn ${values.linked ? "" : "is-unlinked "}`}
+						onClick={handleLinkToggle}
+						className={`link-btn ${currentValues.linked ? "" : "is-unlinked "}`}
 					>
-						{values.linked ? <Link /> : <Unlink />}
+						{currentValues.linked ? <Link /> : <Unlink />}
 					</button>
 				</div>
 			</div>

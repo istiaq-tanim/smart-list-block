@@ -1,8 +1,7 @@
-import { useBlockProps } from "@wordpress/block-editor";
-import { customIcons } from "./const/icons";
+import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
 import { hexToRgba } from "./utils";
 
-function save({ attributes }) {
+export default function save({ attributes }) {
 	const {
 		listOrientation,
 		alignment,
@@ -25,7 +24,7 @@ function save({ attributes }) {
 		iconBorderStyle,
 		paddingIcon,
 		radiusIcon,
-		lists,
+		backgroundOverlay,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -35,8 +34,8 @@ function save({ attributes }) {
 		color: borderColor,
 		show: borderShow,
 	} = border;
-	const { background, image, type, backgroundSize, backgroundOverlay } =
-		backgroundStyle;
+
+	const { background, image, type, backgroundSize } = backgroundStyle;
 
 	const orientationClass = `is-${listOrientation || "vertical"}`;
 	const alignmentClass = `alignment-${alignment || "left"}`;
@@ -54,135 +53,55 @@ function save({ attributes }) {
 		},
 	});
 
-	const RenderIcon = () => {
-		if (!icon?.show) return null;
-
-		const hasBg = iconStyle?.show;
-		const hasBorder = iconBorderStyle?.show;
-
-		return (
-			<div
-				className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${
-					hasBorder ? "has-border" : ""
-				}`}
-				style={{
-					"--iconSize": `${icon?.size || 20}px`,
-					"--icon-color": iconStyle?.iconColor || "#757575",
-					"--icon-hover-color": iconStyle?.iconHoverColor || "#757575",
-					"--bg-color": hasBg ? iconStyle?.iconBgColor : "#EEEEEE",
-					"--bg-hover-color": hasBg ? iconStyle?.iconHoverBgColor : "#EEEEEE",
-					"--iconBorderColor": iconBorderStyle?.color,
-					"--iconBorderStyle": iconBorderStyle?.style,
-					"--iconBorderWidth": `${iconBorderStyle?.width || 1}px`,
-					"--iconPaddingTop": `${paddingIcon?.top ?? 10}px`,
-					"--iconPaddingRight": `${paddingIcon?.right ?? 10}px`,
-					"--iconPaddingBottom": `${paddingIcon?.bottom ?? 10}px`,
-					"--iconPaddingLeft": `${paddingIcon?.left ?? 10}px`,
-					"--iconRadiusTop": `${radiusIcon?.top || 0}px`,
-					"--iconRadiusRight": `${radiusIcon?.right || 0}px`,
-					"--iconRadiusBottom": `${radiusIcon?.bottom || 0}px`,
-					"--iconRadiusLeft": `${radiusIcon?.left || 0}px`,
-				}}
-			>
-				{icon.type === "custom" && icon.imageSource && (
-					<img
-						src={icon.imageSource}
-						alt=""
-						style={{ width: "100%", height: "100%", objectFit: "contain" }}
-					/>
-				)}
-
-				{icon.type === "iconSet" &&
-					icon.iconSourceId &&
-					(() => {
-						const iconData = customIcons[icon.iconSourceId];
-						if (iconData && iconData.component) {
-							const IconComponent = iconData.component;
-							return (
-								<IconComponent size={icon.size || 20} color="currentColor" />
-							);
-						}
-						return null;
-					})()}
-			</div>
-		);
-	};
-
-	// Helper function to render individual list items
-	const renderListItem = (item, index) => {
-		const TitleTag = title?.tags === "p" ? "p" : title?.tags || "div";
-		const DescriptionTag =
-			description?.tags === "p" ? "p" : description?.tags || "div";
-
-		return (
-			<li
-				key={index}
-				className={`smart-item icon-${icon.position} icon-align-${
-					icon.alignment || "center"
-				}`}
-			>
-				<RenderIcon />
-				<div className="list-content">
-					{title.show && (
-						<TitleTag
-							className={title?.tags === "p" ? "title" : "title-without-size"}
-						>
-							{item.title}
-						</TitleTag>
-					)}
-					{(presetsType !== "list" || description.show) && (
-						<DescriptionTag
-							className={
-								description?.tags === "p"
-									? "description"
-									: "description-without-size"
-							}
-						>
-							{item.description}
-						</DescriptionTag>
-					)}
-				</div>
-			</li>
-		);
-	};
-
 	return (
 		<div {...blockProps}>
 			<ul
 				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass}`}
 				style={{
-					"--spaceBetween": `${spaceBetween}px`,
-					"--iconSize": `${icon.size || 20}px`,
-					"--iconGap": `${iconGap}px`,
+					"--spaceBetween": `${spaceBetween.desktop}px`,
+					"--spaceBetweenTablet": `${spaceBetween.tablet}px`,
+					"--spaceBetweenMobile": `${spaceBetween.mobile}px`,
+					"--iconGap": `${iconGap.desktop}px`,
+					"--iconGapTablet": `${iconGap.tablet}px`,
+					"--iconGapMobile": `${iconGap.mobile}px`,
 					"--dividerColor": color,
 					"--dividerStyle": style,
-					"--dividerWidth": `${width}`,
+					"--dividerWidth": `${width.desktop}px`,
+					"--dividerWidthTablet": `${width.tablet}px`,
+					"--dividerWidthMobile": `${width.mobile}px`,
 					"--borderColor": borderColor,
 					"--borderStyle": borderStyle,
-					"--borderWidth": `${borderWidth}`,
-					"--paddingTop": `${padding.top}px`,
-					"--paddingRight": `${padding.right}px`,
-					"--paddingBottom": `${padding.bottom}px`,
-					"--paddingLeft": `${padding.left}px`,
-					"--radiusTop": `${radius.top}px`,
-					"--radiusRight": `${radius.right}px`,
-					"--radiusBottom": `${radius.bottom}px`,
-					"--radiusLeft": `${radius.left}px`,
-					"--fontSize": `${title.fontSize}px`,
-					"--weight": `${title.weight}`,
-					"--font": `${title.family}`,
-					"--spacing": `${title.spacing}px`,
-					"--height": `${title.height}`,
-					"--titleColor": `${title.titleColor}`,
-					"--titleHoverColor": `${title.titleHoverColor}`,
-					"--descriptionFontSize": `${description.fontSize}px`,
-					"--descriptionWeight": `${description.weight}`,
-					"--descriptionFont": `${description.family}`,
-					"--descriptionSpacing": `${description.spacing}px`,
-					"--descriptionHeight": `${description.height}`,
-					"--descriptionColor": `${description.descriptionColor}`,
-					"--descriptionHoverColor": `${description.descriptionHoverColor}`,
-					"--gapBetweenTitleAndDescription": `${gapTitleToDescription}px`,
+					"--borderWidth": `${borderWidth.desktop}px`,
+					"--borderWidthTablet": `${borderWidth.tablet}px`,
+					"--borderWidthMobile": `${borderWidth.mobile}px`,
+					"--paddingTop": `${padding.desktop.top}px`,
+					"--paddingRight": `${padding.desktop.right}px`,
+					"--paddingBottom": `${padding.desktop.bottom}px`,
+					"--paddingLeft": `${padding.desktop.left}px`,
+					"--paddingTopTablet": `${padding.tablet.top}px`,
+					"--paddingRightTablet": `${padding.tablet.right}px`,
+					"--paddingBottomTablet": `${padding.tablet.bottom}px`,
+					"--paddingLeftTablet": `${padding.tablet.left}px`,
+					"--paddingTopMobile": `${padding.mobile.top}px`,
+					"--paddingRightMobile": `${padding.mobile.right}px`,
+					"--paddingBottomMobile": `${padding.mobile.bottom}px`,
+					"--paddingLeftMobile": `${padding.mobile.left}px`,
+					"--radiusTop": `${radius?.desktop?.top ?? 0}px`,
+					"--radiusRight": `${radius?.desktop?.right ?? 0}px`,
+					"--radiusBottom": `${radius?.desktop?.bottom ?? 0}px`,
+					"--radiusLeft": `${radius?.desktop?.left ?? 0}px`,
+					"--radiusTopTablet": `${radius?.tablet?.top ?? 0}px`,
+					"--radiusRightTablet": `${radius?.tablet?.right ?? 0}px`,
+					"--radiusBottomTablet": `${radius?.tablet?.bottom ?? 0}px`,
+					"--radiusLeftTablet": `${radius?.tablet?.left ?? 0}px`,
+					"--radiusTopMobile": `${radius?.mobile?.top ?? 0}px`,
+					"--radiusRightMobile": `${radius?.mobile?.right ?? 0}px`,
+					"--radiusBottomMobile": `${radius?.mobile?.bottom ?? 0}px`,
+					"--radiusLeftMobile": `${radius?.mobile?.left ?? 0}px`,
+
+					"--gapBetweenTitleAndDescription": `${gapTitleToDescription.desktop}px`,
+					"--gapBetweenTitleAndDescriptionTablet": `${gapTitleToDescription.tablet}px`,
+					"--gapBetweenTitleAndDescriptionMobile": `${gapTitleToDescription.mobile}px`,
 					"--backgroundColor":
 						type === "solid" ? backgroundColor : "transparent",
 					"--backgroundGradient": type === "gradient" ? background : "none",
@@ -192,16 +111,75 @@ function save({ attributes }) {
 						type === "image" && backgroundOverlay?.enabled
 							? hexToRgba(
 									backgroundOverlay.color || "#000",
-									backgroundOverlay.opacity || 50,
+									backgroundOverlay.opacity?.desktop ?? 50,
+							  )
+							: "transparent",
+					"--overlayColorTablet":
+						type === "image" && backgroundOverlay?.enabled
+							? hexToRgba(
+									backgroundOverlay.color || "#000",
+									backgroundOverlay.opacity?.tablet ?? 50,
 							  )
 							: "transparent",
 					"--backgroundSize": type === "image" ? backgroundSize : "auto",
+					"--overlayColorMobile":
+						type === "image" && backgroundOverlay?.enabled
+							? hexToRgba(
+									backgroundOverlay.color || "#000",
+									backgroundOverlay.opacity?.mobile ?? 50,
+							  )
+							: "transparent",
+
+					"--showIcon": icon.show ? "flex" : "none",
+					"--iconType": icon.type || "iconSet",
+					"--iconSource":
+						icon.type === "image" ? icon.imageSource : icon.iconSourceId,
+					"--iconWidth": `${icon.width?.desktop || 24}px`,
+					"--iconWidthTablet": `${icon.width?.tablet || 24}px`,
+					"--iconWidthMobile": `${icon.width?.mobile || 24}px`,
+					"--iconHeight": `${icon.height?.desktop || 24}px`,
+					"--iconHeightTablet": `${icon.height?.tablet || 24}px`,
+					"--iconHeightMobile": `${icon.height?.mobile || 24}px`,
+					"--iconSize": `${icon.size?.desktop || 24}px`,
+					"--iconSizeTablet": `${icon.size?.tablet || 24}px`,
+					"--iconSizeMobile": `${icon.size?.mobile || 24}px`,
+
+					"--iconBgColor": iconStyle.iconBgColor || "transparent",
+					"--iconHoverBgColor": iconStyle.iconHoverBgColor || "transparent",
+					"--iconColor": iconStyle.iconColor || "#757575",
+					"--iconHoverColor": iconStyle.iconHoverColor || "#757575",
+					"--showIconStyle": iconStyle.show ? "block" : "none",
+
+					"--iconPaddingTop": `${paddingIcon.top}px`,
+					"--iconPaddingRight": `${paddingIcon.right}px`,
+					"--iconPaddingBottom": `${paddingIcon.bottom}px`,
+					"--iconPaddingLeft": `${paddingIcon.left}px`,
+					"--iconRadiusTop": `${radiusIcon.top}px`,
+					"--iconRadiusRight": `${radiusIcon.right}px`,
+					"--iconRadiusBottom": `${radiusIcon.bottom}px`,
+					"--iconRadiusLeft": `${radiusIcon.left}px`,
+
+					"--titleShow": title.show ? "block" : "none",
+					"--titleFamily": title.family,
+					"--titleFontSize": `${title.fontSize}px`,
+					"--titleWeight": title.weight,
+					"--titleHeight": title.height,
+					"--titleSpacing": `${title.spacing}px`,
+					"--titleColor": title.titleColor,
+					"--titleHoverColor": title.titleHoverColor,
+
+					"--descriptionShow": description.show ? "block" : "none",
+					"--descriptionFamily": description.family,
+					"--descriptionFontSize": `${description.fontSize}px`,
+					"--descriptionWeight": description.weight,
+					"--descriptionHeight": description.height,
+					"--descriptionSpacing": `${description.spacing}px`,
+					"--descriptionColor": description.descriptionColor,
+					"--descriptionHoverColor": description.descriptionHoverColor,
 				}}
 			>
-				{lists.map((item, index) => renderListItem(item, index))}
+				<InnerBlocks.Content />
 			</ul>
 		</div>
 	);
 }
-
-export default save;

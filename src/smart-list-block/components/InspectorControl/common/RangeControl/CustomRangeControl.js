@@ -1,7 +1,8 @@
 import { RangeControl } from "@wordpress/components";
-import TelevisionIcon from "../../../../assets/TelevisionIcon";
 import ResetIcon from "../../../../assets/ResetIcon";
 import useBlockContext from "../../../../hooks/useBlockContext";
+import { useDeviceType } from "../../../../utils";
+import DeviceDropdown from "../../../ResponsibeDropdown";
 
 function CustomRangeControl({
 	label = "Space Between Lists",
@@ -9,36 +10,37 @@ function CustomRangeControl({
 	min = 0,
 	max = 100,
 	defaultValue = 0,
-	subKey = null,
 	nestedKey = null,
 }) {
 	const { attributes, setAttributes } = useBlockContext();
+	const deviceType = useDeviceType();
+
+	const normalizedDeviceType = deviceType?.toLowerCase() || "desktop";
+	const activeSubKey = normalizedDeviceType;
 
 	const value =
-		nestedKey && subKey
-			? attributes?.[attributeKey]?.[subKey]?.[nestedKey] ?? defaultValue
-			: subKey
-			? attributes?.[attributeKey]?.[subKey] ?? defaultValue
+		nestedKey && activeSubKey
+			? attributes?.[attributeKey]?.[nestedKey]?.[activeSubKey] ?? defaultValue
+			: activeSubKey
+			? attributes?.[attributeKey]?.[activeSubKey] ?? defaultValue
 			: attributes?.[attributeKey] ?? defaultValue;
 
-	//Handle Both primitive and nonPrimitive attributes
-
-	const handleChange = (attributeKey, newValue, subKey) => {
-		if (nestedKey && subKey) {
+	const handleChange = (attributeKey, newValue, deviceSubKey) => {
+		if (nestedKey && deviceSubKey) {
 			setAttributes({
 				[attributeKey]: {
 					...attributes[attributeKey],
-					[subKey]: {
-						...attributes[attributeKey][subKey],
-						[nestedKey]: newValue,
+					[nestedKey]: {
+						...attributes[attributeKey]?.[nestedKey],
+						[deviceSubKey]: newValue,
 					},
 				},
 			});
-		} else if (subKey) {
+		} else if (deviceSubKey) {
 			setAttributes({
 				[attributeKey]: {
 					...attributes[attributeKey],
-					[subKey]: newValue,
+					[deviceSubKey]: newValue,
 				},
 			});
 		} else {
@@ -46,10 +48,8 @@ function CustomRangeControl({
 		}
 	};
 
-	//Reset the value with default value
-
 	const handleReset = () => {
-		handleChange(attributeKey, defaultValue, subKey);
+		handleChange(attributeKey, defaultValue, activeSubKey);
 	};
 	return (
 		<div className="custom-range-control">
@@ -58,15 +58,12 @@ function CustomRangeControl({
 					<div className="range-label">
 						<p>{label}</p>
 						<div className="desktop">
-							<TelevisionIcon></TelevisionIcon>
+							<DeviceDropdown></DeviceDropdown>
 						</div>
 					</div>
 					<div className="range-measure">
 						<div>
-							<ResetIcon
-								style={{ cursor: "pointer" }}
-								onClick={handleReset}
-							></ResetIcon>
+							<ResetIcon style={{ cursor: "pointer" }} onClick={handleReset} />
 							<div className="pixel">
 								<p>px</p>
 							</div>
@@ -79,8 +76,10 @@ function CustomRangeControl({
 					max={max}
 					min={min}
 					value={value}
-					onChange={(newValue) => handleChange(attributeKey, newValue, subKey)}
-				></RangeControl>
+					onChange={(newValue) =>
+						handleChange(attributeKey, newValue, activeSubKey)
+					}
+				/>
 			</div>
 		</div>
 	);

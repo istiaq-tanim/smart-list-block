@@ -19,7 +19,11 @@ return array(
 		'supports' => array(
 			'html' => false,
 			'anchor' => true,
-			'className' => true
+			'className' => true,
+			'innerBlocks' => true
+		),
+		'allowedBlocks' => array(
+			'create-block/smart-list-item'
 		),
 		'attributes' => array(
 			'presetsType' => array(
@@ -34,43 +38,35 @@ return array(
 				'type' => 'string',
 				'default' => 'left'
 			),
-			'lists' => array(
-				'type' => 'array',
-				'default' => array(
-					array(
-						'icon' => '✨',
-						'title' => 'Bangladesh',
-						'description' => 'Beautiful Bangladesh'
-					),
-					array(
-						'icon' => '✨',
-						'title' => 'Bangladesh',
-						'description' => 'Beautiful Bangladesh'
-					),
-					array(
-						'icon' => '✨',
-						'title' => 'Bangladesh',
-						'description' => 'Beautiful Bangladesh'
-					)
-				)
-			),
 			'previewWidth' => array(
 				'type' => 'string',
 				'default' => '100%'
 			),
 			'spaceBetween' => array(
-				'type' => 'number',
-				'default' => 24
+				'type' => 'object',
+				'default' => array(
+					'desktop' => 4,
+					'tablet' => 4,
+					'mobile' => 4
+				)
 			),
 			'iconGap' => array(
-				'type' => 'number',
-				'default' => 12
+				'type' => 'object',
+				'default' => array(
+					'desktop' => 12,
+					'tablet' => 12,
+					'mobile' => 12
+				)
 			),
 			'divider' => array(
 				'type' => 'object',
 				'default' => array(
 					'show' => false,
-					'width' => 1,
+					'width' => array(
+						'desktop' => 1,
+						'tablet' => 1,
+						'mobile' => 1
+					),
 					'style' => 'solid',
 					'color' => '#f05e31'
 				)
@@ -79,7 +75,11 @@ return array(
 				'type' => 'object',
 				'default' => array(
 					'show' => false,
-					'width' => 1,
+					'width' => array(
+						'desktop' => 1,
+						'tablet' => 1,
+						'mobile' => 1
+					),
 					'style' => 'solid',
 					'color' => '#f05e31'
 				)
@@ -94,11 +94,18 @@ return array(
 					'type' => 'solid',
 					'background' => '',
 					'image' => '',
-					'backgroundSize' => 'auto',
-					'backgroundOverlay' => array(
-						'enabled' => false,
-						'color' => '#f05e31',
-						'opacity' => 50
+					'backgroundSize' => 'auto'
+				)
+			),
+			'backgroundOverlay' => array(
+				'type' => 'object',
+				'default' => array(
+					'enabled' => false,
+					'color' => '#f05e31',
+					'opacity' => array(
+						'desktop' => 50,
+						'tablet' => 30,
+						'mobile' => 30
 					)
 				)
 			),
@@ -109,31 +116,79 @@ return array(
 			'padding' => array(
 				'type' => 'object',
 				'default' => array(
-					'top' => 0,
-					'right' => 0,
-					'bottom' => 0,
-					'left' => 0,
-					'linked' => true
+					'desktop' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'tablet' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'mobile' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					)
 				)
 			),
 			'margin' => array(
 				'type' => 'object',
 				'default' => array(
-					'top' => 0,
-					'right' => 0,
-					'bottom' => 0,
-					'left' => 0,
-					'linked' => true
+					'desktop' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'tablet' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'mobile' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					)
 				)
 			),
 			'radius' => array(
 				'type' => 'object',
 				'default' => array(
-					'top' => 0,
-					'right' => 0,
-					'bottom' => 0,
-					'left' => 0,
-					'linked' => true
+					'desktop' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'tablet' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'mobile' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					)
 				)
 			),
 			'title' => array(
@@ -146,6 +201,7 @@ return array(
 					'weight' => 400,
 					'height' => 1.5,
 					'spacing' => 0,
+					'text' => 'List item title',
 					'titleColor' => '#757575',
 					'titleHoverColor' => '#757575'
 				)
@@ -160,6 +216,7 @@ return array(
 					'weight' => 400,
 					'height' => 1.5,
 					'spacing' => 0,
+					'text' => 'List item title',
 					'descriptionColor' => '#757575',
 					'descriptionHoverColor' => '#757575'
 				)
@@ -169,8 +226,12 @@ return array(
 				'default' => 'normal'
 			),
 			'gapTitleToDescription' => array(
-				'type' => 'number',
-				'default' => 6
+				'type' => 'object',
+				'default' => array(
+					'desktop' => 6,
+					'tablet' => 3,
+					'mobile' => 1
+				)
 			),
 			'icon' => array(
 				'type' => 'object',
@@ -179,9 +240,21 @@ return array(
 					'type' => 'iconSet',
 					'imageSource' => '',
 					'iconSourceId' => 'star',
-					'width' => 20,
-					'height' => 20,
-					'size' => 24,
+					'width' => array(
+						'desktop' => 24,
+						'tablet' => 20,
+						'mobile' => 16
+					),
+					'height' => array(
+						'desktop' => 24,
+						'tablet' => 20,
+						'mobile' => 16
+					),
+					'size' => array(
+						'desktop' => 24,
+						'tablet' => 20,
+						'mobile' => 16
+					),
 					'position' => 'left',
 					'alignment' => 'center'
 				)
@@ -203,7 +276,11 @@ return array(
 				'type' => 'object',
 				'default' => array(
 					'show' => false,
-					'width' => 1,
+					'width' => array(
+						'desktop' => 1,
+						'tablet' => 1,
+						'mobile' => 1
+					),
 					'style' => 'solid',
 					'color' => '#f05e31'
 				)
@@ -211,28 +288,112 @@ return array(
 			'paddingIcon' => array(
 				'type' => 'object',
 				'default' => array(
-					'top' => 10,
-					'right' => 10,
-					'bottom' => 10,
-					'left' => 10,
-					'linked' => true
+					'desktop' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'tablet' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'mobile' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					)
 				)
 			),
 			'radiusIcon' => array(
 				'type' => 'object',
 				'default' => array(
-					'top' => 0,
-					'right' => 0,
-					'bottom' => 0,
-					'left' => 0,
-					'linked' => true
+					'desktop' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'tablet' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					),
+					'mobile' => array(
+						'top' => 0,
+						'right' => 0,
+						'bottom' => 0,
+						'left' => 0,
+						'linked' => true
+					)
 				)
 			)
+		),
+		'providesContext' => array(
+			'title' => 'title',
+			'description' => 'description',
+			'icon' => 'icon',
+			'iconStyle' => 'iconStyle',
+			'iconBorderStyle' => 'iconBorderStyle',
+			'radiusIcon' => 'radiusIcon',
+			'paddingIcon' => 'paddingIcon',
+			'presetsType' => 'presetsType'
 		),
 		'textdomain' => 'smart-list-block',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
+	),
+	'smart-list-item' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'create-block/smart-list-item',
+		'title' => 'Smart List Item',
+		'parent' => array(
+			'create-block/smart-list-block'
+		),
+		'category' => 'smart-list',
+		'icon' => 'editor-ul',
+		'supports' => array(
+			'reusable' => false,
+			'html' => false
+		),
+		'attributes' => array(
+			'icon' => array(
+				'type' => 'string',
+				'default' => 'Star'
+			),
+			'titleText' => array(
+				'type' => 'string',
+				'default' => 'Bangladesh'
+			),
+			'descriptionText' => array(
+				'type' => 'string',
+				'default' => 'I Love My Country'
+			)
+		),
+		'usesContext' => array(
+			'title',
+			'description',
+			'icon',
+			'iconStyle',
+			'iconBorderStyle',
+			'radiusIcon',
+			'paddingIcon',
+			'presetsType'
+		),
+		'editorScript' => 'file:./index.js',
+		'style' => 'file:./style.css',
+		'render' => 'file:./render.php'
 	)
 );

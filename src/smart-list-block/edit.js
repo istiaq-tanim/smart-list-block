@@ -9,13 +9,24 @@ import "./editor.scss";
 import GeneralControlPanel from "./components/InspectorControl/GeneralControlPanel/GeneralControlPanel";
 import ListPreview from "./components/ListPreview";
 import BlockProvider from "./Provider/BlockProvider";
-import { ToolbarGroup } from "@wordpress/components";
-import { ToolbarButton } from "@wordpress/components";
 import ContentControlPanel from "./components/InspectorControl/ContentControlPanel/ContentControlPanel";
 import IconControlPanel from "./components/InspectorControl/IconControlPanel/IconControlPanel";
+import { useEffect } from "react";
 
 export default function Edit({ attributes, setAttributes }) {
 	const { previewWidth } = attributes;
+
+	useEffect(() => {
+		const root = document.querySelector(".is-root-container");
+		if (!root) return;
+
+		root.classList.remove("is-mobile-preview", "is-tablet-preview");
+		if (attributes.device === "mobile") {
+			root.classList.add("is-mobile-preview");
+		} else if (attributes.device === "tablet") {
+			root.classList.add("is-tablet-preview");
+		}
+	}, [attributes.device]);
 	const blockProps = useBlockProps({
 		style: {
 			maxWidth: previewWidth,
@@ -24,7 +35,7 @@ export default function Edit({ attributes, setAttributes }) {
 	});
 	return (
 		<BlockProvider attributes={attributes} setAttributes={setAttributes}>
-			<BlockControls>
+			{/* <BlockControls>
 				<ToolbarGroup>
 					<ToolbarButton
 						icon="align-center"
@@ -40,7 +51,7 @@ export default function Edit({ attributes, setAttributes }) {
 						onClick={() => setAttributes({ previewWidth: "1200px" })}
 					/>
 				</ToolbarGroup>
-			</BlockControls>
+			</BlockControls> */}
 			<InspectorControls>
 				{/* General Panel with Tabs */}
 				<GeneralControlPanel></GeneralControlPanel>

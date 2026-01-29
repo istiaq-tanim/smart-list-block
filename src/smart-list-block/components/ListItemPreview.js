@@ -1,24 +1,28 @@
+import { RichText } from "@wordpress/block-editor";
 import RenderIcon from "./RenderIcon";
+
 function ListItemPreview({
-	item = { title: "List Item", description: "This is the list Description" },
 	icon,
+	iconStyle,
 	title,
 	description,
 	presetsType,
-	iconStyle,
 	iconBorderStyle,
-	radiusIcon,
 	paddingIcon,
+	radiusIcon,
+	attributes,
+	setAttributes,
 }) {
-	const TitleTag = title?.tags === "p" ? "p" : title?.tags;
-	const DescriptionTag = description?.tags === "p" ? "p" : description?.tags;
+	const TitleTag = title?.tags === "p" ? "p" : title?.tags || "p";
+	const DescriptionTag =
+		description?.tags === "p" ? "p" : description?.tags || "p";
+
+	const { titleText, descriptionText } = attributes;
+
+	const showDescription = presetsType !== "list" || description?.show === true;
 
 	return (
-		<li
-			className={`smart-item icon-${icon.position} icon-align-${
-				icon.alignment || "center"
-			}`}
-		>
+		<>
 			<RenderIcon
 				icon={icon}
 				iconStyle={iconStyle}
@@ -26,27 +30,33 @@ function ListItemPreview({
 				radiusIcon={radiusIcon}
 				paddingIcon={paddingIcon}
 			/>
+
 			<div className="list-content">
 				{title.show && (
-					<TitleTag
-						className={title?.tags === "p" ? "title" : "title-without-size"}
-					>
-						{item.title}
-					</TitleTag>
+					<RichText
+						tagName={TitleTag}
+						className={TitleTag === "p" ? "title" : "title-without-size"}
+						value={titleText}
+						onChange={(value) => setAttributes({ titleText: value })}
+						placeholder="Title..."
+					/>
 				)}
-				{(presetsType !== "list" || description.show) && (
-					<DescriptionTag
+
+				{showDescription && (
+					<RichText
+						tagName={DescriptionTag}
 						className={
-							description?.tags === "p"
+							DescriptionTag === "p"
 								? "description"
 								: "description-without-size"
 						}
-					>
-						{item.description}
-					</DescriptionTag>
+						value={descriptionText}
+						onChange={(value) => setAttributes({ descriptionText: value })}
+						placeholder="Description..."
+					/>
 				)}
 			</div>
-		</li>
+		</>
 	);
 }
 

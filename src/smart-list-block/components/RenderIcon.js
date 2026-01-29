@@ -1,4 +1,5 @@
 import { getIcon } from "../const/icons";
+import { useDeviceType } from "../utils";
 
 export default function RenderIcon({
 	icon,
@@ -10,20 +11,35 @@ export default function RenderIcon({
 	const hasBg = iconStyle?.show;
 	const hasBorder = iconBorderStyle.show;
 	if (!icon?.show) return null;
+
+	const device = useDeviceType()?.toLowerCase() || "desktop";
+
+	const getResponsiveValue = (obj, fallback = 0) =>
+		obj?.[device] ?? obj?.desktop ?? fallback;
+
+	const getResponsiveObjectValue = (obj, key, fallback = 0) =>
+		obj?.[key]?.[device] ?? obj?.[key]?.desktop ?? fallback;
+
+	const iconWidth = getResponsiveObjectValue(icon, "width");
+	const iconHeight = getResponsiveObjectValue(icon, "height");
+
 	return (
 		<div
 			className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${
 				hasBorder ? "has-border" : ""
 			}`}
 			style={{
-				"--iconSize": `${icon?.size || 20}px`,
+				"--iconSize": `${getResponsiveObjectValue(icon, "size")}px`,
 				"--icon-color": iconStyle.iconColor || "#757575",
 				"--icon-hover-color": iconStyle.iconHoverColor || "#757575",
-				"--bg-color": hasBg ? iconStyle.iconBgColor : "#EEEEEE",
-				"--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "#EEEEEE",
-				"--iconBorderColor": iconBorderStyle.color,
-				"--iconBorderStyle": iconBorderStyle.style,
-				"--iconBorderWidth": `${iconBorderStyle.width || 1}px`,
+				"--bg-color": hasBg ? iconStyle.iconBgColor : "transparent",
+				"--bg-hover-color": hasBg ? iconStyle.iconHoverBgColor : "transparent",
+				"--iconBorderColor": hasBorder ? iconBorderStyle?.color : "transparent",
+				"--iconBorderStyle": iconBorderStyle?.style || "solid",
+				"--iconBorderWidth": `${getResponsiveObjectValue(
+					iconBorderStyle,
+					"width",
+				)}px`,
 				"--iconPaddingTop": `${paddingIcon.top}px` || "10px",
 				"--iconPaddingRight": `${paddingIcon.right}px` || "10px",
 				"--iconPaddingBottom": `${paddingIcon.bottom}px` || "10px",
@@ -39,8 +55,8 @@ export default function RenderIcon({
 					src={icon.imageSource}
 					alt="icon"
 					style={{
-						width: "100%",
-						height: "100%",
+						width: iconWidth ? `${iconWidth}px` : undefined,
+						height: iconHeight ? `${iconHeight}px` : undefined,
 						objectFit: "contain",
 					}}
 				/>
