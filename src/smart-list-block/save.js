@@ -94,6 +94,8 @@ export default function save({ attributes }) {
 		},
 	});
 
+	console.log(description.family);
+
 	return (
 		<div {...blockProps}>
 			<ul

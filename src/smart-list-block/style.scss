@@ -146,15 +146,6 @@
 				}
 			}
 		}
-
-		.description {
-			margin: 5px 0 0;
-			font-size: var(--descriptionFontSize, 16px);
-			font-weight: var(--descriptionWeight, 400);
-			font-family: var(--descriptionFont, "Roboto");
-			letter-spacing: var(--descriptionSpacing, 0);
-			line-height: var(--descriptionHeight, 1.5);
-		}
 	}
 
 	.smart-list .smart-item {
@@ -261,12 +252,12 @@
 	}
 
 	.smart-list .list-content .title {
-		font-size: var(--fontSize, 16px);
-		font-weight: var(--weight, 400);
-		font-family: var(--font, Roboto);
+		font-size: var(--titleFontSize, 16px);
+		font-weight: var(--titleWeight, 400);
+		font-family: var(--titleFamily, Roboto);
 		color: var(--titleColor, #2f2f2f);
-		letter-spacing: var(--spacing, 0);
-		line-height: var(--height, 0);
+		letter-spacing: var(--titleSpacing, 0);
+		line-height: var(--titleHeight, 0);
 	}
 
 	.smart-list .list-content .title-without-size {
@@ -278,7 +269,7 @@
 	.smart-list .list-content .description {
 		font-size: var(--descriptionFontSize, 11px);
 		font-weight: var(--descriptionWeight, 400);
-		font-family: var(--descriptionFont, Roboto);
+		font-family: var(--descriptionFamily, Roboto);
 		color: var(--descriptionColor, #757575);
 		letter-spacing: var(--descriptionSpacing, 0);
 		line-height: var(--descriptionHeight, 0);
@@ -286,7 +277,7 @@
 
 	.smart-list .list-content .description-without-size {
 		font-weight: var(--descriptionWeight, 400);
-		font-family: var(--descriptionFont, "Roboto");
+		font-family: var(--descriptionFamily, "Roboto");
 		color: var(--descriptionColor, #2f2f2f);
 	}
 
