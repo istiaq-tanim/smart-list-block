@@ -117,24 +117,24 @@ return array(
 				'type' => 'object',
 				'default' => array(
 					'desktop' => array(
-						'top' => 0,
-						'right' => 0,
-						'bottom' => 0,
-						'left' => 0,
+						'top' => 12,
+						'right' => 12,
+						'bottom' => 12,
+						'left' => 12,
 						'linked' => true
 					),
 					'tablet' => array(
-						'top' => 0,
-						'right' => 0,
-						'bottom' => 0,
-						'left' => 0,
+						'top' => 8,
+						'right' => 8,
+						'bottom' => 8,
+						'left' => 8,
 						'linked' => true
 					),
 					'mobile' => array(
-						'top' => 0,
-						'right' => 0,
-						'bottom' => 0,
-						'left' => 0,
+						'top' => 4,
+						'right' => 4,
+						'bottom' => 4,
+						'left' => 4,
 						'linked' => true
 					)
 				)
@@ -225,6 +225,10 @@ return array(
 				'type' => 'string',
 				'default' => 'normal'
 			),
+			'iconEffect' => array(
+				'type' => 'string',
+				'default' => 'normal'
+			),
 			'gapTitleToDescription' => array(
 				'type' => 'object',
 				'default' => array(
@@ -289,24 +293,24 @@ return array(
 				'type' => 'object',
 				'default' => array(
 					'desktop' => array(
-						'top' => 0,
-						'right' => 0,
-						'bottom' => 0,
-						'left' => 0,
+						'top' => 4,
+						'right' => 4,
+						'bottom' => 4,
+						'left' => 4,
 						'linked' => true
 					),
 					'tablet' => array(
-						'top' => 0,
-						'right' => 0,
-						'bottom' => 0,
-						'left' => 0,
+						'top' => 4,
+						'right' => 4,
+						'bottom' => 4,
+						'left' => 4,
 						'linked' => true
 					),
 					'mobile' => array(
-						'top' => 0,
-						'right' => 0,
-						'bottom' => 0,
-						'left' => 0,
+						'top' => 4,
+						'right' => 4,
+						'bottom' => 4,
+						'left' => 4,
 						'linked' => true
 					)
 				)

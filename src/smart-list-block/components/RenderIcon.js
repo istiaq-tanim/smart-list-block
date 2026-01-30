@@ -1,5 +1,5 @@
 import { getIcon } from "../const/icons";
-import { useDeviceType } from "../utils";
+import { getResponsiveSpacing, useDeviceType } from "../utils";
 
 export default function RenderIcon({
 	icon,
@@ -23,6 +23,23 @@ export default function RenderIcon({
 	const iconWidth = getResponsiveObjectValue(icon, "width");
 	const iconHeight = getResponsiveObjectValue(icon, "height");
 
+	const getResponsiveSpacing = (
+		spacingObj,
+		fallback = { top: 0, right: 0, bottom: 0, left: 0 },
+	) => {
+		if (spacingObj?.[device]) {
+			return spacingObj[device];
+		}
+		if (spacingObj?.desktop) {
+			return spacingObj.desktop;
+		}
+		return fallback;
+	};
+
+	// Get responsive spacing values
+	const responsivePadding = getResponsiveSpacing(paddingIcon);
+	const responsiveRadius = getResponsiveSpacing(radiusIcon);
+
 	return (
 		<div
 			className={`render-icon ${hasBg ? `bg-${iconStyle.type}` : ""} ${
@@ -40,14 +57,14 @@ export default function RenderIcon({
 					iconBorderStyle,
 					"width",
 				)}px`,
-				"--iconPaddingTop": `${paddingIcon.top}px` || "10px",
-				"--iconPaddingRight": `${paddingIcon.right}px` || "10px",
-				"--iconPaddingBottom": `${paddingIcon.bottom}px` || "10px",
-				"--iconPaddingLeft": `${paddingIcon.left}px` || "10px",
-				"--iconRadiusTop": `${radiusIcon.top}px`,
-				"--iconRadiusRight": `${radiusIcon.right}px`,
-				"--iconRadiusBottom": `${radiusIcon.bottom}px`,
-				"--iconRadiusLeft": `${radiusIcon.left}px`,
+				"--iconPaddingTop": `${responsivePadding.top}px` || "10px",
+				"--iconPaddingRight": `${responsivePadding.right}px` || "10px",
+				"--iconPaddingBottom": `${responsivePadding.bottom}px` || "10px",
+				"--iconPaddingLeft": `${responsivePadding.left}px` || "10px",
+				"--iconRadiusTop": `${responsiveRadius.top}px`,
+				"--iconRadiusRight": `${responsiveRadius.right}px`,
+				"--iconRadiusBottom": `${responsiveRadius.bottom}px`,
+				"--iconRadiusLeft": `${responsiveRadius.left}px`,
 			}}
 		>
 			{icon.type === "custom" && icon.imageSource && (

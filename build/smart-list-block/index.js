@@ -1235,7 +1235,7 @@ function Unlink() {
   \*****************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false,"anchor":true,"className":true,"innerBlocks":true},"allowedBlocks":["create-block/smart-list-item"],"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"object","default":{"desktop":4,"tablet":4,"mobile":4}},"iconGap":{"type":"object","default":{"desktop":12,"tablet":12,"mobile":12}},"divider":{"type":"object","default":{"show":false,"width":{"desktop":1,"tablet":1,"mobile":1},"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":{"desktop":1,"tablet":1,"mobile":1},"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto"}},"backgroundOverlay":{"type":"object","default":{"enabled":false,"color":"#f05e31","opacity":{"desktop":50,"tablet":30,"mobile":30}}},"color":{"type":"string","default":"#fff"},"padding":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"margin":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"radius":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":1.5,"spacing":0,"text":"List item title","titleColor":"#757575","titleHoverColor":"#757575"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":1.5,"spacing":0,"text":"List item title","descriptionColor":"#757575","descriptionHoverColor":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"object","default":{"desktop":6,"tablet":3,"mobile":1}},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":{"desktop":24,"tablet":20,"mobile":16},"height":{"desktop":24,"tablet":20,"mobile":16},"size":{"desktop":24,"tablet":20,"mobile":16},"position":"left","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBackGroundStyle":"solid","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}},"iconBorderStyle":{"type":"object","default":{"show":false,"width":{"desktop":1,"tablet":1,"mobile":1},"style":"solid","color":"#f05e31"}},"paddingIcon":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"radiusIcon":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}}},"providesContext":{"title":"title","description":"description","icon":"icon","iconStyle":"iconStyle","iconBorderStyle":"iconBorderStyle","radiusIcon":"radiusIcon","paddingIcon":"paddingIcon","presetsType":"presetsType"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/smart-list-block","version":"1.0.0","title":"Smart List Block","category":"smart-list","icon":{"src":"list-view","foreground":"#641DD7"},"description":"Smart List is block to show list","example":{},"supports":{"html":false,"anchor":true,"className":true,"innerBlocks":true},"allowedBlocks":["create-block/smart-list-item"],"attributes":{"presetsType":{"type":"string","default":"list"},"listOrientation":{"type":"string","default":"vertical"},"alignment":{"type":"string","default":"left"},"previewWidth":{"type":"string","default":"100%"},"spaceBetween":{"type":"object","default":{"desktop":4,"tablet":4,"mobile":4}},"iconGap":{"type":"object","default":{"desktop":12,"tablet":12,"mobile":12}},"divider":{"type":"object","default":{"show":false,"width":{"desktop":1,"tablet":1,"mobile":1},"style":"solid","color":"#f05e31"}},"border":{"type":"object","default":{"show":false,"width":{"desktop":1,"tablet":1,"mobile":1},"style":"solid","color":"#f05e31"}},"showConnectionLine":{"type":"boolean","default":false},"backgroundStyle":{"type":"object","default":{"type":"solid","background":"","image":"","backgroundSize":"auto"}},"backgroundOverlay":{"type":"object","default":{"enabled":false,"color":"#f05e31","opacity":{"desktop":50,"tablet":30,"mobile":30}}},"color":{"type":"string","default":"#fff"},"padding":{"type":"object","default":{"desktop":{"top":12,"right":12,"bottom":12,"left":12,"linked":true},"tablet":{"top":8,"right":8,"bottom":8,"left":8,"linked":true},"mobile":{"top":4,"right":4,"bottom":4,"left":4,"linked":true}}},"margin":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"radius":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}},"title":{"type":"object","default":{"show":true,"tags":"p","family":"Roboto","fontSize":16,"weight":400,"height":1.5,"spacing":0,"text":"List item title","titleColor":"#757575","titleHoverColor":"#757575"}},"description":{"type":"object","default":{"show":false,"tags":"p","family":"Roboto","fontSize":11,"weight":400,"height":1.5,"spacing":0,"text":"List item title","descriptionColor":"#757575","descriptionHoverColor":"#757575"}},"contentEffect":{"type":"string","default":"normal"},"iconEffect":{"type":"string","default":"normal"},"gapTitleToDescription":{"type":"object","default":{"desktop":6,"tablet":3,"mobile":1}},"icon":{"type":"object","default":{"show":true,"type":"iconSet","imageSource":"","iconSourceId":"star","width":{"desktop":24,"tablet":20,"mobile":16},"height":{"desktop":24,"tablet":20,"mobile":16},"size":{"desktop":24,"tablet":20,"mobile":16},"position":"left","alignment":"center"}},"iconStyle":{"type":"object","default":{"show":false,"type":"square","iconBackGroundStyle":"solid","iconBgColor":"#EEEEEE","iconHoverBgColor":"#EEEEEE","iconColor":"#757575","iconHoverColor":"#757575","effect":"normal"}},"iconBorderStyle":{"type":"object","default":{"show":false,"width":{"desktop":1,"tablet":1,"mobile":1},"style":"solid","color":"#f05e31"}},"paddingIcon":{"type":"object","default":{"desktop":{"top":4,"right":4,"bottom":4,"left":4,"linked":true},"tablet":{"top":4,"right":4,"bottom":4,"left":4,"linked":true},"mobile":{"top":4,"right":4,"bottom":4,"left":4,"linked":true}}},"radiusIcon":{"type":"object","default":{"desktop":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"tablet":{"top":0,"right":0,"bottom":0,"left":0,"linked":true},"mobile":{"top":0,"right":0,"bottom":0,"left":0,"linked":true}}}},"providesContext":{"title":"title","description":"description","icon":"icon","iconStyle":"iconStyle","iconBorderStyle":"iconBorderStyle","radiusIcon":"radiusIcon","paddingIcon":"paddingIcon","presetsType":"presetsType"},"textdomain":"smart-list-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -2727,10 +2727,12 @@ function Style() {
   } = (0,_hooks_useBlockContext__WEBPACK_IMPORTED_MODULE_1__["default"])();
   const {
     iconStyle,
-    iconBorderStyle
+    iconBorderStyle,
+    iconEffect
   } = attributes;
   const selectedTab = iconStyle.type;
-  const selectedEffectTab = iconStyle.effect;
+  const selectedEffectTab = iconEffect;
+  console.log(selectedEffectTab, iconStyle);
   const handleTab = tabName => {
     setAttributes({
       iconStyle: {
@@ -2741,21 +2743,18 @@ function Style() {
   };
   const handleEffectTab = tabName => {
     setAttributes({
-      iconStyle: {
-        ...iconStyle,
-        effect: tabName
-      }
+      iconEffect: tabName
     });
   };
   const handleIconBackgroundColor = value => {
-    if (iconStyle.effect === "normal") {
+    if (iconEffect === "normal") {
       setAttributes({
         iconStyle: {
           ...iconStyle,
           iconBgColor: value
         }
       });
-    } else if (iconStyle.effect === "hover") {
+    } else if (iconEffect === "hover") {
       setAttributes({
         iconStyle: {
           ...iconStyle,
@@ -2765,14 +2764,14 @@ function Style() {
     }
   };
   const handleIconColor = value => {
-    if (iconStyle.effect === "normal") {
+    if (iconEffect === "normal") {
       setAttributes({
         iconStyle: {
           ...iconStyle,
           iconColor: value
         }
       });
-    } else if (iconStyle.effect === "hover") {
+    } else if (iconEffect === "hover") {
       setAttributes({
         iconStyle: {
           ...iconStyle,
@@ -2809,13 +2808,13 @@ function Style() {
         color: "#757575"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_3__["default"], {
         label: "Icon Background",
-        value: iconStyle.effect === "normal" ? iconStyle.iconBgColor : iconStyle.iconHoverBgColor,
+        value: iconEffect === "normal" ? iconStyle.iconBgColor : iconStyle.iconHoverBgColor,
         onChange: handleIconBackgroundColor,
         defaultValue: "#EEEEEE"
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_CustomColorPicker_CustomColorPicker__WEBPACK_IMPORTED_MODULE_3__["default"], {
       label: "Icon Color",
-      value: iconStyle.effect === "normal" ? iconStyle.iconColor : iconStyle.iconHoverColor,
+      value: iconEffect === "normal" ? iconStyle.iconColor : iconStyle.iconHoverColor,
       onChange: handleIconColor,
       defaultValue: "#757575"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_common_ToggleButton_ToggleButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -3798,7 +3797,8 @@ function ListPreview({
     description,
     contentEffect,
     gapTitleToDescription,
-    backgroundOverlay
+    backgroundOverlay,
+    iconEffect
   } = attributes;
   const ALLOWED_BLOCKS = ["create-block/smart-list-item"];
   const TEMPLATE = [["create-block/smart-list-item"], ["create-block/smart-list-item"], ["create-block/smart-list-item"]];
@@ -3825,6 +3825,7 @@ function ListPreview({
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
   const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
+  const hasIconHoverClass = iconEffect === "hover" ? "has-Icon-hover" : "has-Icon-normal";
   const device = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.useDeviceType)()?.toLowerCase() || "desktop";
   const getResponsiveValue = (obj, fallback = 0) => {
     var _ref, _obj$device;
@@ -3866,7 +3867,7 @@ function ListPreview({
     class: "smart-list-wrapper",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
       className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
-				${borderClass} ${hasHoverClass} `,
+				${borderClass} ${hasHoverClass} ${hasIconHoverClass}`,
       style: {
         "--spaceBetween": `${getResponsiveValue(spaceBetween)}px`,
         "--iconGap": `${getResponsiveValue(iconGap)}px`,
@@ -3980,7 +3981,9 @@ function DeviceDropdown() {
   };
   const getColor = device => normalizedDeviceType === device ? "#8e56e9ff" : "#8C8F94";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Dropdown, {
-    position: "bottom right",
+    popoverProps: {
+      placement: "bottom-center"
+    },
     renderToggle: ({
       isOpen,
       onToggle
@@ -4790,7 +4793,7 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
-  var _radius$desktop$top, _radius$desktop$right, _radius$desktop$botto, _radius$desktop$left, _radius$tablet$top, _radius$tablet$right, _radius$tablet$bottom, _radius$tablet$left, _radius$mobile$top, _radius$mobile$right, _radius$mobile$bottom, _radius$mobile$left, _backgroundOverlay$op, _backgroundOverlay$op2, _backgroundOverlay$op3;
+  var _margin$desktop$top, _margin$desktop$right, _margin$desktop$botto, _margin$desktop$left, _ref, _margin$tablet$top, _ref2, _margin$tablet$right, _ref3, _margin$tablet$bottom, _ref4, _margin$tablet$left, _ref5, _ref6, _margin$mobile$top, _ref7, _ref8, _margin$mobile$right, _ref9, _ref0, _margin$mobile$bottom, _ref1, _ref10, _margin$mobile$left, _radius$desktop$top, _radius$desktop$right, _radius$desktop$botto, _radius$desktop$left, _radius$tablet$top, _radius$tablet$right, _radius$tablet$bottom, _radius$tablet$left, _radius$mobile$top, _radius$mobile$right, _radius$mobile$bottom, _radius$mobile$left, _backgroundOverlay$op, _backgroundOverlay$op2, _backgroundOverlay$op3;
   const {
     listOrientation,
     alignment,
@@ -4813,7 +4816,8 @@ function save({
     iconBorderStyle,
     paddingIcon,
     radiusIcon,
-    backgroundOverlay
+    backgroundOverlay,
+    iconEffect
   } = attributes;
   const {
     width,
@@ -4838,19 +4842,31 @@ function save({
   const dividerClass = show ? "has-divider" : "";
   const borderClass = borderShow ? "has-border" : "";
   const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
+  const hasIconHoverClass = iconEffect === "hover" ? "has-Icon-hover" : "has-Icon-normal";
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save({
     className: "smart-list-wrapper",
     style: {
-      "--marginTop": `${margin.top}px`,
-      "--marginRight": `${margin.right}px`,
-      "--marginBottom": `${margin.bottom}px`,
-      "--marginLeft": `${margin.left}px`
+      /* Desktop */
+      "--marginTop-desktop": `${(_margin$desktop$top = margin?.desktop?.top) !== null && _margin$desktop$top !== void 0 ? _margin$desktop$top : 0}px`,
+      "--marginRight-desktop": `${(_margin$desktop$right = margin?.desktop?.right) !== null && _margin$desktop$right !== void 0 ? _margin$desktop$right : 0}px`,
+      "--marginBottom-desktop": `${(_margin$desktop$botto = margin?.desktop?.bottom) !== null && _margin$desktop$botto !== void 0 ? _margin$desktop$botto : 0}px`,
+      "--marginLeft-desktop": `${(_margin$desktop$left = margin?.desktop?.left) !== null && _margin$desktop$left !== void 0 ? _margin$desktop$left : 0}px`,
+      /* Tablet (fallback to desktop) */
+      "--marginTop-tablet": `${(_ref = (_margin$tablet$top = margin?.tablet?.top) !== null && _margin$tablet$top !== void 0 ? _margin$tablet$top : margin?.desktop?.top) !== null && _ref !== void 0 ? _ref : 0}px`,
+      "--marginRight-tablet": `${(_ref2 = (_margin$tablet$right = margin?.tablet?.right) !== null && _margin$tablet$right !== void 0 ? _margin$tablet$right : margin?.desktop?.right) !== null && _ref2 !== void 0 ? _ref2 : 0}px`,
+      "--marginBottom-tablet": `${(_ref3 = (_margin$tablet$bottom = margin?.tablet?.bottom) !== null && _margin$tablet$bottom !== void 0 ? _margin$tablet$bottom : margin?.desktop?.bottom) !== null && _ref3 !== void 0 ? _ref3 : 0}px`,
+      "--marginLeft-tablet": `${(_ref4 = (_margin$tablet$left = margin?.tablet?.left) !== null && _margin$tablet$left !== void 0 ? _margin$tablet$left : margin?.desktop?.left) !== null && _ref4 !== void 0 ? _ref4 : 0}px`,
+      /* Mobile (fallback to tablet → desktop) */
+      "--marginTop-mobile": `${(_ref5 = (_ref6 = (_margin$mobile$top = margin?.mobile?.top) !== null && _margin$mobile$top !== void 0 ? _margin$mobile$top : margin?.tablet?.top) !== null && _ref6 !== void 0 ? _ref6 : margin?.desktop?.top) !== null && _ref5 !== void 0 ? _ref5 : 0}px`,
+      "--marginRight-mobile": `${(_ref7 = (_ref8 = (_margin$mobile$right = margin?.mobile?.right) !== null && _margin$mobile$right !== void 0 ? _margin$mobile$right : margin?.tablet?.right) !== null && _ref8 !== void 0 ? _ref8 : margin?.desktop?.right) !== null && _ref7 !== void 0 ? _ref7 : 0}px`,
+      "--marginBottom-mobile": `${(_ref9 = (_ref0 = (_margin$mobile$bottom = margin?.mobile?.bottom) !== null && _margin$mobile$bottom !== void 0 ? _margin$mobile$bottom : margin?.tablet?.bottom) !== null && _ref0 !== void 0 ? _ref0 : margin?.desktop?.bottom) !== null && _ref9 !== void 0 ? _ref9 : 0}px`,
+      "--marginLeft-mobile": `${(_ref1 = (_ref10 = (_margin$mobile$left = margin?.mobile?.left) !== null && _margin$mobile$left !== void 0 ? _margin$mobile$left : margin?.tablet?.left) !== null && _ref10 !== void 0 ? _ref10 : margin?.desktop?.left) !== null && _ref1 !== void 0 ? _ref1 : 0}px`
     }
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
-      className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass}`,
+      className: `smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass} ${hasIconHoverClass}`,
       style: {
         "--spaceBetween": `${spaceBetween.desktop}px`,
         "--spaceBetweenTablet": `${spaceBetween.tablet}px`,

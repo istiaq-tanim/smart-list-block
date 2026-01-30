@@ -52,7 +52,7 @@ function DeviceDropdown() {
 
 	return (
 		<Dropdown
-			position="bottom right"
+			popoverProps={{ placement: "bottom-center" }}
 			renderToggle={({ isOpen, onToggle }) => (
 				<div
 					className="device-toggle"

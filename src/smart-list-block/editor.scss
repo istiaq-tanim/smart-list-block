@@ -68,11 +68,6 @@
 				justify-content: center;
 				transition: all 0.2s ease;
 
-				padding-top: var(--iconPaddingTop, 5px);
-				padding-left: var(--iconPaddingLeft, 5px);
-				padding-right: var(--iconPaddingRight, 5px);
-				padding-bottom: var(--iconPaddingBottom, 5px);
-
 				&.has-border {
 					border-width: var(--iconBorderWidth);
 					border-style: var(--iconBorderStyle, solid);
@@ -87,6 +82,7 @@
 
 				transition: all 0.2s ease;
 			}
+
 			.render-icon:hover {
 				background-color: var(--bg-hover-color);
 				color: var(--icon-hover-color);
@@ -283,7 +279,7 @@
 			}
 		}
 
-		&.is-horizontal {
+		&.has- &.is-horizontal {
 			flex-direction: row;
 			gap: var(--spaceBetween, 24px);
 		}

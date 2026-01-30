@@ -63,10 +63,6 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  padding-top: var(--iconPaddingTop, 5px);
-  padding-right: var(--iconPaddingLeft, 5px);
-  padding-left: var(--iconPaddingRight, 5px);
-  padding-bottom: var(--iconPaddingBottom, 5px);
 }
 .wp-block-create-block-smart-list-block .smart-list .smart-item .render-icon.has-border,
 .wp-block-create-block-smart-list-block .smart-list .wp-block-create-block-smart-list-item .render-icon.has-border {
@@ -246,7 +242,7 @@
 .wp-block-create-block-smart-list-block .smart-list.has-hover .smart-item:hover .description {
   color: var(--descriptionHoverColor, #2f2f2f);
 }
-.wp-block-create-block-smart-list-block .smart-list.is-horizontal {
+.wp-block-create-block-smart-list-block .smart-list.has- .wp-block-create-block-smart-list-block .smart-list.is-horizontal {
   flex-direction: row;
   gap: var(--spaceBetween, 24px);
 }

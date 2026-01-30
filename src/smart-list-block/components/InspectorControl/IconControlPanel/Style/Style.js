@@ -10,29 +10,31 @@ import BorderSetting from "../../GeneralControlPanel/GeneralPanelItems/Styles/Bo
 
 function Style() {
 	const { attributes, setAttributes } = useBlockContext();
-	const { iconStyle, iconBorderStyle } = attributes;
+	const { iconStyle, iconBorderStyle, iconEffect } = attributes;
 	const selectedTab = iconStyle.type;
-	const selectedEffectTab = iconStyle.effect;
+	const selectedEffectTab = iconEffect;
+
+	console.log(selectedEffectTab, iconStyle);
 
 	const handleTab = (tabName) => {
 		setAttributes({ iconStyle: { ...iconStyle, type: tabName } });
 	};
 
 	const handleEffectTab = (tabName) => {
-		setAttributes({ iconStyle: { ...iconStyle, effect: tabName } });
+		setAttributes({ iconEffect: tabName });
 	};
 
 	const handleIconBackgroundColor = (value) => {
-		if (iconStyle.effect === "normal") {
+		if (iconEffect === "normal") {
 			setAttributes({ iconStyle: { ...iconStyle, iconBgColor: value } });
-		} else if (iconStyle.effect === "hover") {
+		} else if (iconEffect === "hover") {
 			setAttributes({ iconStyle: { ...iconStyle, iconHoverBgColor: value } });
 		}
 	};
 	const handleIconColor = (value) => {
-		if (iconStyle.effect === "normal") {
+		if (iconEffect === "normal") {
 			setAttributes({ iconStyle: { ...iconStyle, iconColor: value } });
-		} else if (iconStyle.effect === "hover") {
+		} else if (iconEffect === "hover") {
 			setAttributes({ iconStyle: { ...iconStyle, iconHoverColor: value } });
 		}
 	};
@@ -72,7 +74,7 @@ function Style() {
 					<CustomColorPicker
 						label="Icon Background"
 						value={
-							iconStyle.effect === "normal"
+							iconEffect === "normal"
 								? iconStyle.iconBgColor
 								: iconStyle.iconHoverBgColor
 						}
@@ -84,7 +86,7 @@ function Style() {
 			<CustomColorPicker
 				label="Icon Color"
 				value={
-					iconStyle.effect === "normal"
+					iconEffect === "normal"
 						? iconStyle.iconColor
 						: iconStyle.iconHoverColor
 				}

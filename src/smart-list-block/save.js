@@ -25,6 +25,7 @@ export default function save({ attributes }) {
 		paddingIcon,
 		radiusIcon,
 		backgroundOverlay,
+		iconEffect,
 	} = attributes;
 
 	const { width, style, color, show } = divider;
@@ -42,21 +43,61 @@ export default function save({ attributes }) {
 	const dividerClass = show ? "has-divider" : "";
 	const borderClass = borderShow ? "has-border" : "";
 	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
+	const hasIconHoverClass =
+		iconEffect === "hover" ? "has-Icon-hover" : "has-Icon-normal";
 
 	const blockProps = useBlockProps.save({
 		className: "smart-list-wrapper",
 		style: {
-			"--marginTop": `${margin.top}px`,
-			"--marginRight": `${margin.right}px`,
-			"--marginBottom": `${margin.bottom}px`,
-			"--marginLeft": `${margin.left}px`,
+			/* Desktop */
+			"--marginTop-desktop": `${margin?.desktop?.top ?? 0}px`,
+			"--marginRight-desktop": `${margin?.desktop?.right ?? 0}px`,
+			"--marginBottom-desktop": `${margin?.desktop?.bottom ?? 0}px`,
+			"--marginLeft-desktop": `${margin?.desktop?.left ?? 0}px`,
+
+			/* Tablet (fallback to desktop) */
+			"--marginTop-tablet": `${
+				margin?.tablet?.top ?? margin?.desktop?.top ?? 0
+			}px`,
+			"--marginRight-tablet": `${
+				margin?.tablet?.right ?? margin?.desktop?.right ?? 0
+			}px`,
+			"--marginBottom-tablet": `${
+				margin?.tablet?.bottom ?? margin?.desktop?.bottom ?? 0
+			}px`,
+			"--marginLeft-tablet": `${
+				margin?.tablet?.left ?? margin?.desktop?.left ?? 0
+			}px`,
+
+			/* Mobile (fallback to tablet → desktop) */
+			"--marginTop-mobile": `${
+				margin?.mobile?.top ?? margin?.tablet?.top ?? margin?.desktop?.top ?? 0
+			}px`,
+			"--marginRight-mobile": `${
+				margin?.mobile?.right ??
+				margin?.tablet?.right ??
+				margin?.desktop?.right ??
+				0
+			}px`,
+			"--marginBottom-mobile": `${
+				margin?.mobile?.bottom ??
+				margin?.tablet?.bottom ??
+				margin?.desktop?.bottom ??
+				0
+			}px`,
+			"--marginLeft-mobile": `${
+				margin?.mobile?.left ??
+				margin?.tablet?.left ??
+				margin?.desktop?.left ??
+				0
+			}px`,
 		},
 	});
 
 	return (
 		<div {...blockProps}>
 			<ul
-				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass}`}
+				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} ${borderClass} ${hasHoverClass} ${hasIconHoverClass}`}
 				style={{
 					"--spaceBetween": `${spaceBetween.desktop}px`,
 					"--spaceBetweenTablet": `${spaceBetween.tablet}px`,

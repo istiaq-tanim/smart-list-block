@@ -19,6 +19,7 @@ function ListPreview({ attributes }) {
 		contentEffect,
 		gapTitleToDescription,
 		backgroundOverlay,
+		iconEffect,
 	} = attributes;
 
 	const ALLOWED_BLOCKS = ["create-block/smart-list-item"];
@@ -42,6 +43,8 @@ function ListPreview({ attributes }) {
 	const dividerClass = show ? "has-divider" : "";
 	const borderClass = borderShow ? "has-border" : "";
 	const hasHoverClass = contentEffect === "hover" ? "has-hover" : "has-normal";
+	const hasIconHoverClass =
+		iconEffect === "hover" ? "has-Icon-hover" : "has-Icon-normal";
 
 	const device = useDeviceType()?.toLowerCase() || "desktop";
 
@@ -84,7 +87,7 @@ function ListPreview({ attributes }) {
 		>
 			<ul
 				className={`smart-list ${orientationClass} ${alignmentClass} ${dividerClass} 
-				${borderClass} ${hasHoverClass} `}
+				${borderClass} ${hasHoverClass} ${hasIconHoverClass}`}
 				style={{
 					"--spaceBetween": `${getResponsiveValue(spaceBetween)}px`,
 					"--iconGap": `${getResponsiveValue(iconGap)}px`,

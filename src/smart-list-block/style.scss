@@ -6,23 +6,16 @@
  */
 
 .wp-block-create-block-smart-list-block {
-	.smart-list-wrapper {
-		margin-top: var(--marginTop, 0) !important;
-		margin-right: var(--marginRight, 0) !important;
-		margin-bottom: var(--marginBottom, 0) !important;
-		margin-left: var(--marginLeft, 0) !important;
-	}
-
 	.smart-list {
 		display: flex;
 		gap: var(--spaceBetween, 24px);
 		list-style: none;
 		flex-wrap: wrap;
 
-		margin-top: var(--marginTop, 5px);
-		margin-right: var(--marginRight, 5px);
-		margin-bottom: var(--marginBottom, 5px);
-		margin-left: var(--marginLeft, 5px);
+		margin-top: var(--marginTop-desktop);
+		margin-right: var(--marginRight-desktop);
+		margin-bottom: var(--marginBottom-desktop);
+		margin-left: var(--marginLeft-desktop);
 
 		padding-top: var(--paddingTop, 5px);
 		padding-left: var(--paddingLeft, 5px);
@@ -44,12 +37,12 @@
 		}
 
 		&.has-hover {
-			.smart-item:hover .title,
-			.smart-item:hover .title-without-size {
+			.smart-item .title:hover,
+			.smart-item .title-without-size:hover {
 				color: var(--titleHoverColor, #757575);
 			}
-			.smart-item:hover .description,
-			.smart-item:hover .description-without-size {
+			.smart-item .description:hover,
+			.smart-item .description-without-size:hover {
 				color: var(--descriptionHoverColor, #2f2f2f);
 			}
 		}
@@ -236,10 +229,10 @@
 		background-color: var(--bg-color, #eeeeee);
 		border: var(--iconBorderWidth-desktop, 1px) var(--iconBorderStyle, solid)
 			var(--iconBorderColor);
-		border-radius: var(--iconRadiusTop, 0px) var(--iconRadiusRight, 0px)
-			var(--iconRadiusBottom, 0px) var(--iconRadiusLeft, 0px);
-		padding: var(--iconPaddingTop, 10px) var(--iconPaddingRight, 10px)
-			var(--iconPaddingBottom, 10px) var(--iconPaddingLeft, 10px);
+		border-radius: var(--iconRadiustop-desktop) var(--iconRadiusright-desktop)
+			var(--iconRadiusbottom-desktop) var(--iconRadiusleft-desktop);
+		padding: var(--iconPaddingtop-desktop) var(--iconPaddingright-desktop)
+			var(--iconPaddingbottom-desktop) var(--iconPaddingleft-desktop);
 
 		&.bg-circle {
 			border-radius: 50%;
@@ -300,6 +293,11 @@
 	@media (max-width: 1024px) {
 		.smart-list {
 			gap: var(--spaceBetweenTablet, var(--spaceBetween, 24px));
+
+			margin-top: var(--marginTop-tablet);
+			margin-right: var(--marginRight-tablet);
+			margin-bottom: var(--marginBottom-tablet);
+			margin-left: var(--marginLeft-tablet);
 
 			padding-top: var(--paddingTopTablet, var(--paddingTop, 5px));
 			padding-right: var(--paddingRightTablet, var(--paddingRight, 5px));
@@ -400,6 +398,12 @@
 			height: var(--iconSize-tablet, 24px);
 			border: var(--iconBorderWidth-tablet, 1px) var(--iconBorderStyle, solid)
 				var(--iconBorderColor);
+
+			padding: var(--iconPaddingtop-tablet) var(--iconPaddingright-tablet)
+				var(--iconPaddingbottom-tablet) var(--iconPaddingleft-tablet);
+
+			border-radius: var(--iconRadiustop-tablet) var(--iconRadiusright-tablet)
+				var(--iconRadiusbottom-tablet) var(--iconRadiusleft-tablet);
 		}
 
 		.render-icon img {
@@ -412,6 +416,11 @@
 	@media (max-width: 768px) {
 		.smart-list {
 			gap: var(--spaceBetweenMobile, var(--spaceBetween, 24px));
+
+			margin-top: var(--marginTop-mobile);
+			margin-right: var(--marginRight-mobile);
+			margin-bottom: var(--marginBottom-mobile);
+			margin-left: var(--marginLeft-mobile);
 			padding-top: var(
 				--paddingTopMobile,
 				var(--paddingTopTablet, var(--paddingTop, 5px))
@@ -533,6 +542,11 @@
 				height: var(--iconSize-mobile, 24px);
 				border: var(--iconBorderWidth-mobile, 1px) var(--iconBorderStyle, solid)
 					var(--iconBorderColor);
+
+				padding: var(--iconPaddingtop-mobile) var(--iconPaddingright-mobile)
+					var(--iconPaddingbottom-mobile) var(--iconPaddingleft-mobile);
+				border-radius: var(--iconRadiusTop-mobile) var(--iconRadiusRight-mobile)
+					var(--iconRadiusbottom-mobile) var(--iconRadiusleft-mobile);
 			}
 
 			.render-icon img {

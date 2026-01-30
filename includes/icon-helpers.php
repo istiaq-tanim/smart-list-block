@@ -86,6 +86,7 @@ if (!function_exists("smart_list_render_icon")) {
 
     $css_vars = [];
 
+
     $css_vars["--iconSize-desktop"] = esc_attr($icon_size_desktop) . 'px';
     $css_vars['--iconWidth-desktop'] = esc_attr($icon_width_desktop) . 'px';
     $css_vars['--iconHeight-desktop'] = esc_attr($icon_height_desktop) . 'px';
@@ -107,14 +108,22 @@ if (!function_exists("smart_list_render_icon")) {
     $css_vars['--bg-hover-color'] = $has_bg ? esc_attr($icon_style['iconHoverBgColor'] ?? 'transparent') : 'transparent';
     $css_vars['--iconBorderColor'] = $has_border ? esc_attr($icon_border_style['color'] ?? 'transparent') : 'transparent';
     $css_vars['--iconBorderStyle'] = esc_attr($icon_border_style['style'] ?? 'solid');
-    $css_vars['--iconPaddingTop'] = esc_attr($padding_icon['top'] ?? 10) . 'px';
-    $css_vars['--iconPaddingRight'] = esc_attr($padding_icon['right'] ?? 10) . 'px';
-    $css_vars['--iconPaddingBottom'] = esc_attr($padding_icon['bottom'] ?? 10) . 'px';
-    $css_vars['--iconPaddingLeft'] = esc_attr($padding_icon['left'] ?? 10) . 'px';
-    $css_vars['--iconRadiusTop'] = esc_attr($radius_icon['top'] ?? 0) . 'px';
-    $css_vars['--iconRadiusRight'] = esc_attr($radius_icon['right'] ?? 0) . 'px';
-    $css_vars['--iconRadiusBottom'] = esc_attr($radius_icon['bottom'] ?? 0) . 'px';
-    $css_vars['--iconRadiusLeft'] = esc_attr($radius_icon['left'] ?? 0) . 'px';
+
+
+    foreach (['top', 'right', 'bottom', 'left'] as $side) {
+      foreach (['desktop', 'tablet', 'mobile'] as $device) {
+        $css_vars["--iconPadding{$side}-{$device}"] =
+          esc_attr($padding_icon[$device][$side]
+            ?? $padding_icon[$side]['desktop']
+            ?? 10) . 'px';
+
+        $css_vars["--iconRadius{$side}-{$device}"] =
+          esc_attr($radius_icon[$device][$side]
+            ?? $radius_icon[$side]['desktop']
+            ?? 0) . 'px';
+      }
+    }
+
 
     $style_parts = [];
     foreach ($css_vars as $property => $value) {

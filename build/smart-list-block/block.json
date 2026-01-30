@@ -112,24 +112,24 @@
       "type": "object",
       "default": {
         "desktop": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0,
+          "top": 12,
+          "right": 12,
+          "bottom": 12,
+          "left": 12,
           "linked": true
         },
         "tablet": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0,
+          "top": 8,
+          "right": 8,
+          "bottom": 8,
+          "left": 8,
           "linked": true
         },
         "mobile": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0,
+          "top": 4,
+          "right": 4,
+          "bottom": 4,
+          "left": 4,
           "linked": true
         }
       }
@@ -220,6 +220,10 @@
       "type": "string",
       "default": "normal"
     },
+    "iconEffect": {
+      "type": "string",
+      "default": "normal"
+    },
     "gapTitleToDescription": {
       "type": "object",
       "default": {
@@ -284,24 +288,24 @@
       "type": "object",
       "default": {
         "desktop": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0,
+          "top": 4,
+          "right": 4,
+          "bottom": 4,
+          "left": 4,
           "linked": true
         },
         "tablet": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0,
+          "top": 4,
+          "right": 4,
+          "bottom": 4,
+          "left": 4,
           "linked": true
         },
         "mobile": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0,
+          "top": 4,
+          "right": 4,
+          "bottom": 4,
+          "left": 4,
           "linked": true
         }
       }
